@@ -1130,7 +1130,7 @@ Another example, `YUCS` represents the change of `YU` `YUG` `Yugoslavia` to
     — ISO 639-3 codes
 *   [`iso-15924`](https://github.com/wooorm/iso-15924)
     — ISO 15924 codes
-*   [`un-m49`](https://github.com/wooorm/un-49)
+*   [`un-m49`](https://github.com/wooorm/un-m49)
     — UN M49 codes
 
 ## License
