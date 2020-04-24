@@ -33,7 +33,15 @@
   ],
   "main": "1.json",
   "files": [
-    "index.json"
+    "index.json",
+    "1-a2-to-1-a3.json",
+    "1-a2-to-1-n.json",
+    "1-a3-to-1-a2.json",
+    "1-n-to-1-a2.json",
+    "1-reserved.json",
+    "1.json",
+    "2.json",
+    "3.json"
   ],
   "dependencies": {},
   "devDependencies": {
