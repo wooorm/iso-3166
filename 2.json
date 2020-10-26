@@ -9755,6 +9755,11 @@
     "parent": "IQ"
   },
   {
+    "code": "IQ-HA",
+    "name": "Halabja",
+    "parent": "IQ"
+  },
+  {
     "code": "IQ-KA",
     "name": "Karbalā’",
     "parent": "IQ"
@@ -9961,7 +9966,7 @@
   },
   {
     "code": "IS-1",
-    "name": "Höfuðborgarsvæðið",
+    "name": "Höfuðborgarsvæði",
     "parent": "IS"
   },
   {
@@ -23886,7 +23891,7 @@
   },
   {
     "code": "US-VI",
-    "name": "Virgin Islands, U.S.",
+    "name": "U.S. Virgin Islands",
     "parent": "US"
   },
   {
