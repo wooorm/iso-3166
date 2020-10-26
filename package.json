@@ -49,24 +49,24 @@
     "concat-stream": "^2.0.0",
     "hast-util-select": "^4.0.0",
     "hast-util-to-string": "^1.0.0",
-    "hastscript": "^5.0.0",
+    "hastscript": "^6.0.0",
     "mdast-util-heading-range": "^2.0.0",
     "node-fetch": "^2.0.0",
     "p-map": "^4.0.0",
     "prettier": "^2.0.0",
     "rehype-format": "^3.0.0",
-    "rehype-parse": "^6.0.0",
-    "rehype-stringify": "^7.0.0",
-    "remark-cli": "^8.0.0",
-    "remark-preset-wooorm": "^7.0.0",
-    "tape": "^4.0.0",
+    "rehype-parse": "^7.0.0",
+    "rehype-stringify": "^8.0.0",
+    "remark-cli": "^9.0.0",
+    "remark-preset-wooorm": "^8.0.0",
+    "tape": "^5.0.0",
     "unified": "^9.0.0",
     "unist-builder": "^2.0.0",
-    "xo": "^0.29.0"
+    "xo": "^0.34.0"
   },
   "scripts": {
     "generate": "node build",
-    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test-api": "node test",
     "test": "npm run format && npm run test-api"
   },
@@ -82,21 +82,16 @@
     "prettier": true,
     "esnext": false,
     "rules": {
-      "unicorn/prefer-number-properties": "off",
-      "guard-for-in": "off",
       "complexity": "off",
-      "max-depth": "off"
+      "guard-for-in": "off",
+      "max-depth": "off",
+      "unicorn/no-fn-reference-in-iterator": "off",
+      "unicorn/prefer-number-properties": "off"
     }
   },
   "remarkConfig": {
     "plugins": [
       "preset-wooorm",
-      [
-        "toc",
-        {
-          "heading": "contents"
-        }
-      ],
       "./build-iso-3166-1-a2-table"
     ]
   }

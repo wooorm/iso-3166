@@ -141,7 +141,9 @@ Promise.resolve()
     return pMap(codes, map, {concurrency: 1})
 
     function map(d) {
-      return new Promise((resolve) => setTimeout(resolve, 1000))
+      return new Promise((resolve) => {
+        setTimeout(resolve, 1000)
+      })
         .then(() => fetch(iso31662Base + d.alpha2))
         .then(textIfSuccessful)
         .then((doc) => {
