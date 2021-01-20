@@ -416,7 +416,7 @@
   },
   {
     "code": "AO-CCU",
-    "name": "Kuando Kubango",
+    "name": "Cuando Cubango",
     "parent": "AO"
   },
   {
@@ -426,12 +426,12 @@
   },
   {
     "code": "AO-CNO",
-    "name": "Kwanza Norte",
+    "name": "Cuanza-Norte",
     "parent": "AO"
   },
   {
     "code": "AO-CUS",
-    "name": "Kwanza Sul",
+    "name": "Cuanza-Sul",
     "parent": "AO"
   },
   {
@@ -446,12 +446,12 @@
   },
   {
     "code": "AO-LNO",
-    "name": "Lunda Norte",
+    "name": "Lunda-Norte",
     "parent": "AO"
   },
   {
     "code": "AO-LSU",
-    "name": "Lunda Sul",
+    "name": "Lunda-Sul",
     "parent": "AO"
   },
   {
@@ -1161,7 +1161,7 @@
   },
   {
     "code": "BD-03",
-    "name": "Bogra",
+    "name": "Bogura",
     "parent": "BD-E"
   },
   {
@@ -1176,7 +1176,7 @@
   },
   {
     "code": "BD-06",
-    "name": "Barisal",
+    "name": "Barishal",
     "parent": "BD-A"
   },
   {
@@ -1186,7 +1186,7 @@
   },
   {
     "code": "BD-08",
-    "name": "Comilla",
+    "name": "Cumilla",
     "parent": "BD-B"
   },
   {
@@ -1196,7 +1196,7 @@
   },
   {
     "code": "BD-10",
-    "name": "Chittagong",
+    "name": "Chattogram",
     "parent": "BD-B"
   },
   {
@@ -1256,7 +1256,7 @@
   },
   {
     "code": "BD-22",
-    "name": "Jessore",
+    "name": "Jashore",
     "parent": "BD-D"
   },
   {
@@ -1471,12 +1471,12 @@
   },
   {
     "code": "BD-A",
-    "name": "Barisal",
+    "name": "Barishal",
     "parent": "BD"
   },
   {
     "code": "BD-B",
-    "name": "Chittagong",
+    "name": "Chattogram",
     "parent": "BD"
   },
   {
@@ -2626,7 +2626,7 @@
   },
   {
     "code": "BT-43",
-    "name": "Pemagatshel",
+    "name": "Pema Gatshel",
     "parent": "BT"
   },
   {
@@ -2746,7 +2746,7 @@
   },
   {
     "code": "BY-HR",
-    "name": "Hrodzenskaya voblasts'",
+    "name": "Hrodzyenskaya voblasts'",
     "parent": "BY"
   },
   {
@@ -5270,6 +5270,131 @@
     "parent": "EC"
   },
   {
+    "code": "EE-130",
+    "name": "Alutaguse",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-141",
+    "name": "Anija",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-142",
+    "name": "Antsla",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-171",
+    "name": "Elva",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-184",
+    "name": "Haapsalu",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-191",
+    "name": "Haljala",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-198",
+    "name": "Harku",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-205",
+    "name": "Hiiumaa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-214",
+    "name": "Häädemeeste",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-245",
+    "name": "Jõelähtme",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-247",
+    "name": "Jõgeva",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-251",
+    "name": "Jõhvi",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-255",
+    "name": "Järva",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-272",
+    "name": "Kadrina",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-283",
+    "name": "Kambja",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-284",
+    "name": "Kanepi",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-291",
+    "name": "Kastre",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-293",
+    "name": "Kehtna",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-296",
+    "name": "Keila",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-303",
+    "name": "Kihnu",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-305",
+    "name": "Kiili",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-317",
+    "name": "Kohila",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-321",
+    "name": "Kohtla-Järve",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-338",
+    "name": "Kose",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-353",
+    "name": "Kuusalu",
+    "parent": "EE"
+  },
+  {
     "code": "EE-37",
     "name": "Harjumaa",
     "parent": "EE"
@@ -5280,43 +5405,223 @@
     "parent": "EE"
   },
   {
-    "code": "EE-44",
+    "code": "EE-424",
+    "name": "Loksa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-430",
+    "name": "Lääneranna",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-431",
+    "name": "Lääne-Harju",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-432",
+    "name": "Luunja",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-441",
+    "name": "Lääne-Nigula",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-442",
+    "name": "Lüganuse",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-446",
+    "name": "Maardu",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-45",
     "name": "Ida-Virumaa",
     "parent": "EE"
   },
   {
-    "code": "EE-49",
+    "code": "EE-478",
+    "name": "Muhu",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-480",
+    "name": "Mulgi",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-486",
+    "name": "Mustvee",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-50",
     "name": "Jõgevamaa",
     "parent": "EE"
   },
   {
-    "code": "EE-51",
+    "code": "EE-503",
+    "name": "Märjamaa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-511",
+    "name": "Narva",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-514",
+    "name": "Narva-Jõesuu",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-52",
     "name": "Järvamaa",
     "parent": "EE"
   },
   {
-    "code": "EE-57",
+    "code": "EE-528",
+    "name": "Nõo",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-557",
+    "name": "Otepää",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-56",
     "name": "Läänemaa",
     "parent": "EE"
   },
   {
-    "code": "EE-59",
+    "code": "EE-567",
+    "name": "Paide",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-586",
+    "name": "Peipsiääre",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-60",
     "name": "Lääne-Virumaa",
     "parent": "EE"
   },
   {
-    "code": "EE-65",
+    "code": "EE-615",
+    "name": "Põhja-Sakala",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-618",
+    "name": "Põltsamaa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-622",
+    "name": "Põlva",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-624",
+    "name": "Pärnu",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-638",
+    "name": "Põhja-Pärnumaa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-64",
     "name": "Põlvamaa",
     "parent": "EE"
   },
   {
-    "code": "EE-67",
+    "code": "EE-651",
+    "name": "Raasiku",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-653",
+    "name": "Rae",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-661",
+    "name": "Rakvere",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-663",
+    "name": "Rakvere",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-668",
+    "name": "Rapla",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-68",
     "name": "Pärnumaa",
     "parent": "EE"
   },
   {
-    "code": "EE-70",
+    "code": "EE-689",
+    "name": "Ruhnu",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-698",
+    "name": "Rõuge",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-708",
+    "name": "Räpina",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-71",
     "name": "Raplamaa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-712",
+    "name": "Saarde",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-714",
+    "name": "Saaremaa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-719",
+    "name": "Saku",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-726",
+    "name": "Saue",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-732",
+    "name": "Setomaa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-735",
+    "name": "Sillamäe",
     "parent": "EE"
   },
   {
@@ -5325,13 +5630,53 @@
     "parent": "EE"
   },
   {
-    "code": "EE-78",
+    "code": "EE-784",
+    "name": "Tallinn",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-79",
     "name": "Tartumaa",
     "parent": "EE"
   },
   {
-    "code": "EE-82",
+    "code": "EE-792",
+    "name": "Tapa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-793",
+    "name": "Tartu",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-796",
+    "name": "Tartu",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-803",
+    "name": "Toila",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-809",
+    "name": "Tori",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-81",
     "name": "Valgamaa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-824",
+    "name": "Tõrva",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-834",
+    "name": "Türi",
     "parent": "EE"
   },
   {
@@ -5340,8 +5685,58 @@
     "parent": "EE"
   },
   {
-    "code": "EE-86",
+    "code": "EE-855",
+    "name": "Valga",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-87",
     "name": "Võrumaa",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-890",
+    "name": "Viimsi",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-897",
+    "name": "Viljandi",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-899",
+    "name": "Viljandi",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-901",
+    "name": "Vinni",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-903",
+    "name": "Viru-Nigula",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-907",
+    "name": "Vormsi",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-917",
+    "name": "Võru",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-919",
+    "name": "Võru",
+    "parent": "EE"
+  },
+  {
+    "code": "EE-928",
+    "name": "Väike-Maarja",
     "parent": "EE"
   },
   {
@@ -5756,7 +6151,7 @@
   },
   {
     "code": "ES-PM",
-    "name": "Balears",
+    "name": "Illes Balears",
     "parent": "ES-IB"
   },
   {
@@ -6215,6 +6610,11 @@
     "parent": "FR-NAQ"
   },
   {
+    "code": "FR-20R",
+    "name": "Corse",
+    "parent": "FR"
+  },
+  {
     "code": "FR-21",
     "name": "Côte-d'Or",
     "parent": "FR-BFC"
@@ -6262,12 +6662,12 @@
   {
     "code": "FR-2A",
     "name": "Corse-du-Sud",
-    "parent": "FR-COR"
+    "parent": "FR-20R"
   },
   {
     "code": "FR-2B",
     "name": "Haute-Corse",
-    "parent": "FR-COR"
+    "parent": "FR-20R"
   },
   {
     "code": "FR-30",
@@ -6600,6 +7000,31 @@
     "parent": "FR-IDF"
   },
   {
+    "code": "FR-971",
+    "name": "Guadeloupe",
+    "parent": "FR-GP"
+  },
+  {
+    "code": "FR-972",
+    "name": "Martinique",
+    "parent": "FR-MQ"
+  },
+  {
+    "code": "FR-973",
+    "name": "Guyane (française)",
+    "parent": "FR-GF"
+  },
+  {
+    "code": "FR-974",
+    "name": "La Réunion",
+    "parent": "FR-RE"
+  },
+  {
+    "code": "FR-976",
+    "name": "Mayotte",
+    "parent": "FR-YT"
+  },
+  {
     "code": "FR-ARA",
     "name": "Auvergne-Rhône-Alpes",
     "parent": "FR"
@@ -6617,11 +7042,6 @@
   {
     "code": "FR-BRE",
     "name": "Bretagne",
-    "parent": "FR"
-  },
-  {
-    "code": "FR-COR",
-    "name": "Corse",
     "parent": "FR"
   },
   {
@@ -6650,11 +7070,6 @@
     "parent": "FR"
   },
   {
-    "code": "FR-GUA",
-    "name": "Guadeloupe",
-    "parent": "FR"
-  },
-  {
     "code": "FR-HDF",
     "name": "Hauts-de-France",
     "parent": "FR"
@@ -6662,16 +7077,6 @@
   {
     "code": "FR-IDF",
     "name": "Île-de-France",
-    "parent": "FR"
-  },
-  {
-    "code": "FR-LRE",
-    "name": "La Réunion",
-    "parent": "FR"
-  },
-  {
-    "code": "FR-MAY",
-    "name": "Mayotte",
     "parent": "FR"
   },
   {
@@ -6840,6 +7245,11 @@
     "parent": "GB-ENG"
   },
   {
+    "code": "GB-BCP",
+    "name": "Bournemouth, Christchurch and Poole",
+    "parent": "GB-ENG"
+  },
+  {
     "code": "GB-BDF",
     "name": "Bedford",
     "parent": "GB-ENG"
@@ -6861,7 +7271,7 @@
   },
   {
     "code": "GB-BFS",
-    "name": "Belfast",
+    "name": "Belfast City",
     "parent": "GB-NIR"
   },
   {
@@ -6882,11 +7292,6 @@
   {
     "code": "GB-BKM",
     "name": "Buckinghamshire",
-    "parent": "GB-ENG"
-  },
-  {
-    "code": "GB-BMH",
-    "name": "Bournemouth",
     "parent": "GB-ENG"
   },
   {
@@ -7071,7 +7476,7 @@
   },
   {
     "code": "GB-DRS",
-    "name": "Derry City and Strabane",
+    "name": "Derry and Strabane",
     "parent": "GB-NIR"
   },
   {
@@ -7081,7 +7486,7 @@
   },
   {
     "code": "GB-DUR",
-    "name": "Durham County",
+    "name": "Durham, County",
     "parent": "GB-ENG"
   },
   {
@@ -7421,7 +7826,7 @@
   },
   {
     "code": "GB-MUL",
-    "name": "Mid Ulster",
+    "name": "Mid-Ulster",
     "parent": "GB-NIR"
   },
   {
@@ -7545,11 +7950,6 @@
     "parent": "GB-ENG"
   },
   {
-    "code": "GB-POL",
-    "name": "Poole",
-    "parent": "GB-ENG"
-  },
-  {
     "code": "GB-POR",
     "name": "Portsmouth",
     "parent": "GB-ENG"
@@ -7576,7 +7976,7 @@
   },
   {
     "code": "GB-RCT",
-    "name": "Rhondda, Cynon, Taff",
+    "name": "Rhondda Cynon Taff",
     "parent": "GB-WLS"
   },
   {
@@ -7621,7 +8021,7 @@
   },
   {
     "code": "GB-SCB",
-    "name": "Scottish Borders, The",
+    "name": "Scottish Borders",
     "parent": "GB-SCT"
   },
   {
@@ -8375,6 +8775,11 @@
     "parent": "GQ-C"
   },
   {
+    "code": "GQ-DJ",
+    "name": "Djibloho",
+    "parent": "GQ-C"
+  },
+  {
     "code": "GQ-I",
     "name": "Región Insular",
     "parent": "GQ"
@@ -8581,7 +8986,7 @@
   },
   {
     "code": "GW-BL",
-    "name": "Bolama",
+    "name": "Bolama / Bijagós",
     "parent": "GW-S"
   },
   {
@@ -9541,7 +9946,7 @@
   },
   {
     "code": "IN-AR",
-    "name": "Arunachal Pradesh",
+    "name": "Arunāchal Pradesh",
     "parent": "IN"
   },
   {
@@ -9551,7 +9956,7 @@
   },
   {
     "code": "IN-BR",
-    "name": "Bihar",
+    "name": "Bihār",
     "parent": "IN"
   },
   {
@@ -9561,22 +9966,17 @@
   },
   {
     "code": "IN-CT",
-    "name": "Chhattisgarh",
+    "name": "Chhattīsgarh",
     "parent": "IN"
   },
   {
-    "code": "IN-DD",
-    "name": "Daman and Diu",
+    "code": "IN-DH",
+    "name": "Dādra and Nagar Haveli and Damān and Diu",
     "parent": "IN"
   },
   {
     "code": "IN-DL",
     "name": "Delhi",
-    "parent": "IN"
-  },
-  {
-    "code": "IN-DN",
-    "name": "Dadra and Nagar Haveli",
     "parent": "IN"
   },
   {
@@ -9586,32 +9986,32 @@
   },
   {
     "code": "IN-GJ",
-    "name": "Gujarat",
+    "name": "Gujarāt",
     "parent": "IN"
   },
   {
     "code": "IN-HP",
-    "name": "Himachal Pradesh",
+    "name": "Himāchal Pradesh",
     "parent": "IN"
   },
   {
     "code": "IN-HR",
-    "name": "Haryana",
+    "name": "Haryāna",
     "parent": "IN"
   },
   {
     "code": "IN-JH",
-    "name": "Jharkhand",
+    "name": "Jhārkhand",
     "parent": "IN"
   },
   {
     "code": "IN-JK",
-    "name": "Jammu and Kashmir",
+    "name": "Jammu and Kashmīr",
     "parent": "IN"
   },
   {
     "code": "IN-KA",
-    "name": "Karnataka",
+    "name": "Karnātaka",
     "parent": "IN"
   },
   {
@@ -9621,7 +10021,7 @@
   },
   {
     "code": "IN-LA",
-    "name": "Ladakh",
+    "name": "Ladākh",
     "parent": "IN"
   },
   {
@@ -9631,12 +10031,12 @@
   },
   {
     "code": "IN-MH",
-    "name": "Maharashtra",
+    "name": "Mahārāshtra",
     "parent": "IN"
   },
   {
     "code": "IN-ML",
-    "name": "Meghalaya",
+    "name": "Meghālaya",
     "parent": "IN"
   },
   {
@@ -9656,7 +10056,7 @@
   },
   {
     "code": "IN-NL",
-    "name": "Nagaland",
+    "name": "Nāgāland",
     "parent": "IN"
   },
   {
@@ -9676,7 +10076,7 @@
   },
   {
     "code": "IN-RJ",
-    "name": "Rajasthan",
+    "name": "Rājasthān",
     "parent": "IN"
   },
   {
@@ -9686,12 +10086,12 @@
   },
   {
     "code": "IN-TG",
-    "name": "Telangana",
+    "name": "Telangāna",
     "parent": "IN"
   },
   {
     "code": "IN-TN",
-    "name": "Tamil Nadu",
+    "name": "Tamil Nādu",
     "parent": "IN"
   },
   {
@@ -9706,7 +10106,7 @@
   },
   {
     "code": "IN-UT",
-    "name": "Uttarakhand",
+    "name": "Uttarākhand",
     "parent": "IN"
   },
   {
@@ -9810,128 +10210,138 @@
     "parent": "IQ"
   },
   {
-    "code": "IR-01",
-    "name": "Āz̄ārbāyjān-e Shārqī",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-02",
-    "name": "Āz̄ārbāyjān-e Ghārbī",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-03",
-    "name": "Ardabīl",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-04",
-    "name": "Eşfahān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-05",
-    "name": "Īlām",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-06",
-    "name": "Būshehr",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-07",
-    "name": "Tehrān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-08",
-    "name": "Chahār Maḩāl va Bakhtīārī",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-10",
-    "name": "Khūzestān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-11",
-    "name": "Zanjān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-12",
-    "name": "Semnān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-13",
-    "name": "Sīstān va Balūchestān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-14",
-    "name": "Fārs",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-15",
-    "name": "Kermān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-16",
-    "name": "Kordestān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-17",
-    "name": "Kermānshāh",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-18",
-    "name": "Kohgīlūyeh va Bowyer Aḩmad",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-19",
-    "name": "Gīlān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-20",
-    "name": "Lorestān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-21",
-    "name": "Māzandarān",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-22",
+    "code": "IR-00",
     "name": "Markazī",
     "parent": "IR"
   },
   {
-    "code": "IR-23",
-    "name": "Hormozgān",
+    "code": "IR-01",
+    "name": "Gīlān",
     "parent": "IR"
   },
   {
-    "code": "IR-24",
+    "code": "IR-02",
+    "name": "Māzandarān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-03",
+    "name": "Āz̄ārbāyjān-e Shārqī",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-04",
+    "name": "Āz̄ārbāyjān-e Ghārbī",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-05",
+    "name": "Kermānshāh",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-06",
+    "name": "Khūzestān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-07",
+    "name": "Fārs",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-08",
+    "name": "Kermān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-09",
+    "name": "Khorāsān-e Raẕavī",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-10",
+    "name": "Eşfahān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-11",
+    "name": "Sīstān va Balūchestān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-12",
+    "name": "Kordestān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-13",
     "name": "Hamadān",
     "parent": "IR"
   },
   {
-    "code": "IR-25",
+    "code": "IR-14",
+    "name": "Chahār Maḩāl va Bakhtīārī",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-15",
+    "name": "Lorestān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-16",
+    "name": "Īlām",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-17",
+    "name": "Kohgīlūyeh va Bowyer Aḩmad",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-18",
+    "name": "Būshehr",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-19",
+    "name": "Zanjān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-20",
+    "name": "Semnān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-21",
     "name": "Yazd",
     "parent": "IR"
   },
   {
-    "code": "IR-26",
+    "code": "IR-22",
+    "name": "Hormozgān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-23",
+    "name": "Tehrān",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-24",
+    "name": "Ardabīl",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-25",
     "name": "Qom",
+    "parent": "IR"
+  },
+  {
+    "code": "IR-26",
+    "name": "Qazvīn",
     "parent": "IR"
   },
   {
@@ -9941,7 +10351,7 @@
   },
   {
     "code": "IR-28",
-    "name": "Qazvīn",
+    "name": "Khorāsān-e Shomālī",
     "parent": "IR"
   },
   {
@@ -9951,16 +10361,6 @@
   },
   {
     "code": "IR-30",
-    "name": "Khorāsān-e Raẕavī",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-31",
-    "name": "Khorāsān-e Shomālī",
-    "parent": "IR"
-  },
-  {
-    "code": "IR-32",
     "name": "Alborz",
     "parent": "IR"
   },
@@ -10002,6 +10402,366 @@
   {
     "code": "IS-8",
     "name": "Suðurland",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-AKH",
+    "name": "Akrahreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-AKN",
+    "name": "Akraneskaupstaður",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-AKU",
+    "name": "Akureyrarbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-ARN",
+    "name": "Árneshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-ASA",
+    "name": "Ásahreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-BFJ",
+    "name": "Borgarfjarðarhreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-BLA",
+    "name": "Bláskógabyggð",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-BLO",
+    "name": "Blönduósbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-BOG",
+    "name": "Borgarbyggð",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-BOL",
+    "name": "Bolungarvíkurkaupstaður",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-DAB",
+    "name": "Dalabyggð",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-DAV",
+    "name": "Dalvíkurbyggð",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-DJU",
+    "name": "Djúpavogshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-EOM",
+    "name": "Eyja- og Miklaholtshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-EYF",
+    "name": "Eyjafjarðarsveit",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-FJD",
+    "name": "Fjarðabyggð",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-FJL",
+    "name": "Fjallabyggð",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-FLA",
+    "name": "Flóahreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-FLD",
+    "name": "Fljótsdalshérað",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-FLR",
+    "name": "Fljótsdalshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-GAR",
+    "name": "Garðabær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-GOG",
+    "name": "Grímsnes- og Grafningshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-GRN",
+    "name": "Grindavíkurbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-GRU",
+    "name": "Grundarfjarðarbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-GRY",
+    "name": "Grýtubakkahreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-HAF",
+    "name": "Hafnarfjarðarkaupstaður",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-HEL",
+    "name": "Helgafellssveit",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-HRG",
+    "name": "Hörgársveit",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-HRU",
+    "name": "Hrunamannahreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-HUT",
+    "name": "Húnavatnshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-HUV",
+    "name": "Húnaþing vestra",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-HVA",
+    "name": "Hvalfjarðarsveit",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-HVE",
+    "name": "Hveragerðisbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-ISA",
+    "name": "Ísafjarðarbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-KAL",
+    "name": "Kaldrananeshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-KJO",
+    "name": "Kjósarhreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-KOP",
+    "name": "Kópavogsbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-LAN",
+    "name": "Langanesbyggð",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-MOS",
+    "name": "Mosfellsbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-MYR",
+    "name": "Mýrdalshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-NOR",
+    "name": "Norðurþing",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-RGE",
+    "name": "Rangárþing eystra",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-RGY",
+    "name": "Rangárþing ytra",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-RHH",
+    "name": "Reykhólahreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-RKN",
+    "name": "Reykjanesbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-RKV",
+    "name": "Reykjavíkurborg",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SBH",
+    "name": "Svalbarðshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SBT",
+    "name": "Svalbarðsstrandarhreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SDN",
+    "name": "Suðurnesjabær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SDV",
+    "name": "Súðavíkurhreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SEL",
+    "name": "Seltjarnarnesbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SEY",
+    "name": "Seyðisfjarðarkaupstaður",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SFA",
+    "name": "Sveitarfélagið Árborg",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SHF",
+    "name": "Sveitarfélagið Hornafjörður",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SKF",
+    "name": "Skaftárhreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SKG",
+    "name": "Skagabyggð",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SKO",
+    "name": "Skorradalshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SKU",
+    "name": "Skútustaðahreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SNF",
+    "name": "Snæfellsbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SOG",
+    "name": "Skeiða- og Gnúpverjahreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SOL",
+    "name": "Sveitarfélagið Ölfus",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SSF",
+    "name": "Sveitarfélagið Skagafjörður",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SSS",
+    "name": "Sveitarfélagið Skagaströnd",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-STR",
+    "name": "Strandabyggð",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-STY",
+    "name": "Stykkishólmsbær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-SVG",
+    "name": "Sveitarfélagið Vogar",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-TAL",
+    "name": "Tálknafjarðarhreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-THG",
+    "name": "Þingeyjarsveit",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-TJO",
+    "name": "Tjörneshreppur",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-VEM",
+    "name": "Vestmannaeyjabær",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-VER",
+    "name": "Vesturbyggð",
+    "parent": "IS"
+  },
+  {
+    "code": "IS-VOP",
+    "name": "Vopnafjarðarhreppur",
     "parent": "IS"
   },
   {
@@ -10290,6 +11050,11 @@
     "parent": "IT-42"
   },
   {
+    "code": "IT-GO",
+    "name": "Gorizia",
+    "parent": "IT-36"
+  },
+  {
     "code": "IT-GR",
     "name": "Grosseto",
     "parent": "IT-52"
@@ -10430,6 +11195,11 @@
     "parent": "IT-52"
   },
   {
+    "code": "IT-PN",
+    "name": "Pordenone",
+    "parent": "IT-36"
+  },
+  {
     "code": "IT-PO",
     "name": "Prato",
     "parent": "IT-52"
@@ -10505,11 +11275,6 @@
     "parent": "IT-72"
   },
   {
-    "code": "IT-SD",
-    "name": "Sud Sardegna",
-    "parent": "IT-88"
-  },
-  {
     "code": "IT-SI",
     "name": "Siena",
     "parent": "IT-52"
@@ -10532,6 +11297,11 @@
   {
     "code": "IT-SS",
     "name": "Sassari",
+    "parent": "IT-88"
+  },
+  {
+    "code": "IT-SU",
+    "name": "Sud Sardegna",
     "parent": "IT-88"
   },
   {
@@ -10570,9 +11340,19 @@
     "parent": "IT-55"
   },
   {
+    "code": "IT-TS",
+    "name": "Trieste",
+    "parent": "IT-36"
+  },
+  {
     "code": "IT-TV",
     "name": "Treviso",
     "parent": "IT-34"
+  },
+  {
+    "code": "IT-UD",
+    "name": "Udine",
+    "parent": "IT-36"
   },
   {
     "code": "IT-VA",
@@ -11226,12 +12006,12 @@
   },
   {
     "code": "KG-GB",
-    "name": "Bishkek",
+    "name": "Bishkek Shaary",
     "parent": "KG"
   },
   {
     "code": "KG-GO",
-    "name": "Osh",
+    "name": "Osh Shaary",
     "parent": "KG"
   },
   {
@@ -11261,7 +12041,7 @@
   },
   {
     "code": "KH-1",
-    "name": "Banteay Mean Chey",
+    "name": "Banteay Mean Choăy",
     "parent": "KH"
   },
   {
@@ -11691,17 +12471,12 @@
   },
   {
     "code": "KZ-AST",
-    "name": "Astana",
+    "name": "Nur-Sultan",
     "parent": "KZ"
   },
   {
     "code": "KZ-ATY",
     "name": "Atyraū oblysy",
-    "parent": "KZ"
-  },
-  {
-    "code": "KZ-BAY",
-    "name": "Bayqongyr",
     "parent": "KZ"
   },
   {
@@ -12246,7 +13021,7 @@
   },
   {
     "code": "LS-B",
-    "name": "Butha-Buthe",
+    "name": "Botha-Bothe",
     "parent": "LS"
   },
   {
@@ -13631,12 +14406,12 @@
   },
   {
     "code": "MA-KHE",
-    "name": "Khemisset",
+    "name": "Khémisset",
     "parent": "MA-04"
   },
   {
     "code": "MA-KHN",
-    "name": "Khenifra",
+    "name": "Khénifra",
     "parent": "MA-05"
   },
   {
@@ -13791,7 +14566,7 @@
   },
   {
     "code": "MA-TAR",
-    "name": "Taroudant",
+    "name": "Taroudannt",
     "parent": "MA-09"
   },
   {
@@ -15455,18 +16230,8 @@
     "parent": "MU"
   },
   {
-    "code": "MU-BR",
-    "name": "Beau Bassin-Rose Hill",
-    "parent": "MU"
-  },
-  {
     "code": "MU-CC",
     "name": "Cargados Carajos Shoals(local variant is Saint Brandon Islands)",
-    "parent": "MU"
-  },
-  {
-    "code": "MU-CU",
-    "name": "Curepipe",
     "parent": "MU"
   },
   {
@@ -15495,18 +16260,8 @@
     "parent": "MU"
   },
   {
-    "code": "MU-PU",
-    "name": "Port Louis",
-    "parent": "MU"
-  },
-  {
     "code": "MU-PW",
     "name": "Plaines Wilhems",
-    "parent": "MU"
-  },
-  {
-    "code": "MU-QB",
-    "name": "Quatre Bornes",
     "parent": "MU"
   },
   {
@@ -15522,11 +16277,6 @@
   {
     "code": "MU-SA",
     "name": "Savanne",
-    "parent": "MU"
-  },
-  {
-    "code": "MU-VP",
-    "name": "Vacoas-Phoenix",
     "parent": "MU"
   },
   {
@@ -16101,7 +16851,7 @@
   },
   {
     "code": "NA-KA",
-    "name": "Karas(local variant is //Karas)",
+    "name": "//Karas(local variants are Karas and !Karas)",
     "parent": "NA"
   },
   {
@@ -16555,68 +17305,13 @@
     "parent": "NL"
   },
   {
-    "code": "NO-01",
-    "name": "Østfold",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-02",
-    "name": "Akershus",
-    "parent": "NO"
-  },
-  {
     "code": "NO-03",
     "name": "Oslo",
     "parent": "NO"
   },
   {
-    "code": "NO-04",
-    "name": "Hedmark",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-05",
-    "name": "Oppland",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-06",
-    "name": "Buskerud",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-07",
-    "name": "Vestfold",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-08",
-    "name": "Telemark",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-09",
-    "name": "Aust-Agder",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-10",
-    "name": "Vest-Agder",
-    "parent": "NO"
-  },
-  {
     "code": "NO-11",
     "name": "Rogaland",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-12",
-    "name": "Hordaland",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-14",
-    "name": "Sogn og Fjordane",
     "parent": "NO"
   },
   {
@@ -16627,16 +17322,6 @@
   {
     "code": "NO-18",
     "name": "Nordland",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-19",
-    "name": "Troms / Romsa",
-    "parent": "NO"
-  },
-  {
-    "code": "NO-20",
-    "name": "Finnmark / Finnmárku",
     "parent": "NO"
   },
   {
@@ -16676,7 +17361,7 @@
   },
   {
     "code": "NO-50",
-    "name": "Trøndelag",
+    "name": "Trøndelag / Trööndelage (-)",
     "parent": "NO"
   },
   {
@@ -16776,12 +17461,12 @@
   },
   {
     "code": "NP-P3",
-    "name": "Bagmati Pradesh",
+    "name": "Bāgmatī",
     "parent": "NP"
   },
   {
     "code": "NP-P4",
-    "name": "Gandaki Pradesh",
+    "name": "Gandaki",
     "parent": "NP"
   },
   {
@@ -16791,12 +17476,12 @@
   },
   {
     "code": "NP-P6",
-    "name": "Karnali Pradesh",
+    "name": "Karnali",
     "parent": "NP"
   },
   {
     "code": "NP-P7",
-    "name": "Sudurpashchim Pradesh",
+    "name": "Sudūr Pashchim",
     "parent": "NP"
   },
   {
@@ -17541,7 +18226,7 @@
   },
   {
     "code": "PH-COM",
-    "name": "Compostela Valley (Davao de Oro)",
+    "name": "Davao de Oro",
     "parent": "PH-11"
   },
   {
@@ -19380,8 +20065,18 @@
     "parent": "SC"
   },
   {
+    "code": "SC-26",
+    "name": "Ile Perseverance I",
+    "parent": "SC"
+  },
+  {
+    "code": "SC-27",
+    "name": "Ile Perseverance II",
+    "parent": "SC"
+  },
+  {
     "code": "SD-DC",
-    "name": "Wasaţ Dārfūr Zālinjay",
+    "name": "Wasaţ Dārfūr(local variant is Zālinjay)",
     "parent": "SD"
   },
   {
@@ -19431,7 +20126,7 @@
   },
   {
     "code": "SD-KN",
-    "name": "Shiamāl Kurdufān",
+    "name": "Shamāl Kurdufān",
     "parent": "SD"
   },
   {
@@ -19936,7 +20631,7 @@
   },
   {
     "code": "SI-065",
-    "name": "Loška Dolina",
+    "name": "Loška dolina",
     "parent": "SI"
   },
   {
@@ -20191,7 +20886,7 @@
   },
   {
     "code": "SI-116",
-    "name": "Sveti Jurij",
+    "name": "Sveti Jurij ob Ščavnici",
     "parent": "SI"
   },
   {
@@ -20451,7 +21146,7 @@
   },
   {
     "code": "SI-169",
-    "name": "Miklavž na Dravskem Polju",
+    "name": "Miklavž na Dravskem polju",
     "parent": "SI"
   },
   {
@@ -20516,7 +21211,7 @@
   },
   {
     "code": "SI-182",
-    "name": "Sveti Andraž v Slovenskih Goricah",
+    "name": "Sveti Andraž v Slovenskih goricah",
     "parent": "SI"
   },
   {
@@ -20626,7 +21321,7 @@
   },
   {
     "code": "SI-204",
-    "name": "Sveta Trojica v Slovenskih Goricah",
+    "name": "Sveta Trojica v Slovenskih goricah",
     "parent": "SI"
   },
   {
@@ -20656,7 +21351,7 @@
   },
   {
     "code": "SI-210",
-    "name": "Sveti Jurij v Slovenskih Goricah",
+    "name": "Sveti Jurij v Slovenskih goricah",
     "parent": "SI"
   },
   {
@@ -20771,7 +21466,7 @@
   },
   {
     "code": "SM-07",
-    "name": "San Marino",
+    "name": "Città di San Marino(local variant is San Marino)",
     "parent": "SM"
   },
   {
@@ -21045,13 +21740,38 @@
     "parent": "SS"
   },
   {
-    "code": "ST-P",
-    "name": "Príncipe",
+    "code": "ST-01",
+    "name": "Água Grande",
     "parent": "ST"
   },
   {
-    "code": "ST-S",
-    "name": "São Tomé",
+    "code": "ST-02",
+    "name": "Cantagalo",
+    "parent": "ST"
+  },
+  {
+    "code": "ST-03",
+    "name": "Caué",
+    "parent": "ST"
+  },
+  {
+    "code": "ST-04",
+    "name": "Lembá",
+    "parent": "ST"
+  },
+  {
+    "code": "ST-05",
+    "name": "Lobata",
+    "parent": "ST"
+  },
+  {
+    "code": "ST-06",
+    "name": "Mé-Zóchi",
+    "parent": "ST"
+  },
+  {
+    "code": "ST-P",
+    "name": "Príncipe",
     "parent": "ST"
   },
   {
@@ -21216,7 +21936,7 @@
   },
   {
     "code": "TD-BA",
-    "name": "Al Baţḩah",
+    "name": "Al Baţḩā’",
     "parent": "TD"
   },
   {
@@ -21236,12 +21956,12 @@
   },
   {
     "code": "TD-EE",
-    "name": "Ennedi-Est",
+    "name": "Inīdī ash Sharqī",
     "parent": "TD"
   },
   {
     "code": "TD-EO",
-    "name": "Ennedi-Ouest",
+    "name": "Inīdī al Gharbī",
     "parent": "TD"
   },
   {
@@ -21266,12 +21986,12 @@
   },
   {
     "code": "TD-LO",
-    "name": "Lūqūn al Gharbī",
+    "name": "Lūghūn al Gharbī",
     "parent": "TD"
   },
   {
     "code": "TD-LR",
-    "name": "Lūqūn ash Sharqī",
+    "name": "Lūghūn ash Sharqī",
     "parent": "TD"
   },
   {
@@ -21316,7 +22036,7 @@
   },
   {
     "code": "TD-TA",
-    "name": "Tānjilī",
+    "name": "Tānjīlī",
     "parent": "TD"
   },
   {
@@ -21326,7 +22046,7 @@
   },
   {
     "code": "TD-WF",
-    "name": "Wādī Fīrā",
+    "name": "Wādī Fīrā’",
     "parent": "TD"
   },
   {
@@ -23156,7 +23876,7 @@
   },
   {
     "code": "UG-220",
-    "name": "Bukwa",
+    "name": "Bukwo",
     "parent": "UG-E"
   },
   {
@@ -23237,6 +23957,11 @@
   {
     "code": "UG-236",
     "name": "Kapelebyong",
+    "parent": "UG-E"
+  },
+  {
+    "code": "UG-237",
+    "name": "Kalaki",
     "parent": "UG-E"
   },
   {
@@ -23410,6 +24135,21 @@
     "parent": "UG-N"
   },
   {
+    "code": "UG-335",
+    "name": "Karenga",
+    "parent": "UG-N"
+  },
+  {
+    "code": "UG-336",
+    "name": "Madi-Okollo",
+    "parent": "UG-N"
+  },
+  {
+    "code": "UG-337",
+    "name": "Obongi",
+    "parent": "UG-N"
+  },
+  {
     "code": "UG-401",
     "name": "Bundibugyo",
     "parent": "UG-W"
@@ -23567,6 +24307,21 @@
   {
     "code": "UG-432",
     "name": "Kikuube",
+    "parent": "UG-W"
+  },
+  {
+    "code": "UG-433",
+    "name": "Kazo",
+    "parent": "UG-W"
+  },
+  {
+    "code": "UG-434",
+    "name": "Kitagwenda",
+    "parent": "UG-W"
+  },
+  {
+    "code": "UG-435",
+    "name": "Rwampara",
     "parent": "UG-W"
   },
   {
@@ -24226,7 +24981,7 @@
   },
   {
     "code": "VE-X",
-    "name": "Vargas",
+    "name": "La Guaira",
     "parent": "VE"
   },
   {
@@ -24531,27 +25286,27 @@
   },
   {
     "code": "VN-CT",
-    "name": "Can Tho",
+    "name": "Cần Thơ",
     "parent": "VN"
   },
   {
     "code": "VN-DN",
-    "name": "Da Nang",
+    "name": "Đà Nẵng",
     "parent": "VN"
   },
   {
     "code": "VN-HN",
-    "name": "Ha Noi",
+    "name": "Hà Nội",
     "parent": "VN"
   },
   {
     "code": "VN-HP",
-    "name": "Hai Phong",
+    "name": "Hải Phòng",
     "parent": "VN"
   },
   {
     "code": "VN-SG",
-    "name": "Ho Chi Minh(local variant is Sai Gon)",
+    "name": "Hồ Chí Minh(local variant is Sai Gon)",
     "parent": "VN"
   },
   {
