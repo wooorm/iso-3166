@@ -1139,9 +1139,9 @@ Another example, `YUCS` represents the change of `YU` `YUG` `Yugoslavia` to
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/iso-3166.svg
+[build-badge]: https://github.com/wooorm/iso-3166/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/iso-3166
+[build]: https://github.com/wooorm/iso-3166/actions
 
 [downloads-badge]: https://img.shields.io/npm/dm/iso-3166.svg
 
