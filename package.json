@@ -43,7 +43,6 @@
     "2.json",
     "3.json"
   ],
-  "dependencies": {},
   "devDependencies": {
     "bail": "^1.0.0",
     "concat-stream": "^2.0.0",
@@ -62,7 +61,7 @@
     "tape": "^5.0.0",
     "unified": "^9.0.0",
     "unist-builder": "^2.0.0",
-    "xo": "^0.37.0"
+    "xo": "^0.38.0"
   },
   "scripts": {
     "generate": "node build",
@@ -86,6 +85,7 @@
       "guard-for-in": "off",
       "max-depth": "off",
       "unicorn/no-array-callback-reference": "off",
+      "unicorn/no-array-for-each": "off",
       "unicorn/prefer-number-properties": "off"
     }
   },
