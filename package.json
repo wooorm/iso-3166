@@ -31,20 +31,22 @@
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
-  "main": "1.json",
+  "sideEffects": false,
+  "type": "module",
+  "main": "1.js",
   "files": [
-    "index.json",
-    "1-a2-to-1-a3.json",
-    "1-a2-to-1-n.json",
-    "1-a3-to-1-a2.json",
-    "1-n-to-1-a2.json",
-    "1-reserved.json",
-    "1.json",
-    "2.json",
-    "3.json"
+    "1-a2-to-1-a3.js",
+    "1-a2-to-1-n.js",
+    "1-a3-to-1-a2.js",
+    "1-n-to-1-a2.js",
+    "1-reserved.js",
+    "1.js",
+    "2.js",
+    "3.js"
   ],
   "devDependencies": {
-    "bail": "^1.0.0",
+    "bail": "^2.0.0",
+    "c8": "^7.0.0",
     "concat-stream": "^2.0.0",
     "hast-util-select": "^4.0.0",
     "hast-util-to-string": "^1.0.0",
@@ -66,8 +68,9 @@
   "scripts": {
     "generate": "node build",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
-    "test-api": "node test",
-    "test": "npm run format && npm run test-api"
+    "test-api": "node test.js",
+    "test-coverage": "c8 --check-coverage --branches 100 --functions 100 --lines 100 --statements 100 --reporter lcov node test.js",
+    "test": "npm run format && npm run test-coverage"
   },
   "prettier": {
     "tabWidth": 2,
@@ -79,20 +82,21 @@
   },
   "xo": {
     "prettier": true,
-    "esnext": false,
     "rules": {
       "complexity": "off",
       "guard-for-in": "off",
+      "import/no-mutable-exports": "off",
       "max-depth": "off",
+      "no-var": "off",
+      "prefer-arrow-callback": "off",
       "unicorn/no-array-callback-reference": "off",
-      "unicorn/no-array-for-each": "off",
-      "unicorn/prefer-number-properties": "off"
+      "unicorn/no-array-for-each": "off"
     }
   },
   "remarkConfig": {
+    "to do: add this plugin below when unified engine supports ESM": "./build-iso-3166-1-a2-table",
     "plugins": [
-      "preset-wooorm",
-      "./build-iso-3166-1-a2-table"
+      "preset-wooorm"
     ]
   }
 }

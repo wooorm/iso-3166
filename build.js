@@ -1,13 +1,11 @@
-'use strict'
-
-var fs = require('fs')
-var pMap = require('p-map')
-var bail = require('bail')
-var fetch = require('node-fetch')
-var unified = require('unified')
-var parse = require('rehype-parse')
-var $ = require('hast-util-select')
-var toString = require('hast-util-to-string')
+import fs from 'fs'
+import pMap from 'p-map'
+import {bail} from 'bail'
+import fetch from 'node-fetch'
+import unified from 'unified'
+import parse from 'rehype-parse'
+import $ from 'hast-util-select'
+import toString from 'hast-util-to-string'
 
 var html = unified().use(parse)
 
@@ -204,11 +202,11 @@ Promise.resolve()
 
                 if (cell.properties.rowSpan) {
                   headerSpans[columnIndex] =
-                    parseInt(cell.properties.rowSpan, 10) - 1
+                    Number.parseInt(cell.properties.rowSpan, 10) - 1
                 }
 
                 if (cell.properties.colSpan) {
-                  columnIndex += parseInt(cell.properties.colSpan, 10)
+                  columnIndex += Number.parseInt(cell.properties.colSpan, 10)
                 } else {
                   headers[columnIndex] = cleanNode(cell).toLowerCase()
                   columnIndex++
@@ -383,14 +381,14 @@ Promise.resolve()
       re = /\([A-Z]{2}, [A-Z]{3}, (\d{3}|-)\)/g
 
       iso31663.push({
-        alpha4: alpha4,
+        alpha4,
         type: kind,
         from: {
           state: undefined,
-          alpha2: alpha2,
-          alpha3: alpha3,
+          alpha2,
+          alpha3,
           numeric: numeric === '-' ? undefined : numeric,
-          name: name
+          name
         },
         to: changeTo
       })
@@ -404,10 +402,10 @@ Promise.resolve()
 
         changeTo.push({
           state: undefined,
-          alpha2: alpha2,
-          alpha3: alpha3,
+          alpha2,
+          alpha3,
           numeric: numeric === '-' ? undefined : numeric,
-          name: name
+          name
         })
 
         lastIndex = match.index + match[0].length
@@ -469,19 +467,19 @@ Promise.resolve()
       a2To2[alpha2].sort((a, b) => a.localeCompare(b))
     })
 
-    write('1', iso31661Assigned)
-    write('1-reserved', iso31661Reserved)
-    write('1-a2-to-1-a3', a2ToA3)
-    write('1-a2-to-1-n', a2ToN)
-    write('1-a3-to-1-a2', a3ToA2)
-    write('1-n-to-1-a2', nToA2)
-    write('2', iso31662)
-    write('3', iso31663)
+    write('1', 'iso31661', iso31661Assigned)
+    write('1-reserved', 'iso31661Reserved', iso31661Reserved)
+    write('1-a2-to-1-a3', 'iso31661Alpha2ToAlpha3', a2ToA3)
+    write('1-a2-to-1-n', 'iso31661Alpha2ToNumeric', a2ToN)
+    write('1-a3-to-1-a2', 'iso31661Alpha3ToAlpha2', a3ToA2)
+    write('1-n-to-1-a2', 'iso31661NumericToAlpha2', nToA2)
+    write('2', 'iso31662', iso31662)
+    write('3', 'iso31663', iso31663)
 
-    function write(name, data) {
-      return fs.writeFile(
-        name + '.json',
-        JSON.stringify(data, null, 2) + '\n',
+    function write(name, id, data) {
+      fs.writeFile(
+        name + '.js',
+        'export var ' + id + ' = ' + JSON.stringify(data, null, 2) + '\n',
         bail
       )
     }

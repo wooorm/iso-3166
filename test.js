@@ -1,15 +1,13 @@
-'use strict'
-
-var assert = require('assert')
-var test = require('tape')
-var iso31661 = require('./1')
-var iso31661Reserved = require('./1-reserved')
-var iso31662 = require('./2')
-var iso31663 = require('./3')
-var iso31661A2To1A3 = require('./1-a2-to-1-a3')
-var iso31661A2To1N = require('./1-a2-to-1-n')
-var iso31661A3To1A2 = require('./1-a3-to-1-a2')
-var iso31661NTo1A2 = require('./1-n-to-1-a2')
+import assert from 'assert'
+import test from 'tape'
+import {iso31661} from './1.js'
+import {iso31661Reserved} from './1-reserved.js'
+import {iso31662} from './2.js'
+import {iso31663} from './3.js'
+import {iso31661Alpha2ToAlpha3} from './1-a2-to-1-a3.js'
+import {iso31661Alpha2ToNumeric} from './1-a2-to-1-n.js'
+import {iso31661Alpha3ToAlpha2} from './1-a3-to-1-a2.js'
+import {iso31661NumericToAlpha2} from './1-n-to-1-a2.js'
 
 test('iso-3166/1', function (t) {
   var iA2s = []
@@ -136,53 +134,56 @@ test('iso-3166/3', function (t) {
 })
 
 test('iso-3166/1-a2-to-1-a3', function (t) {
-  var keys = Object.keys(iso31661A2To1A3)
+  var keys = Object.keys(iso31661Alpha2ToAlpha3)
 
   t.plan(keys.length)
 
   keys.forEach((d) => {
     t.doesNotThrow(function () {
       assert.ok(a2(d), 'key should be an alpha-2')
-      assert.ok(a3(iso31661A2To1A3[d]), 'value should be an alpha-3')
+      assert.ok(a3(iso31661Alpha2ToAlpha3[d]), 'value should be an alpha-3')
     }, d)
   })
 })
 
 test('iso-3166/1-a3-to-1-a2', function (t) {
-  var keys = Object.keys(iso31661A3To1A2)
+  var keys = Object.keys(iso31661Alpha3ToAlpha2)
 
   t.plan(keys.length)
 
   keys.forEach((d) => {
     t.doesNotThrow(function () {
       assert.ok(a3(d), 'key should be an alpha-3')
-      assert.ok(a2(iso31661A3To1A2[d]), 'value should be an alpha-2')
+      assert.ok(a2(iso31661Alpha3ToAlpha2[d]), 'value should be an alpha-2')
     }, d)
   })
 })
 
 test('iso-3166/1-a2-to-1-n', function (t) {
-  var keys = Object.keys(iso31661A2To1N)
+  var keys = Object.keys(iso31661Alpha2ToNumeric)
 
   t.plan(keys.length)
 
   keys.forEach((d) => {
     t.doesNotThrow(function () {
       assert.ok(a2(d), 'key should be an alpha-2')
-      assert.ok(numeric(iso31661A2To1N[d]), 'value should be a numeric')
+      assert.ok(
+        numeric(iso31661Alpha2ToNumeric[d]),
+        'value should be a numeric'
+      )
     }, d)
   })
 })
 
 test('iso-3166/1-n-to-1-a2', function (t) {
-  var keys = Object.keys(iso31661NTo1A2)
+  var keys = Object.keys(iso31661NumericToAlpha2)
 
   t.plan(keys.length)
 
   keys.forEach((d) => {
     t.doesNotThrow(function () {
       assert.ok(numeric(d), 'key should be a numeric')
-      assert.ok(a2(iso31661NTo1A2[d]), 'value should be an alpha-2')
+      assert.ok(a2(iso31661NumericToAlpha2[d]), 'value should be an alpha-2')
     }, d)
   })
 })

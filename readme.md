@@ -1,14 +1,25 @@
 # `iso-3166`
 
 [![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
 [ISO 3166][i3166] codes in an accessible, machine readable, format.
 
+## Install
+
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
+[npm][]:
+
+```sh
+npm install iso-3166
+```
+
 ## Contents
 
-*   [Install](#install)
 *   [Use](#use)
 *   [Overview](#overview)
 *   [Matrix](#matrix)
@@ -23,17 +34,14 @@
 *   [Related](#related)
 *   [License](#license)
 
-## Install
-
-[npm][]:
-
-```sh
-npm install iso-3166
-```
-
 ## Use
 
-See examples below.
+This package exports the following identifiers: `iso31661`,
+`iso31661Alpha2ToAlpha3`, `iso31661Alpha2ToNumeric`, `iso31661Alpha3ToAlpha2`,
+`iso31661NumericToAlpha2`, `iso31661Reserved`, `iso31662`, `iso31663`.
+There is no default export.
+
+See examples below for more info.
 
 ## Overview
 
@@ -58,29 +66,29 @@ and vice versa.
 UN M49 also includes information on bigger regions between our earth and
 countries.
 
-This project includes all three parts of ISO 3166 as separate files:
+This project includes all three parts of ISO 3166 as separate exports:
 
-*   [`iso-3166/1.json`][1] (**default export**)
+*   [`iso31661`][1] (**default export**)
     — Countries: list of [assigned][] ISO 3166-1 entries
-*   [`iso-3166/2.json`][2]
+*   [`iso31662`][2]
     — Subdivisions: list of ISO 3166-2 entries
-*   [`iso-3166/3.json`][3]
+*   [`iso31663`][3]
     — Revisions: list of ISO 3166-3 entries
 
 Additionally, a list of reserved ISO 3166-1 entries is available:
 
-*   [`iso-3166/1-reserved.json`][1-reserved]
+*   [`iso31661Reserved`][1-reserved]
     — List of [reserved][] ISO 3166-1 entries
 
 Finally, indexes are available to map between different codes:
 
-*   [`iso-3166/1-a2-to-1-a3.json`][1-a2-to-1-a3]
+*   [`iso31661Alpha2ToAlpha3`][1-a2-to-1-a3]
     — Map ISO 3166-1 alpha-2 codes to ISO 3166-1 alpha-3 codes
-*   [`iso-3166/1-a2-to-1-n.json`][1-a2-to-1-n]
+*   [`iso31661Alpha2ToNumeric`][1-a2-to-1-n]
     — Map ISO 3166-1 alpha-2 codes to ISO 3166-1 numeric (UN M49) codes
-*   [`iso-3166/1-a3-to-1-a2.json`][1-a3-to-1-a2]
+*   [`iso31661Alpha3ToAlpha2`][1-a3-to-1-a2]
     — Map ISO 3166-1 alpha-3 codes to ISO 3166-1 alpha-2 codes
-*   [`iso-3166/1-n-to-1-a2.json`][1-n-to-1-a2]
+*   [`iso31661NumericToAlpha2`][1-n-to-1-a2]
     — Map ISO 3166-1 numeric (UN M49) codes to ISO 3166-1 alpha-2 codes
 
 ## Matrix
@@ -887,7 +895,7 @@ Finally, indexes are available to map between different codes:
 [`ISO31661Entry[]`][1-entry] — Countries: [assigned][] ISO 3166-1 entries.
 
 ```js
-var iso31661 = require('iso-3166')
+import {iso31661} from 'iso-3166'
 
 console.log(iso31661)
 ```
@@ -910,7 +918,7 @@ Yields:
 [`ISO31661Entry[]`][1-entry] — [Reserved][] ISO 3166-1 entries.
 
 ```js
-var iso31661Reserved = require('iso-3166/1-reserved')
+import {iso31661Reserved} from 'iso-3166'
 
 console.log(iso31661Reserved)
 ```
@@ -933,7 +941,7 @@ Yields:
 [`ISO31662Entry[]`][2-entry] — Subdivisions: ISO 3166-2 entries.
 
 ```js
-var iso31662 = require('iso-3166/2')
+import {iso31662} from 'iso-3166'
 
 console.log(iso31662)
 ```
@@ -959,7 +967,7 @@ Yields:
 [`ISO31663Entry[]`][3-entry] — Changes: ISO 3166-3 entries.
 
 ```js
-var iso31663 = require('iso-3166/3')
+import {iso31663} from 'iso-3166'
 
 console.log(iso31663)
 ```
@@ -1143,6 +1151,10 @@ Another example, `YUCS` represents the change of `YU` `YUG` `Yugoslavia` to
 
 [build]: https://github.com/wooorm/iso-3166/actions
 
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/iso-3166.svg
+
+[coverage]: https://codecov.io/github/wooorm/iso-3166
+
 [downloads-badge]: https://img.shields.io/npm/dm/iso-3166.svg
 
 [downloads]: https://www.npmjs.com/package/iso-3166
@@ -1161,21 +1173,21 @@ Another example, `YUCS` represents the change of `YU` `YUG` `Yugoslavia` to
 
 [um49]: https://unstats.un.org/unsd/methodology/m49/
 
-[1]: 1.json
+[1]: 1.js
 
-[2]: 2.json
+[2]: 2.js
 
-[3]: 3.json
+[3]: 3.js
 
-[1-reserved]: 1-reserved.json
+[1-reserved]: 1-reserved.js
 
-[1-a2-to-1-a3]: 1-a2-to-1-a3.json
+[1-a2-to-1-a3]: 1-a2-to-1-a3.js
 
-[1-a2-to-1-n]: 1-a2-to-1-n.json
+[1-a2-to-1-n]: 1-a2-to-1-n.js
 
-[1-a3-to-1-a2]: 1-a3-to-1-a2.json
+[1-a3-to-1-a2]: 1-a3-to-1-a2.js
 
-[1-n-to-1-a2]: 1-n-to-1-a2.json
+[1-n-to-1-a2]: 1-n-to-1-a2.js
 
 [1-entry]: #iso31661entry
 
