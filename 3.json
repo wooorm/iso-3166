@@ -267,13 +267,13 @@
   },
   {
     "alpha4": "GEHH",
-    "type": "split",
+    "type": "change",
     "from": {
       "state": "formerly-assigned",
       "alpha2": "GE",
       "alpha3": "GEL",
       "numeric": "296",
-      "name": "Gilbert and Ellice Islands"
+      "name": "Gilbert Islands"
     },
     "to": [
       {
@@ -282,13 +282,6 @@
         "alpha3": "KIR",
         "numeric": "296",
         "name": "Kiribati"
-      },
-      {
-        "state": "assigned",
-        "alpha2": "TV",
-        "alpha3": "TUV",
-        "numeric": "798",
-        "name": "Tuvalu"
       }
     ]
   },
@@ -442,7 +435,7 @@
         "alpha2": "FM",
         "alpha3": "FSM",
         "numeric": "583",
-        "name": "Micronesia, Federated States of"
+        "name": "Micronesia (Federated States of)"
       },
       {
         "state": "assigned",
@@ -757,7 +750,7 @@
         "alpha2": "CD",
         "alpha3": "COD",
         "numeric": "180",
-        "name": "Congo, the Democratic Republic of the"
+        "name": "Congo, Democratic Republic of the"
       }
     ]
   }
