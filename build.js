@@ -4,7 +4,9 @@ import {bail} from 'bail'
 import fetch from 'node-fetch'
 import unified from 'unified'
 import parse from 'rehype-parse'
+// @ts-ignore To do: remove when types are added
 import $ from 'hast-util-select'
+// @ts-ignore To do: remove when types are added
 import toString from 'hast-util-to-string'
 
 var html = unified().use(parse)
@@ -15,9 +17,31 @@ var iso31661Overview = wiki + '/wiki/ISO_3166-1_alpha-2'
 var iso31662Base = wiki + '/wiki/ISO_3166-2:'
 var iso31663Main = wiki + '/wiki/ISO_3166-3'
 
+/**
+ * @typedef {import('hast').Element} Element
+ *
+ * @typedef {{name?: string, alpha2: string, alpha3: string, numeric: string}} Reserved
+ *
+ * @typedef {{name: string, alpha2: string, alpha3: string, numeric: string}} Assigned
+ *
+ * @typedef {{state: string, alpha2: string, alpha3: string, numeric: string, name?: string}} Iso31661
+ *
+ * @typedef {{code: string, name: string, parent?: string}} Iso31662
+ *
+ * @typedef {{alpha4: string, type: string, from: Iso31663From, to: Array.<Iso31663To>}} Iso31663
+ *
+ * @typedef {{state: string, alpha2: string, alpha3: string, numeric?: string, name: string}} Iso31663From
+ *
+ * @typedef {{state: string, alpha2: string, alpha3: string, numeric: string, name: string}} Iso31663To
+ */
+
+/** @type {Array.<Assigned>} */
 var assigned = []
+/** @type {Array.<Iso31661>} */
 var iso31661 = []
+/** @type {Array.<Iso31662>} */
 var iso31662 = []
+/** @type {Array.<Iso31663>} */
 var iso31663 = []
 
 Promise.resolve()
@@ -30,16 +54,20 @@ Promise.resolve()
     var table = $.selectAll('table.wikitable', tree)[1]
     var rows = $.selectAll('tr', table)
 
-    rows.forEach(function (row) {
-      var cells = $.selectAll('td', row)
-      var [name, alpha2, alpha3, numeric] = cells.map(cleanNode)
+    rows.forEach(
+      /** @param {Element} row **/
+      function (row) {
+        /** @type {Element[]} **/
+        var cells = $.selectAll('td', row)
+        var [name, alpha2, alpha3, numeric] = cells.map(cleanNode)
 
-      if (!name) {
-        return
+        if (!name) {
+          return
+        }
+
+        assigned.push({name, alpha2, alpha3, numeric})
       }
-
-      assigned.push({name, alpha2, alpha3, numeric})
-    })
+    )
   })
   .then(() => fetch(iso31661Overview))
   .then(textIfSuccessful)
@@ -63,13 +91,20 @@ Promise.resolve()
       'unassigned'
     ]
 
+    /**
+     * @typedef {{state: string, alpha2: string, note: string}} Entry
+     */
+
+    /** @type {Element} */
     var table = $.selectAll('table.wikitable', tree)[1]
+    /** @type {Element[]} */
     var cells = $.selectAll('td', table)
+    /** @type {Entry[]} */
     var entries = []
 
     cells.forEach((d) => {
       var alpha2 = cleanNode(d)
-      var title = d.properties.title
+      var title = String(d.properties.title)
       var state = 'assigned'
       var index = -1
       var length = states.length
@@ -133,11 +168,13 @@ Promise.resolve()
   })
   // ISO 3166-2:
   .then(() => {
-    // . var codes = iso31661.filter(d => d.alpha2 === 'IL')
     var codes = iso31661.filter((d) => d.state === 'assigned')
 
     return pMap(codes, map, {concurrency: 1})
 
+    /**
+     * @param {Iso31661} d
+     */
     function map(d) {
       return new Promise((resolve) => {
         setTimeout(resolve, 1000)
@@ -147,27 +184,50 @@ Promise.resolve()
         .then((doc) => {
           var tree = html.parse(doc)
           var prefix = d.alpha2 + '-'
+          /** @type {Element[]} */
           var tables = $.selectAll('table.wikitable', tree)
           var tableLength = tables.length
           var tableIndex = -1
-          var headers
-          var headerSpans
-          var columnIndex
-          var table
-          var rows
           var found = false
-          var rowIndex
-          var rowLength
-          var cellIndex
-          var cellLength
-          var cells
-          var row
-          var cell
-          var field
-          var column
-          var result
-          var match
+          /** @type {Object.<string, Iso31662>} */
           var byCode = {}
+          /** @type {string[]} */
+          var headers
+          /** @type {number[]} */
+          var headerSpans
+          /** @type {number} */
+          var columnIndex
+          /** @type {Element} */
+          var table
+          /** @type {Element[]} */
+          var rows
+          /** @type {number} */
+          var rowIndex
+          /** @type {number} */
+          var rowLength
+          /** @type {number} */
+          var cellIndex
+          /** @type {number} */
+          var cellLength
+          /** @type {Element[]} */
+          var cellNodes
+          /** @type {string[]} */
+          var cells
+          /** @type {Element} */
+          var row
+          /** @type {Element} */
+          var cellNode
+          /** @type {string} */
+          var cell
+          /** @type {string} */
+          var field
+          /** @type {string} */
+          var column
+          /** @type {Iso31662} */
+          var result
+          /** @type {RegExpMatchArray} */
+          var match
+          /** @type {string} */
           var key
 
           while (++tableIndex < tableLength) {
@@ -180,8 +240,8 @@ Promise.resolve()
 
             while (rowIndex < rowLength) {
               row = rows[rowIndex]
-              cells = $.selectAll('th', row)
-              cellLength = cells.length
+              cellNodes = $.selectAll('th', row)
+              cellLength = cellNodes.length
 
               // Not a header row.
               if (cellLength === 0) {
@@ -198,17 +258,20 @@ Promise.resolve()
                   continue
                 }
 
-                cell = cells[cellIndex]
+                cellNode = cellNodes[cellIndex]
 
-                if (cell.properties.rowSpan) {
+                if (cellNode.properties.rowSpan) {
                   headerSpans[columnIndex] =
-                    Number.parseInt(cell.properties.rowSpan, 10) - 1
+                    Number.parseInt(String(cellNode.properties.rowSpan), 10) - 1
                 }
 
-                if (cell.properties.colSpan) {
-                  columnIndex += Number.parseInt(cell.properties.colSpan, 10)
+                if (cellNode.properties.colSpan) {
+                  columnIndex += Number.parseInt(
+                    String(cellNode.properties.colSpan),
+                    10
+                  )
                 } else {
-                  headers[columnIndex] = cleanNode(cell).toLowerCase()
+                  headers[columnIndex] = cleanNode(cellNode).toLowerCase()
                   columnIndex++
                 }
 
@@ -240,7 +303,7 @@ Promise.resolve()
                 continue
               }
 
-              result = {}
+              result = {code: '', name: ''}
               cellIndex = -1
 
               while (++cellIndex < cellLength) {
@@ -298,7 +361,7 @@ Promise.resolve()
               if (!result.code || !result.name) {
                 console.warn(
                   'Cannot handle result w/o code or name',
-                  d.code,
+                  pick(d),
                   result,
                   cells
                 )
@@ -328,16 +391,13 @@ Promise.resolve()
     }
   })
   // ISO 3166-3:
-  .then(() => {
-    // . console.log(iso31662)
-    // . throw new Error('break')
-    return fetch(iso31663Main)
-  })
+  .then(() => fetch(iso31663Main))
   .then(textIfSuccessful)
   .then((doc) => {
     var tree = html.parse(doc)
-
+    /** @type {Element} */
     var table = $.selectAll('table.wikitable', tree)[0]
+    /** @type {Element[]} */
     var rows = $.selectAll('tr', table)
 
     var types = {
@@ -352,17 +412,25 @@ Promise.resolve()
         return
       }
 
+      /** @type {Element[]} */
       var cells = $.selectAll('th, td', row)
       var [alpha4, name, before, , after] = cells.map(cleanNode)
+      /** @type {string} */
       var kind = null
-      var key
-      var match
-      var alpha3
-      var numeric
-      var changeTo = []
       var lastIndex = 0
+      var re = /\([A-Z]{2}, [A-Z]{3}, (\d{3}|-)\)/g
+      /** @type {string} */
+      var key
+      /** @type {RegExpMatchArray} */
+      var match
+      /** @type {string} */
       var alpha2
-      var re
+      /** @type {string} */
+      var alpha3
+      /** @type {string} */
+      var numeric
+      /** @type {Iso31663To[]} */
+      var changeTo = []
 
       for (key in types) {
         match = after.match(types[key])
@@ -378,7 +446,6 @@ Promise.resolve()
       }
 
       ;[alpha2, alpha3, numeric] = before.split(/,\s+/g)
-      re = /\([A-Z]{2}, [A-Z]{3}, (\d{3}|-)\)/g
 
       iso31663.push({
         alpha4,
@@ -417,7 +484,9 @@ Promise.resolve()
   .then(() => {
     // Check which ISO 3166-3 changes are (formerly) assigned:
     iso31663.forEach((d) => {
+      /** @type {Array.<Iso31663From|Iso31663To>} */
       var entries = [].concat(d.from, d.to)
+
       entries.forEach((entry) => {
         var i1 = iso31661.find((d) => d.alpha2 === entry.alpha2)
         var same =
@@ -430,17 +499,24 @@ Promise.resolve()
       })
     })
 
+    /** @type {Array.<Assigned>} */
     var iso31661Assigned = []
+    /** @type {Array.<Reserved>} */
     var iso31661Reserved = []
+    /** @type {Object.<string, string>} */
     var a2ToA3 = {}
+    /** @type {Object.<string, string>} */
     var a2ToN = {}
+    /** @type {Object.<string, string[]>} */
     var a2To2 = {}
+    /** @type {Object.<string, string>} */
     var a3ToA2 = {}
+    /** @type {Object.<string, string>} */
     var nToA2 = {}
 
     iso31661.forEach((d) => {
       if (d.state === 'assigned') {
-        iso31661Assigned.push(d)
+        iso31661Assigned.push({name: '', ...d})
       } else if (
         d.state === 'indeterminately-reserved' ||
         d.state === 'exceptionally-reserved' ||
@@ -476,6 +552,12 @@ Promise.resolve()
     write('2', 'iso31662', iso31662)
     write('3', 'iso31663', iso31663)
 
+    /**
+     * @param {string} name
+     * @param {string} id
+     * @param {unknown} data
+     * @returns {void}
+     */
     function write(name, id, data) {
       fs.writeFile(
         name + '.js',
@@ -484,14 +566,25 @@ Promise.resolve()
       )
     }
   })
-  .catch((error) => {
-    console.log('Error:', error)
-  })
+  .catch(
+    /** @param {Error} error */ (error) => {
+      console.log('Error:', error)
+    }
+  )
 
+/**
+ * @param {Iso31661|Iso31662|Iso31663} a
+ * @param {Iso31661|Iso31662|Iso31663} b
+ * @returns {number}
+ */
 function sort(a, b) {
   return pick(a).localeCompare(pick(b))
 }
 
+/**
+ * @param {import('node-fetch').Response} response
+ * @returns {Promise.<string>}
+ */
 function textIfSuccessful(response) {
   if (response.status !== 200) {
     throw new Error('Unsuccessful response: `' + response.status + '`')
@@ -500,14 +593,27 @@ function textIfSuccessful(response) {
   return response.text()
 }
 
+/**
+ * @param {Iso31661|Iso31662|Iso31663} d
+ * @returns {string}
+ */
 function pick(d) {
+  // @ts-ignore TS making life difficult.
   return d.alpha2 || d.code || d.alpha4
 }
 
+/**
+ * @param {Element} d
+ * @returns {string}
+ */
 function cleanNode(d) {
   return clean(toString(d))
 }
 
+/**
+ * @param {string} d
+ * @returns {string}
+ */
 function clean(d) {
   return d
     .replace(/\[[^\]]+]/g, '')

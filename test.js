@@ -10,8 +10,11 @@ import {iso31661Alpha3ToAlpha2} from './1-a3-to-1-a2.js'
 import {iso31661NumericToAlpha2} from './1-n-to-1-a2.js'
 
 test('iso-3166/1', function (t) {
+  /** @type {string[]} */
   var iA2s = []
+  /** @type {string[]} */
   var iA3s = []
+  /** @type {string[]} */
   var iNs = []
 
   t.plan(iso31661.length)
@@ -35,6 +38,7 @@ test('iso-3166/1', function (t) {
 })
 
 test('iso-3166/1-reserved', function (t) {
+  /** @type {string[]} */
   var iA2s = []
 
   t.plan(iso31661Reserved.length)
@@ -58,8 +62,11 @@ test('iso-3166/1-reserved', function (t) {
 })
 
 test('iso-3166/2', function (t) {
+  /** @type {string[]} */
   var i1s = []
+  /** @type {string[]} */
   var i2sInitial = []
+  /** @type {string[]} */
   var i2s = []
 
   t.plan(iso31662.length)
@@ -89,6 +96,7 @@ test('iso-3166/2', function (t) {
 })
 
 test('iso-3166/3', function (t) {
+  /** @type {string[]} */
   var a4s = []
 
   t.plan(iso31663.length)
@@ -188,26 +196,50 @@ test('iso-3166/1-n-to-1-a2', function (t) {
   })
 })
 
+/**
+ * @param {string} value
+ * @returns {boolean}
+ */
 function a2(value) {
   return /^[A-Z]{2}$/.test(value)
 }
 
+/**
+ * @param {string} value
+ * @returns {boolean}
+ */
 function a3(value) {
   return /^[A-Z]{3}$/.test(value)
 }
 
+/**
+ * @param {string} value
+ * @returns {boolean}
+ */
 function a4(value) {
   return /^[A-Z]{4}$/.test(value)
 }
 
+/**
+ * @param {string} value
+ * @returns {boolean}
+ */
 function numeric(value) {
   return /^\d{3}$/.test(value)
 }
 
+/**
+ * @param {string} value
+ * @returns {boolean}
+ */
 function i2(value) {
   return /^[A-Z]{2}-[A-Z\d]{1,3}$/.test(value)
 }
 
+/**
+ * @param {string} value
+ * @returns {boolean}
+ */
 function name(value) {
   return typeof value === 'string' && value.length > 1
 }
