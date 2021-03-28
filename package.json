@@ -33,7 +33,7 @@
   ],
   "sideEffects": false,
   "type": "module",
-  "main": "1.js",
+  "main": "index.js",
   "types": "index.d.ts",
   "files": [
     "1-a2-to-1-a3.d.ts",
@@ -51,7 +51,9 @@
     "2.d.ts",
     "2.js",
     "3.d.ts",
-    "3.js"
+    "3.js",
+    "index.d.ts",
+    "index.js"
   ],
   "devDependencies": {
     "@types/hast": "^2.0.0",

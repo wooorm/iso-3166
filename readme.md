@@ -41,8 +41,6 @@ This package exports the following identifiers: `iso31661`,
 `iso31661NumericToAlpha2`, `iso31661Reserved`, `iso31662`, `iso31663`.
 There is no default export.
 
-See examples below for more info.
-
 ## Overview
 
 ISO 3166 is a standard to represent countries and subregions with codes.
@@ -68,7 +66,7 @@ countries.
 
 This project includes all three parts of ISO 3166 as separate exports:
 
-*   [`iso31661`][1] (**default export**)
+*   [`iso31661`][1]
     — Countries: list of [assigned][] ISO 3166-1 entries
 *   [`iso31662`][2]
     — Subdivisions: list of ISO 3166-2 entries
