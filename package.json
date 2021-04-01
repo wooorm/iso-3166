@@ -116,9 +116,9 @@
     }
   },
   "remarkConfig": {
-    "to do: add this plugin below when unified engine supports ESM": "./build-iso-3166-1-a2-table",
     "plugins": [
-      "preset-wooorm"
+      "preset-wooorm",
+      "./build-iso-3166-1-a2-table.js"
     ]
   },
   "typeCoverage": {
