@@ -1,4 +1,4 @@
-export var iso31661Alpha2ToNumeric = {
+export const iso31661Alpha2ToNumeric = {
   AD: '020',
   AE: '784',
   AF: '004',

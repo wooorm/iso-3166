@@ -1,4 +1,4 @@
-export var iso31661Alpha2ToAlpha3 = {
+export const iso31661Alpha2ToAlpha3 = {
   AD: 'AND',
   AE: 'ARE',
   AF: 'AFG',

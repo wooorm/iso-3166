@@ -1,4 +1,4 @@
-export var iso31662 = [
+export const iso31662 = [
   {
     code: 'AD-02',
     name: 'Canillo',

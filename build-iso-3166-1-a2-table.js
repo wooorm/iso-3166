@@ -7,44 +7,49 @@ import {headingRange} from 'mdast-util-heading-range'
 import {iso31661Reserved} from './1-reserved.js'
 import {iso31661} from './1.js'
 
-var processor = unified().use(format).use(stringify)
+const processor = unified().use(format).use(stringify)
 
 /**
  * @type {import('unified').Plugin<[], import('mdast').Root>}
  */
 export default function table() {
   return (tree) => {
-    var a = 65
-    var z = 90
+    const a = 65
+    const z = 90
 
-    var a2ToState = {}
-    var a2ToName = {}
-    iso31661
-      .map(({alpha2, state, name}) => ({alpha2, state, name}))
-      .concat(
-        iso31661Reserved.map(({alpha2, state, name}) => ({alpha2, state, name}))
-      )
-      .forEach((d) => {
-        a2ToState[d.alpha2] = d.state
-        a2ToName[d.alpha2] = d.name
-      })
+    const a2ToState = {}
+    const a2ToName = {}
+
+    let index = -1
+    while (++index < iso31661.length) {
+      const d = iso31661[index]
+      a2ToState[d.alpha2] = d.state
+      a2ToName[d.alpha2] = d.name
+    }
+
+    index = -1
+    while (++index < iso31661Reserved.length) {
+      const d = iso31661Reserved[index]
+      a2ToState[d.alpha2] = d.state
+      a2ToName[d.alpha2] = d.name
+    }
 
     headingRange(tree, 'matrix', (start, _, end) => {
-      var head = [h('th')]
+      const head = [h('th')]
       /** @type {import('hast').Element[]} */
-      var rows = []
+      const rows = []
       /** @type {import('hast').Element[]} */
-      var cells
+      let cells
       /** @type {number} */
-      var x = a
+      let x = a
       /** @type {number} */
-      var y
+      let y
       /** @type {import('hast').Element|string} */
-      var code
+      let code
       /** @type {string} */
-      var state
+      let state
       /** @type {string} */
-      var title
+      let title
 
       while (x <= z) {
         y = a
@@ -82,7 +87,7 @@ export default function table() {
         ++x
       }
 
-      var node = processor.runSync(
+      const node = processor.runSync(
         // @ts-expect-error: fine to pass an element.
         h('details', [
           h('summary', 'ISO 3166-1 alpha-2 code matrix'),
@@ -90,7 +95,7 @@ export default function table() {
         ])
       )
 
-      var html = processor.stringify(node)
+      const html = processor.stringify(node)
 
       return [
         start,

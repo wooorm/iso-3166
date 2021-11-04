@@ -1,4 +1,4 @@
-export var iso31661 = [
+export const iso31661 = [
   {
     name: 'Andorra',
     state: 'assigned',

@@ -1,4 +1,4 @@
-export var iso31661NumericToAlpha2 = {
+export const iso31661NumericToAlpha2 = {
   100: 'BG',
   104: 'MM',
   108: 'BI',

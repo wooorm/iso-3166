@@ -106,13 +106,7 @@
     "prettier": true,
     "rules": {
       "complexity": "off",
-      "guard-for-in": "off",
-      "import/no-mutable-exports": "off",
-      "max-depth": "off",
-      "no-var": "off",
-      "prefer-arrow-callback": "off",
-      "unicorn/no-array-callback-reference": "off",
-      "unicorn/no-array-for-each": "off"
+      "max-depth": "off"
     }
   },
   "remarkConfig": {

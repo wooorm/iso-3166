@@ -1,4 +1,4 @@
-export var iso31661Reserved = [
+export const iso31661Reserved = [
   {
     state: 'exceptionally-reserved',
     alpha2: 'AC',

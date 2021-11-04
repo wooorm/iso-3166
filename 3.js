@@ -1,4 +1,4 @@
-export var iso31663 = [
+export const iso31663 = [
   {
     alpha4: 'AIDJ',
     type: 'change',

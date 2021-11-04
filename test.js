@@ -11,15 +11,18 @@ import {iso31661NumericToAlpha2} from './1-n-to-1-a2.js'
 
 test('iso-3166/1', function (t) {
   /** @type {string[]} */
-  var iA2s = []
+  const iA2s = []
   /** @type {string[]} */
-  var iA3s = []
+  const iA3s = []
   /** @type {string[]} */
-  var iNs = []
+  const iNs = []
 
   t.plan(iso31661.length)
 
-  iso31661.forEach((d) => {
+  let index = -1
+
+  while (++index < iso31661.length) {
+    const d = iso31661[index]
     t.doesNotThrow(function () {
       assert.ok(d.state === 'assigned', 'should be assigned')
       assert.ok(a2(d.alpha2), 'should have an alpha-2')
@@ -34,16 +37,19 @@ test('iso-3166/1', function (t) {
       iA3s.push(d.alpha3)
       iNs.push(d.numeric)
     }, d.alpha2)
-  })
+  }
 })
 
 test('iso-3166/1-reserved', function (t) {
   /** @type {string[]} */
-  var iA2s = []
+  const iA2s = []
 
   t.plan(iso31661Reserved.length)
 
-  iso31661Reserved.forEach((d) => {
+  let index = -1
+
+  while (++index < iso31661Reserved.length) {
+    const d = iso31661Reserved[index]
     t.doesNotThrow(function () {
       assert.ok(
         d.state === 'indeterminately-reserved' ||
@@ -58,28 +64,37 @@ test('iso-3166/1-reserved', function (t) {
 
       iA2s.push(d.alpha2)
     }, d.alpha2)
-  })
+  }
 })
 
 test('iso-3166/2', function (t) {
   /** @type {string[]} */
-  var i1s = []
+  const i1s = []
   /** @type {string[]} */
-  var i2sInitial = []
+  const i2sInitial = []
   /** @type {string[]} */
-  var i2s = []
+  const i2s = []
 
   t.plan(iso31662.length)
 
-  iso31661.forEach((d) => {
+  let index = -1
+
+  while (++index < iso31661.length) {
+    const d = iso31661[index]
     i1s.push(d.alpha2)
-  })
+  }
 
-  iso31662.forEach((d) => {
+  index = -1
+
+  while (++index < iso31662.length) {
+    const d = iso31662[index]
     i2sInitial.push(d.code)
-  })
+  }
 
-  iso31662.forEach((d) => {
+  index = -1
+
+  while (++index < iso31662.length) {
+    const d = iso31662[index]
     t.doesNotThrow(function () {
       assert.ok(i2(d.code), 'should have a code')
       assert.ok(!i2s.includes(d.code), 'should have a unique code')
@@ -92,16 +107,19 @@ test('iso-3166/2', function (t) {
 
       i2s.push(d.code)
     }, d.code)
-  })
+  }
 })
 
 test('iso-3166/3', function (t) {
   /** @type {string[]} */
-  var a4s = []
+  const a4s = []
 
   t.plan(iso31663.length)
 
-  iso31663.forEach((d) => {
+  let index = -1
+
+  while (++index < iso31663.length) {
+    const d = iso31663[index]
     t.doesNotThrow(function () {
       assert.ok(
         d.type === 'merge' || d.type === 'change' || d.type === 'split',
@@ -122,8 +140,11 @@ test('iso-3166/3', function (t) {
         )
       }
 
-      d.to.forEach((to) => {
-        var label = 'to `' + to.alpha2 + '`'
+      let index = -1
+
+      while (++index < d.to.length) {
+        const to = d.to[index]
+        const label = 'to `' + to.alpha2 + '`'
 
         assert.ok(
           to.state === 'assigned' || to.state === 'formerly-assigned',
@@ -134,45 +155,54 @@ test('iso-3166/3', function (t) {
         assert.ok(name(to.name), label + ' should have a name')
 
         assert.ok(numeric(to.numeric), label + ' should have a valid numeric')
-      })
+      }
 
       a4s.push(d.alpha4)
     }, d.alpha4)
-  })
+  }
 })
 
 test('iso-3166/1-a2-to-1-a3', function (t) {
-  var keys = Object.keys(iso31661Alpha2ToAlpha3)
+  const keys = Object.keys(iso31661Alpha2ToAlpha3)
 
   t.plan(keys.length)
 
-  keys.forEach((d) => {
+  let index = -1
+
+  while (++index < keys.length) {
+    const d = keys[index]
     t.doesNotThrow(function () {
       assert.ok(a2(d), 'key should be an alpha-2')
       assert.ok(a3(iso31661Alpha2ToAlpha3[d]), 'value should be an alpha-3')
     }, d)
-  })
+  }
 })
 
 test('iso-3166/1-a3-to-1-a2', function (t) {
-  var keys = Object.keys(iso31661Alpha3ToAlpha2)
+  const keys = Object.keys(iso31661Alpha3ToAlpha2)
 
   t.plan(keys.length)
 
-  keys.forEach((d) => {
+  let index = -1
+
+  while (++index < keys.length) {
+    const d = keys[index]
     t.doesNotThrow(function () {
       assert.ok(a3(d), 'key should be an alpha-3')
       assert.ok(a2(iso31661Alpha3ToAlpha2[d]), 'value should be an alpha-2')
     }, d)
-  })
+  }
 })
 
 test('iso-3166/1-a2-to-1-n', function (t) {
-  var keys = Object.keys(iso31661Alpha2ToNumeric)
+  const keys = Object.keys(iso31661Alpha2ToNumeric)
 
   t.plan(keys.length)
 
-  keys.forEach((d) => {
+  let index = -1
+
+  while (++index < keys.length) {
+    const d = keys[index]
     t.doesNotThrow(function () {
       assert.ok(a2(d), 'key should be an alpha-2')
       assert.ok(
@@ -180,20 +210,23 @@ test('iso-3166/1-a2-to-1-n', function (t) {
         'value should be a numeric'
       )
     }, d)
-  })
+  }
 })
 
 test('iso-3166/1-n-to-1-a2', function (t) {
-  var keys = Object.keys(iso31661NumericToAlpha2)
+  const keys = Object.keys(iso31661NumericToAlpha2)
 
   t.plan(keys.length)
 
-  keys.forEach((d) => {
+  let index = -1
+
+  while (++index < keys.length) {
+    const d = keys[index]
     t.doesNotThrow(function () {
       assert.ok(numeric(d), 'key should be a numeric')
       assert.ok(a2(iso31661NumericToAlpha2[d]), 'value should be an alpha-2')
     }, d)
-  })
+  }
 })
 
 /**
