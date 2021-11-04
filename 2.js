@@ -1086,7 +1086,7 @@ export const iso31662 = [
   },
   {
     code: 'BA-BRC',
-    name: 'Brčko District',
+    name: 'Brčko distrikt',
     parent: 'BA'
   },
   {
@@ -6221,7 +6221,7 @@ export const iso31662 = [
   },
   {
     code: 'ES-V',
-    name: 'ValenciaValència',
+    name: 'València',
     parent: 'ES-VC'
   },
   {
@@ -6231,7 +6231,7 @@ export const iso31662 = [
   },
   {
     code: 'ES-VC',
-    name: 'Valenciana, ComunidadValenciana, Comunitat',
+    name: 'Valenciana, Comunitat',
     parent: 'ES'
   },
   {
@@ -17471,7 +17471,7 @@ export const iso31662 = [
   },
   {
     code: 'NP-P5',
-    name: 'Pradesh 5',
+    name: 'Lumbini',
     parent: 'NP'
   },
   {

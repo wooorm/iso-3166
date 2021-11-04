@@ -204,7 +204,7 @@ Finally, indexes are available to map between different codes:
       <td title="China"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:CN">CN</a></td>
       <td title="Colombia"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:CO">CO</a></td>
       <td title="Clipperton Island"><s>CP</s></td>
-      <td>CQ</td>
+      <td title="Island of Sark"><s>CQ</s></td>
       <td title="Costa Rica"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:CR">CR</a></td>
       <td title="Serbia and Montenegro"><s>CS</s></td>
       <td title="Canton and Enderbury Islands"><s>CT</s></td>

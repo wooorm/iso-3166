@@ -30,6 +30,11 @@ export const iso31661Reserved = [
     name: 'Clipperton Island'
   },
   {
+    state: 'exceptionally-reserved',
+    alpha2: 'CQ',
+    name: 'Island of Sark'
+  },
+  {
     state: 'transitionally-reserved',
     alpha2: 'CS',
     name: 'Serbia and Montenegro'
