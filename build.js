@@ -1,13 +1,11 @@
-import fs from 'fs'
+import fs from 'node:fs'
 import pMap from 'p-map'
 import {bail} from 'bail'
 import fetch from 'node-fetch'
-import unified from 'unified'
+import {unified} from 'unified'
 import parse from 'rehype-parse'
-// @ts-ignore To do: remove when types are added
-import $ from 'hast-util-select'
-// @ts-ignore To do: remove when types are added
-import toString from 'hast-util-to-string'
+import {select, selectAll} from 'hast-util-select'
+import {toString} from 'hast-util-to-string'
 
 var html = unified().use(parse)
 
@@ -51,14 +49,14 @@ Promise.resolve()
   .then((doc) => {
     var tree = html.parse(doc)
 
-    var table = $.selectAll('table.wikitable', tree)[1]
-    var rows = $.selectAll('tr', table)
+    var table = selectAll('table.wikitable', tree)[1]
+    var rows = selectAll('tr', table)
 
     rows.forEach(
       /** @param {Element} row **/
       function (row) {
         /** @type {Element[]} **/
-        var cells = $.selectAll('td', row)
+        var cells = selectAll('td', row)
         var [name, alpha2, alpha3, numeric] = cells.map(cleanNode)
 
         if (!name) {
@@ -96,9 +94,9 @@ Promise.resolve()
      */
 
     /** @type {Element} */
-    var table = $.selectAll('table.wikitable', tree)[1]
+    var table = selectAll('table.wikitable', tree)[1]
     /** @type {Element[]} */
-    var cells = $.selectAll('td', table)
+    var cells = selectAll('td', table)
     /** @type {Entry[]} */
     var entries = []
 
@@ -185,7 +183,7 @@ Promise.resolve()
           var tree = html.parse(doc)
           var prefix = d.alpha2 + '-'
           /** @type {Element[]} */
-          var tables = $.selectAll('table.wikitable', tree)
+          var tables = selectAll('table.wikitable', tree)
           var tableLength = tables.length
           var tableIndex = -1
           var found = false
@@ -234,13 +232,13 @@ Promise.resolve()
             table = tables[tableIndex]
             headers = []
             headerSpans = []
-            rows = $.selectAll('tr', table)
+            rows = selectAll('tr', table)
             rowIndex = 0
             rowLength = rows.length
 
             while (rowIndex < rowLength) {
               row = rows[rowIndex]
-              cellNodes = $.selectAll('th', row)
+              cellNodes = selectAll('th', row)
               cellLength = cellNodes.length
 
               // Not a header row.
@@ -295,7 +293,7 @@ Promise.resolve()
 
             while (++rowIndex < rowLength) {
               row = rows[rowIndex]
-              cells = $.selectAll('td', row).map(cleanNode)
+              cells = selectAll('td', row).map(cleanNode)
               cellLength = cells.length
 
               if (cellLength === 0) {
@@ -396,9 +394,9 @@ Promise.resolve()
   .then((doc) => {
     var tree = html.parse(doc)
     /** @type {Element} */
-    var table = $.selectAll('table.wikitable', tree)[0]
+    var table = selectAll('table.wikitable', tree)[0]
     /** @type {Element[]} */
-    var rows = $.selectAll('tr', table)
+    var rows = selectAll('tr', table)
 
     var types = {
       merge: /^merged into /i,
@@ -408,12 +406,12 @@ Promise.resolve()
 
     rows.forEach(function (row) {
       // Exit if there is no row data.
-      if (!$.select('td', row)) {
+      if (!select('td', row)) {
         return
       }
 
       /** @type {Element[]} */
-      var cells = $.selectAll('th, td', row)
+      var cells = selectAll('th, td', row)
       var [alpha4, name, before, , after] = cells.map(cleanNode)
       /** @type {string} */
       var kind = null

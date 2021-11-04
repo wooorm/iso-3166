@@ -112,8 +112,7 @@ export var iso31661Reserved = [
   {
     state: 'indeterminately-reserved',
     alpha2: 'GC',
-    name:
-      'Patent Office of the Cooperation Council for the Arab States of the Gulf'
+    name: 'Patent Office of the Cooperation Council for the Arab States of the Gulf'
   },
   {
     state: 'formerly-assigned',

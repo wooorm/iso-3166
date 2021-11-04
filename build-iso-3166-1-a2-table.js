@@ -1,23 +1,19 @@
-import unified from 'unified'
-// @ts-ignore To do: remove when types are added
+import {unified} from 'unified'
 import format from 'rehype-format'
 import stringify from 'rehype-stringify'
-import h from 'hastscript'
-import u from 'unist-builder'
-// @ts-ignore To do: remove when types are added
-import range from 'mdast-util-heading-range'
+import {h} from 'hastscript'
+import {u} from 'unist-builder'
+import {headingRange} from 'mdast-util-heading-range'
 import {iso31661Reserved} from './1-reserved.js'
 import {iso31661} from './1.js'
 
 var processor = unified().use(format).use(stringify)
 
+/**
+ * @type {import('unified').Plugin<[], import('mdast').Root>}
+ */
 export default function table() {
-  return transform
-
-  /**
-   * @param {import('mdast').Root} tree
-   */
-  function transform(tree) {
+  return (tree) => {
     var a = 65
     var z = 90
 
@@ -33,14 +29,7 @@ export default function table() {
         a2ToName[d.alpha2] = d.name
       })
 
-    range(tree, 'matrix', onrun)
-
-    /**
-     * @param {import('unist').Node?} start
-     * @param {import('unist').Node[]} _
-     * @param {import('unist').Node?} end
-     */
-    function onrun(start, _, end) {
+    headingRange(tree, 'matrix', (start, _, end) => {
       var head = [h('th')]
       /** @type {import('hast').Element[]} */
       var rows = []
@@ -94,6 +83,7 @@ export default function table() {
       }
 
       var node = processor.runSync(
+        // @ts-expect-error: fine to pass an element.
         h('details', [
           h('summary', 'ISO 3166-1 alpha-2 code matrix'),
           h('table', [h('thead', h('tr', head)), h('tbody', rows)])
@@ -102,11 +92,12 @@ export default function table() {
 
       var html = processor.stringify(node)
 
-      return [start].concat(
+      return [
+        start,
         u('html', '<!--lint ignore no-html-->'),
         u('html', html),
-        end || []
-      )
-    }
+        end
+      ]
+    })
   }
 }

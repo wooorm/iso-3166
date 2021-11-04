@@ -1,4 +1,4 @@
-import assert from 'assert'
+import assert from 'node:assert'
 import test from 'tape'
 import {iso31661} from './1.js'
 import {iso31661Reserved} from './1-reserved.js'
