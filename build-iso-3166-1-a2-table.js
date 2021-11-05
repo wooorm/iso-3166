@@ -17,7 +17,9 @@ export default function table() {
     const a = 65
     const z = 90
 
+    /** @type {Record<string, string>} */
     const a2ToState = {}
+    /** @type {Record<string, string>} */
     const a2ToName = {}
 
     let index = -1

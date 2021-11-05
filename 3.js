@@ -1,3 +1,37 @@
+/**
+ * @typedef {'merge'|'change'|'split'} ISO31663Type
+ *
+ * @typedef ISO31661FromEntry
+ * @property {'formerly-assigned'} state
+ * @property {string} alpha2
+ * @property {string} alpha3
+ * @property {string} [numeric]
+ * @property {string} name
+ *
+ * @typedef ISO31661ToEntry
+ * @property {'formerly-assigned'|'assigned'} state
+ * @property {string} alpha2
+ * @property {string} alpha3
+ * @property {string} numeric
+ * @property {string} name
+ *
+ * @typedef ISO31663Entry
+ *   Object representing a former country.
+ * @property {string} alpha4
+ *   ISO 3166-3 alpha-4 code (example: `ANHH`)
+ * @property {ISO31663Type} type
+ *   Type of revision (example: `'split'`)
+ * @property {ISO31661FromEntry} from
+ *   Country before revision
+ * @property {Array<ISO31661ToEntry>} to
+ *   List of countries after revision
+ */
+
+/**
+ * List of former countries.
+ *
+ * @type {Array<ISO31663Entry>}
+ */
 export const iso31663 = [
   {
     alpha4: 'AIDJ',

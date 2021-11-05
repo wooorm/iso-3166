@@ -1,3 +1,22 @@
+/**
+ * @typedef {import('hast').Element} Element
+ *
+ * @typedef {{name?: string, alpha2: string, alpha3: string, numeric: string}} Reserved
+ *
+ * @typedef {{name: string, alpha2: string, alpha3: string, numeric: string}} Assigned
+ *
+ * @typedef {{state: string, alpha2: string, alpha3: string, numeric: string, name?: string}} Iso31661
+ *
+ * @typedef {{code: string, name: string, parent?: string}} Iso31662
+ *
+ * @typedef {{alpha4: string, type: string, from: Iso31663From, to: Array<Iso31663To>}} Iso31663
+ *
+ * @typedef {{state: string|undefined, alpha2: string, alpha3: string, numeric?: string, name: string}} Iso31663From
+ *
+ * @typedef {{state: string|undefined, alpha2: string, alpha3: string, numeric?: string, name: string}} Iso31663To
+ */
+
+import assert from 'node:assert'
 import fs from 'node:fs'
 import pMap from 'p-map'
 import {bail} from 'bail'
@@ -16,24 +35,6 @@ const iso31661Main = wiki + '/wiki/ISO_3166-1'
 const iso31661Overview = wiki + '/wiki/ISO_3166-1_alpha-2'
 const iso31662Base = wiki + '/wiki/ISO_3166-2:'
 const iso31663Main = wiki + '/wiki/ISO_3166-3'
-
-/**
- * @typedef {import('hast').Element} Element
- *
- * @typedef {{name?: string, alpha2: string, alpha3: string, numeric: string}} Reserved
- *
- * @typedef {{name: string, alpha2: string, alpha3: string, numeric: string}} Assigned
- *
- * @typedef {{state: string, alpha2: string, alpha3: string, numeric: string, name?: string}} Iso31661
- *
- * @typedef {{code: string, name: string, parent?: string}} Iso31662
- *
- * @typedef {{alpha4: string, type: string, from: Iso31663From, to: Array<Iso31663To>}} Iso31663
- *
- * @typedef {{state: string, alpha2: string, alpha3: string, numeric?: string, name: string}} Iso31663From
- *
- * @typedef {{state: string, alpha2: string, alpha3: string, numeric: string, name: string}} Iso31663To
- */
 
 /** @type {Array<Assigned>} */
 const assigned = []
@@ -69,6 +70,7 @@ Promise.resolve()
   .then(textIfSuccessful)
   .then((doc) => {
     const tree = html.parse(doc)
+    /** @type {Record<string, string>} */
     const map = {
       'user-assigned': 'user-assigned',
       'exceptionally reserved': 'exceptionally-reserved',
@@ -88,7 +90,7 @@ Promise.resolve()
     ]
 
     /**
-     * @typedef {{state: string, alpha2: string, note: string}} Entry
+     * @typedef {{state: string, alpha2: string, note: string|undefined}} Entry
      */
 
     /** @type {Element} */
@@ -103,7 +105,7 @@ Promise.resolve()
     while (++index < cells.length) {
       const d = cells[index]
       const alpha2 = cleanNode(d)
-      let title = String(d.properties.title)
+      let title = String((d.properties || {}).title)
       let state = 'assigned'
       let stateIndex = -1
       const length = states.length
@@ -119,8 +121,9 @@ Promise.resolve()
       }
 
       while (++stateIndex < length) {
-        if (new RegExp('^' + states[stateIndex], 'i').test(title)) {
-          state = map[states[stateIndex]]
+        const stateValue = states[stateIndex]
+        if (new RegExp('^' + stateValue, 'i').test(title)) {
+          state = map[stateValue]
           break
         }
       }
@@ -160,7 +163,9 @@ Promise.resolve()
       iso31661.push({
         state,
         alpha2,
+        // @ts-expect-error: missing for now.
         alpha3,
+        // @ts-expect-error: missing for now.
         numeric,
         name: name || note || undefined
       })
@@ -193,10 +198,6 @@ Promise.resolve()
           let found = false
           /** @type {Record<string, Iso31662>} */
           const byCode = {}
-          /** @type {string[]} */
-          let headers
-          /** @type {number[]} */
-          let headerSpans
           /** @type {number} */
           let columnIndex
           /** @type {Element} */
@@ -219,23 +220,25 @@ Promise.resolve()
           let row
           /** @type {Element} */
           let cellNode
-          /** @type {string} */
+          /** @type {string|undefined} */
           let cell
-          /** @type {string} */
+          /** @type {keyof Iso31662|null} */
           let field
           /** @type {string} */
           let column
           /** @type {Iso31662} */
           let result
-          /** @type {RegExpMatchArray} */
+          /** @type {RegExpMatchArray|null} */
           let match
           /** @type {string} */
           let key
 
           while (++tableIndex < tableLength) {
             table = tables[tableIndex]
-            headers = []
-            headerSpans = []
+            /** @type {string[]} */
+            const headers = []
+            /** @type {number[]} */
+            const headerSpans = []
             rows = selectAll('tr', table)
             rowIndex = 0
             rowLength = rows.length
@@ -262,12 +265,12 @@ Promise.resolve()
 
                 cellNode = cellNodes[cellIndex]
 
-                if (cellNode.properties.rowSpan) {
+                if (cellNode.properties && cellNode.properties.rowSpan) {
                   headerSpans[columnIndex] =
                     Number.parseInt(String(cellNode.properties.rowSpan), 10) - 1
                 }
 
-                if (cellNode.properties.colSpan) {
+                if (cellNode.properties && cellNode.properties.colSpan) {
                   columnIndex += Number.parseInt(
                     String(cellNode.properties.colSpan),
                     10
@@ -355,7 +358,7 @@ Promise.resolve()
                   field = 'parent'
                 }
 
-                if (field) {
+                if (field && cell) {
                   result[field] = cell
                 }
               }
@@ -404,6 +407,7 @@ Promise.resolve()
     /** @type {Element[]} */
     const rows = selectAll('tr', table)
 
+    /** @type {Record<string, RegExp>} */
     const types = {
       merge: /^merged into /i,
       change: /^name changed to /i,
@@ -420,17 +424,14 @@ Promise.resolve()
         continue
       }
 
-      /** @type {Element[]} */
       const cells = selectAll('th, td', row)
       let [alpha4, name, before, , after] = cells.map((d) => cleanNode(d))
-      /** @type {string} */
+      /** @type {string|null} */
       let kind = null
       let lastIndex = 0
       const re = /\([A-Z]{2}, [A-Z]{3}, (\d{3}|-)\)/g
       /** @type {string} */
       let key
-      /** @type {RegExpMatchArray} */
-      let match
       /** @type {string} */
       let alpha2
       /** @type {string} */
@@ -442,9 +443,9 @@ Promise.resolve()
 
       for (key in types) {
         if (own.call(types, key)) {
-          match = after.match(types[key])
+          const match = after.match(types[key])
 
-          if (match) {
+          if (match && match.index !== undefined) {
             kind = key
             after =
               after.slice(0, match.index) +
@@ -456,6 +457,8 @@ Promise.resolve()
       }
 
       ;[alpha2, alpha3, numeric] = before.split(/,\s+/g)
+
+      assert(kind, 'expected `kind`')
 
       iso31663.push({
         alpha4,
@@ -470,7 +473,10 @@ Promise.resolve()
         to: changeTo
       })
 
-      while ((match = re.exec(after))) {
+      /** @type {RegExpMatchArray|null} */
+      let match
+
+      while ((match = re.exec(after)) && match.index !== undefined) {
         ;[alpha2, alpha3, numeric] = match[0].slice(1, -1).split(/,\s+/g)
 
         name = clean(
@@ -497,8 +503,7 @@ Promise.resolve()
 
     while (++index < iso31663.length) {
       const d = iso31663[index]
-      /** @type {Array<Iso31663From|Iso31663To>} */
-      const entries = [].concat(d.from, d.to)
+      const entries = [d.from, ...d.to]
       let entryIndex = -1
 
       while (++entryIndex < entries.length) {
@@ -559,35 +564,196 @@ Promise.resolve()
     while (++index < iso31662.length) {
       const {code} = iso31662[index]
       const country = code.slice(0, 2)
-      a2To2[country] = [].concat(a2To2[country] || [], code)
+      a2To2[country] = [...(a2To2[country] || []), code]
     }
 
+    /** @type {string} */
     let key
+
     for (key in a2To2) {
       if (own.call(a2To2, key)) {
         a2To2[key].sort((a, b) => a.localeCompare(b))
       }
     }
 
-    write('1', 'iso31661', iso31661Assigned)
-    write('1-reserved', 'iso31661Reserved', iso31661Reserved)
-    write('1-a2-to-1-a3', 'iso31661Alpha2ToAlpha3', a2ToA3)
-    write('1-a2-to-1-n', 'iso31661Alpha2ToNumeric', a2ToN)
-    write('1-a3-to-1-a2', 'iso31661Alpha3ToAlpha2', a3ToA2)
-    write('1-n-to-1-a2', 'iso31661NumericToAlpha2', nToA2)
-    write('2', 'iso31662', iso31662)
-    write('3', 'iso31663', iso31663)
+    write(
+      '1',
+      'iso31661',
+      iso31661Assigned,
+      [
+        '/**',
+        ' * @typedef ISO31661AssignedEntry',
+        ' *   Object representing an assigned country.',
+        " * @property {'assigned'} state",
+        " *   State (example: `'assigned'`)",
+        ' * @property {string} alpha2',
+        " *   ISO 3166-1 alpha-2 code (example: `'GB'`)",
+        ' * @property {string} alpha3',
+        " *   ISO 3166-1 alpha-3 code (example: `'GBR'`)",
+        ' * @property {string} numeric',
+        " *   ISO 3166-1 numeric (UN M49) code (example: `'826'`)",
+        ' * @property {string} name',
+        " *   Name (example: `'United Kingdom of Great Britain and Northern Ireland'`)",
+        ' */',
+        '',
+        '/**',
+        ' * List of assigned countries.',
+        ' *',
+        ' * @type {Array<ISO31661AssignedEntry>}',
+        ' */'
+      ].join('\n')
+    )
+    write(
+      '1-reserved',
+      'iso31661Reserved',
+      iso31661Reserved,
+      [
+        '/**',
+        ' * @typedef ISO31661ReservedEntry',
+        ' *   Object representing a reserved country.',
+        " * @property {'indeterminately-reserved'|'exceptionally-reserved'|'transitionally-reserved'|'formerly-assigned'} state",
+        " *   State (example: `'assigned'`)",
+        ' * @property {string} alpha2',
+        " *   ISO 3166-1 alpha-2 code (example: `'GB'`)",
+        ' * @property {string} name',
+        " *   Name (example: `'United Kingdom of Great Britain and Northern Ireland'`)",
+        ' */',
+        '',
+        '/**',
+        ' * List of reserved country codes.',
+        ' *',
+        ' * @type {Array<ISO31661ReservedEntry>}',
+        ' */'
+      ].join('\n')
+    )
+    write(
+      '1-a2-to-1-a3',
+      'iso31661Alpha2ToAlpha3',
+      a2ToA3,
+      [
+        '/**',
+        ' * Map of ISO 3166-1 alpha-2 codes to ISO 3166-1 alpha-3 codes.',
+        ' *',
+        ' * @type {Record<string, string>}',
+        ' */'
+      ].join('\n')
+    )
+    write(
+      '1-a2-to-1-n',
+      'iso31661Alpha2ToNumeric',
+      a2ToN,
+      [
+        '/**',
+        ' * Map of ISO 3166-1 alpha-2 codes to ISO 3166-1 numeric (UN M49) codes',
+        ' *',
+        ' * @type {Record<string, string>}',
+        ' */'
+      ].join('\n')
+    )
+    write(
+      '1-a3-to-1-a2',
+      'iso31661Alpha3ToAlpha2',
+      a3ToA2,
+      [
+        '/**',
+        ' * Map of ISO 3166-1 alpha-3 codes to ISO 3166-1 alpha-2 codes',
+        ' *',
+        ' * @type {Record<string, string>}',
+        ' */'
+      ].join('\n')
+    )
+    write(
+      '1-n-to-1-a2',
+      'iso31661NumericToAlpha2',
+      nToA2,
+      [
+        '/**',
+        ' * Map of ISO 3166-1 numeric (UN M49) codes to ISO 3166-1 alpha-2 codes',
+        ' *',
+        ' * @type {Record<string, string>}',
+        ' */'
+      ].join('\n')
+    )
+    write(
+      '2',
+      'iso31662',
+      iso31662,
+      [
+        '/**',
+        ' * @typedef ISO31662Entry',
+        ' *   Object representing a subdivision.',
+        ' * @property {string} code',
+        " *   ISO 3166-2 code (example: `'GB-BFS'`)",
+        ' * @property {string} parent',
+        " *    ISO 3166-1 alpha-2 code or ISO 3166-2 code (example: `'GB'`)",
+        ' * @property {string} name',
+        " *   Name (example: `'Belfast'`)",
+        ' */',
+        '',
+        '/**',
+        ' * List of subdivisions.',
+        ' *',
+        ' * @type {Array<ISO31662Entry>}',
+        ' */'
+      ].join('\n')
+    )
+    write(
+      '3',
+      'iso31663',
+      iso31663,
+      [
+        '/**',
+        " * @typedef {'merge'|'change'|'split'} ISO31663Type",
+        ' *',
+        ' * @typedef ISO31661FromEntry',
+        " * @property {'formerly-assigned'} state",
+        ' * @property {string} alpha2',
+        ' * @property {string} alpha3',
+        ' * @property {string} [numeric]',
+        ' * @property {string} name',
+        ' *',
+        ' * @typedef ISO31661ToEntry',
+        " * @property {'formerly-assigned'|'assigned'} state",
+        ' * @property {string} alpha2',
+        ' * @property {string} alpha3',
+        ' * @property {string} numeric',
+        ' * @property {string} name',
+        ' *',
+        ' * @typedef ISO31663Entry',
+        ' *   Object representing a former country.',
+        ' * @property {string} alpha4',
+        ' *   ISO 3166-3 alpha-4 code (example: `ANHH`)',
+        ' * @property {ISO31663Type} type',
+        " *   Type of revision (example: `'split'`)",
+        ' * @property {ISO31661FromEntry} from',
+        ' *   Country before revision',
+        ' * @property {Array<ISO31661ToEntry>} to',
+        ' *   List of countries after revision',
+        ' */',
+        '',
+        '/**',
+        ' * List of former countries.',
+        ' *',
+        ' * @type {Array<ISO31663Entry>}',
+        ' */'
+      ].join('\n')
+    )
 
     /**
      * @param {string} name
      * @param {string} id
      * @param {unknown} data
+     * @param {string} jsdoc
      * @returns {void}
      */
-    function write(name, id, data) {
+    function write(name, id, data, jsdoc) {
       fs.writeFile(
         name + '.js',
-        'export const ' + id + ' = ' + JSON.stringify(data, null, 2) + '\n',
+        [
+          jsdoc,
+          'export const ' + id + ' = ' + JSON.stringify(data, null, 2),
+          ''
+        ].join('\n'),
         bail
       )
     }
