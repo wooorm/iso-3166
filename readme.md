@@ -1,50 +1,38 @@
-# `iso-3166`
+# iso-3166
 
 [![Build][build-badge]][build]
 [![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-[ISO 3166][i3166] codes in an accessible, machine readable, format.
-
-## Install
-
-This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
-instead of `require`d.
-
-[npm][]:
-
-```sh
-npm install iso-3166
-```
+Info on [ISO 3166][i3166].
 
 ## Contents
 
-*   [Use](#use)
-*   [Overview](#overview)
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
 *   [Matrix](#matrix)
+*   [Install](#install)
+*   [Use](#use)
 *   [API](#api)
     *   [`iso31661`](#iso31661)
     *   [`iso31661Reserved`](#iso31661reserved)
     *   [`iso31662`](#iso31662)
     *   [`iso31663`](#iso31663)
-    *   [`ISO31661Entry`](#iso31661entry)
-    *   [`ISO31662Entry`](#iso31662entry)
-    *   [`ISO31663Entry`](#iso31663entry)
+*   [Types](#types)
+*   [Compatibility](#compatibility)
+*   [Security](#security)
 *   [Related](#related)
+*   [Contribute](#contribute)
 *   [License](#license)
 
-## Use
+## What is this?
 
-This package exports the following identifiers: `iso31661`,
-`iso31661Alpha2ToAlpha3`, `iso31661Alpha2ToNumeric`, `iso31661Alpha3ToAlpha2`,
-`iso31661NumericToAlpha2`, `iso31661Reserved`, `iso31662`, `iso31663`.
-There is no default export.
+This package contains info on ISO 3166.
+The purpose of ISO 3166 is to define internationally recognized codes that we
+can use when we refer to countries and their subdivisions.
 
-## Overview
-
-ISO 3166 is a standard to represent countries and subregions with codes.
-It includes three parts:
+ISO 3166 includes three parts:
 
 *   **ISO 3166-1** defines codes for countries (such as `US` `USA` `United
     States of America`)
@@ -53,9 +41,9 @@ It includes three parts:
 *   **ISO 3166-3** defines codes for former countries (such as `BUMM` to refer
     to when `BU` `BUR` `Burma` revised its name to `MM` `MMR` `Myanmar` in 1989)
 
-While the information in ISO 3166 is well-known and freely available through for
-example WikiPedia, it is not available in a freely available machine readable
-format from ISO.
+While the information in ISO 3166 is well known and freely available through for
+example WikiPedia, it is not freely available in a machine readable format from
+ISO.
 That’s where this project comes in: it scrapes WikiPedia.
 
 ISO 3166 is closely tied to the work of the United Nations: the names for
@@ -67,34 +55,42 @@ countries.
 This project includes all three parts of ISO 3166 as separate exports:
 
 *   [`iso31661`][1]
-    — Countries: list of [assigned][] ISO 3166-1 entries
+    — countries: list of [assigned][] ISO 3166-1 entries
 *   [`iso31662`][2]
-    — Subdivisions: list of ISO 3166-2 entries
+    — subdivisions: list of ISO 3166-2 entries
 *   [`iso31663`][3]
-    — Revisions: list of ISO 3166-3 entries
+    — revisions: list of ISO 3166-3 entries
 
 Additionally, a list of reserved ISO 3166-1 entries is available:
 
 *   [`iso31661Reserved`][1-reserved]
-    — List of [reserved][] ISO 3166-1 entries
+    — list of [reserved][] ISO 3166-1 entries
 
 Finally, indexes are available to map between different codes:
 
 *   [`iso31661Alpha2ToAlpha3`][1-a2-to-1-a3]
-    — Map ISO 3166-1 alpha-2 codes to ISO 3166-1 alpha-3 codes
+    — map ISO 3166-1 alpha-2 codes to ISO 3166-1 alpha-3 codes
 *   [`iso31661Alpha2ToNumeric`][1-a2-to-1-n]
-    — Map ISO 3166-1 alpha-2 codes to ISO 3166-1 numeric (UN M49) codes
+    — map ISO 3166-1 alpha-2 codes to ISO 3166-1 numeric (UN M49) codes
 *   [`iso31661Alpha3ToAlpha2`][1-a3-to-1-a2]
-    — Map ISO 3166-1 alpha-3 codes to ISO 3166-1 alpha-2 codes
+    — map ISO 3166-1 alpha-3 codes to ISO 3166-1 alpha-2 codes
 *   [`iso31661NumericToAlpha2`][1-n-to-1-a2]
-    — Map ISO 3166-1 numeric (UN M49) codes to ISO 3166-1 alpha-2 codes
+    — map ISO 3166-1 numeric (UN M49) codes to ISO 3166-1 alpha-2 codes
+
+## When should I use this?
+
+You can use this package any time you have to deal with countries and
+subdivisions or ISO 3166 in particular.
+The alphabetical codes from ISO 3166 are more useful to humans, but the
+numerical codes from [UN M49][um49] are more resilient to changes.
+UN M49 also encodes regions bigger than countries, such as (sub)contintents.
 
 ## Matrix
 
 <!--lint ignore no-html-->
 
 <details>
-<summary>ISO 3166-1 alpha-2 code matrix</summary>
+<summary>Show ISO 3166-1 alpha-2 code matrix</summary>
 <table>
   <thead>
     <tr>
@@ -886,11 +882,45 @@ Finally, indexes are available to map between different codes:
 </table>
 </details>
 
+## Install
+
+This package is [ESM only][esm].
+In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
+
+```sh
+npm install iso-3166
+```
+
+In Deno with [Skypack][]:
+
+```js
+import * as iso3166 from 'https://cdn.skypack.dev/iso-3166@4?dts'
+```
+
+In browsers with [Skypack][]:
+
+```html
+<script type="module">
+  import * as iso3166 from 'https://cdn.skypack.dev/iso-3166@4?min'
+</script>
+```
+
+## Use
+
+See examples below.
+
 ## API
+
+This package exports the following identifiers: `iso31661`,
+`iso31661Alpha2ToAlpha3`, `iso31661Alpha2ToNumeric`, `iso31661Alpha3ToAlpha2`,
+`iso31661NumericToAlpha2`, `iso31661Reserved`, `iso31662`, `iso31663`.
+There is no default export.
 
 ### `iso31661`
 
-[`ISO31661Entry[]`][1-entry] — Countries: [assigned][] ISO 3166-1 entries.
+List of assigned ISO 3166-1 countries ([`Array<ISO31661Entry>`][1-entry]).
+
+###### Example
 
 ```js
 import {iso31661} from 'iso-3166'
@@ -913,7 +943,9 @@ Yields:
 
 ### `iso31661Reserved`
 
-[`ISO31661Entry[]`][1-entry] — [Reserved][] ISO 3166-1 entries.
+List of reserved ISO 3166-1 countries ([`Array<ISO31661Entry>`][1-entry]).
+
+###### Example
 
 ```js
 import {iso31661Reserved} from 'iso-3166'
@@ -936,7 +968,9 @@ Yields:
 
 ### `iso31662`
 
-[`ISO31662Entry[]`][2-entry] — Subdivisions: ISO 3166-2 entries.
+List of ISO 3166-2 subdivisions ([`Array<ISO31662Entry>`][2-entry]).
+
+###### Example
 
 ```js
 import {iso31662} from 'iso-3166'
@@ -962,7 +996,9 @@ Yields:
 
 ### `iso31663`
 
-[`ISO31663Entry[]`][3-entry] — Changes: ISO 3166-3 entries.
+List of ISO 3166-3 changes ([`Array<ISO31663Entry>`][3-entry]).
+
+###### Example
 
 ```js
 import {iso31663} from 'iso-3166'
@@ -1004,51 +1040,57 @@ Yields:
 ]
 ```
 
-### `ISO31661Entry`
+#### `ISO31661Entry`
 
-Object with the following fields:
+Object representing a country.
 
-*   `state` ([`State`][state]) — State (example: `'assigned'`)
-*   `alpha2` (`string`) — ISO 3166-1 alpha-2 code (example: `'GB'`)
-*   `alpha3` (`string?`) — ISO 3166-1 alpha-3 code (example: `'GBR'`)
-*   `numeric` (`string?`) — ISO 3166-1 numeric (UN M49) code (example: `'826'`)
-*   `name` (`string?`) — Name (example: `'United Kingdom of Great Britain and
-    Northern Ireland'`)
+*   `state` ([`State`][state])
+    — state (example: `'assigned'`)
+*   `alpha2` (`string`)
+    — ISO 3166-1 alpha-2 code (example: `'GB'`)
+*   `alpha3` (`string?`)
+    — ISO 3166-1 alpha-3 code (example: `'GBR'`)
+*   `numeric` (`string?`)
+    — ISO 3166-1 numeric (UN M49) code (example: `'826'`)
+*   `name` (`string?`)
+    — name (example: `'United Kingdom of Great Britain and Northern Ireland'`)
 
 Based on the state of the entry, fields may be available.
 [Assigned][] entries have all fields.
 [Reserved][] entries have `alpha2` and `name` fields.
 
-#### `State`
+##### `State`
 
 `string`, one of the following:
 
-*   `assigned` (example: `VA` `VAT` `Holy See`)
-*   `indeterminately-reserved` (example: `FL` was used on some car vehicle
-    distinguishing signs from `LI` `LIE` `Liechtenstein` before 1949)
-*   `exceptionally-reserved` (example: `UK` is reserved by `United Kingdom`)
-*   `transitionally-reserved` (example: `BU` `Burma` as it changed names to `MM`
+*   `'assigned'`
+    — currently assigned
+    (example: `VA` `VAT` `Holy See`)
+*   `'indeterminately-reserved'`
+    — reserved as other coding systems use them
+    (example: `FL` was used on some car vehicle distinguishing signs from `LI`
+    `LIE` `Liechtenstein` before 1949)
+*   `'exceptionally-reserved'`
+    — reserved by a national ISO member body
+    (example: `UK` is reserved by `United Kingdom`)
+*   `'transitionally-reserved'`
+    — reserved for a while after removing a country
+    (example: `BU` `Burma` as it changed names to `MM`
     `MMR` `Myanmar` in 1989)
-*   `formerly-assigned` (example: `PZ` `Panama Canal Zone`, which was a `US`
+*   `'formerly-assigned'`
+    — codes that were previously in use but are no longer strictly reserved
+    (example: `PZ` `Panama Canal Zone`, which was a `US`
     `USA` `United States of America` controlled area until 1979)
 
 ###### Assigned
 
-Most ISO 3166-1 entries are assigned, and therefore have a `state` of
+Many ISO 3166-1 entries are assigned and therefore have a `state` of
 `'assigned'`.
 
 ###### Reserved
 
-Some ISO 3166-1 entries are explicitly unassigned, but still have some data
-attached to them.
-
-The following states are used for reserved entries:
-
-*   `'indeterminately-reserved'` — Reserved as other coding systems use them
-*   `'exceptionally-reserved'` — Reserved by a national ISO member body
-*   `'transitionally-reserved'` — Reserved for a while after removing a country
-*   `'formerly-assigned'` — Codes that were previously in use (but are no longer
-    strictly reserved)
+Some ISO 3166-1 entries are not assigned but still have some data attached to
+them.
 
 ###### User-assigned
 
@@ -1065,79 +1107,114 @@ The user-assigned codes are:
 *   ISO 3166-1 numeric:
     `900` to `999`
 
-User-assigned codes will not be used by ISO 3166.
+User-assigned codes will not be used by ISO 3166 and are not exposed by this
+package.
 
 ###### Unassigned
 
 All other codes are unassigned and may be used by ISO 3166 in the future.
 
-### `ISO31662Entry`
+Unassigned codes are not exposed by this package.
 
-Object with the following fields:
+#### `ISO31662Entry`
 
-*   `code` (`string`) — ISO 3166-2 code (example: `GB-BFS`)
-*   `name` (`string`) — Name (example: `'Belfast'`)
-*   `parent` (`string`) — ISO 3166-1 alpha-2 code or ISO 3166-2 code
-    (example: `'GB'`)
+Object representing a subdivision of a country.
 
-`code` always has the format of an ISO 3166 alpha-2 code, followed by a hyphen
-minus (`-`), and one, two, or three upper alphabetical or numerical characters.
+*   `code` (`string`)
+    — ISO 3166-2 code (example: `GB-BFS`)
+*   `name` (`string`)
+    — name (example: `'Belfast'`)
+*   `parent` (`string`)
+    — ISO 3166-1 alpha-2 code or ISO 3166-2 code (example: `'GB'`)
+
+The `code` field always has the format of an ISO 3166 alpha-2 code, followed by
+a hyphen minus (`-`), and one, two, or three upper alphabetical or numerical
+characters.
 The latter part of the code is not unique: `ID-RI` is the Riau province of
 Indonesia and `NG-RI` is the Rivers province in Nigeria.
 
-`parent` can be either the ISO 3166-1 alpha-2 of a country, or another ISO
-3166-2 code of a subdivision.
+The `parent` field can be either the ISO 3166-1 alpha-2 of a country, or another
+ISO 3166-2 code of a subdivision.
 The latter is true for `BE-WNA` `Namur`, whose parent is `BE-WAL`
 `Waals Gewest`, whose parent in turn is `BE` `BEL` `Belgium`.
 To get the country a subdivision is a part of, do something like
 `code.slice(0, 2)` to get the ISO 3166-1 alpha-2 code from an ISO 3166-2 code.
 
-### `ISO31663Entry`
+#### `ISO31663Entry`
 
-Object with the following fields:
+Object representing a change to a country.
 
-*   `alpha4` (`string`) — ISO 3166-3 alpha-4 code (example: `ANHH`)
-*   `type` ([`Type`][type]) — Type of revision (example: `'split'`)
-*   `from` ([`ISO31661Entry`][1-entry]) — Country before revision
-*   `to` ([`ISO31661Entry[]`][1-entry]) — List of countries after revision
+*   `alpha4` (`string`)
+    — ISO 3166-3 alpha-4 code (example: `ANHH`)
+*   `type` ([`Type`][type])
+    — type of revision (example: `'split'`)
+*   `from` ([`ISO31661Entry`][1-entry])
+    — country before revision
+*   `to` ([`ISO31661Entry[]`][1-entry])
+    — list of countries after revision
 
-The `from` and `to` entries may not match current ISO 3166-1 entries.
+The entries in `from` and `to` may not match current ISO 3166-1 entries.
 For example, `CSHH` represents the split of `CS` `CSK` `Czechoslovakia` to
 `CZ` `CZE` `Czech Republic` and `SK` `SVK` `Slovakia`, but the former now uses
 `CZ` `CZE` `Czechia`.
 Another example, `YUCS` represents the change of `YU` `YUG` `Yugoslavia` to
 `CS` `SCG` `Serbia and Montenegro`, but the latter later split with `CSXX` to `ME` `MNE` `Montenegro` and `RS` `SRB` `Serbia`.
 
-#### `Type`
+##### `Type`
 
 `string`, one of the following:
 
-*   `merge` — Revision where one country merged with others
+*   `'merge'`
+    — revision where one country merged with others
     (example: `DDDE` represents the merger from `DD` `DDR` `German Democratic
     Republic` to form `DE` `DEU` `Germany` in 1990)
-*   `change` — Significant name revision
+*   `'change'`
+    — significant name revision
     (example: `BYAA` represents the name change from `BY` `BYS` `Byelorussian
     SSR` to `BY` `BLR` `Belarus` in 1992)
-*   `split` — Revision where one country split into others
+*   `'split'`
+    — revision where one country split into others
     (example: `NTHH` represents the division of `NT` `NTZ` `Neutral Zone` to
     `IQ` `IRQ` `Iraq` and `SA` `SAU` `Saudi Arabia` in 1993)
 
+## Types
+
+This package is fully typed with [TypeScript][].
+It exports additional `ISO31661Entry`, `ISO31661AssignedEntry`,
+`ISO31661ReservedEntry`, `ISO31662Entry`, `ISO31663Entry`, `State`, and `Type`
+types that model their respective interfaces.
+
+## Compatibility
+
+This package is at least compatible with all maintained versions of Node.js.
+As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+It also works in Deno and modern browsers.
+
+## Security
+
+This package is safe.
+
 ## Related
 
-*   [`bcp-47`](https://github.com/wooorm/bcp-47)
-    — Parse and stringify BCP 47 language tags
-*   [`bcp-47-normalize`](https://github.com/wooorm/bcp-47-normalize)
-    — Normalize, canonicalize, and format BCP 47 tags
-*   [`bcp-47-match`](https://github.com/wooorm/bcp-47-match)
-    — Match BCP 47 language tags with language ranges per RFC 4647
-*   [`iso-639-2`](https://github.com/wooorm/iso-639-2)
+*   [`wooorm/bcp-47`](https://github.com/wooorm/bcp-47)
+    — parse and stringify BCP 47 language tags
+*   [`wooorm/bcp-47-normalize`](https://github.com/wooorm/bcp-47-normalize)
+    — normalize, canonicalize, and format BCP 47 tags
+*   [`wooorm/bcp-47-match`](https://github.com/wooorm/bcp-47-match)
+    — match BCP 47 language tags with language ranges per RFC 4647
+*   [`wooorm/iso-639-2`](https://github.com/wooorm/iso-639-2)
     — ISO 639-2 codes
-*   [`iso-639-3`](https://github.com/wooorm/iso-639-3)
+*   [`wooorm/iso-639-3`](https://github.com/wooorm/iso-639-3)
     — ISO 639-3 codes
-*   [`iso-15924`](https://github.com/wooorm/iso-15924)
+*   [`wooorm/iso-15924`](https://github.com/wooorm/iso-15924)
     — ISO 15924 codes
-*   [`un-m49`](https://github.com/wooorm/un-m49)
+*   [`wooorm/un-m49`](https://github.com/wooorm/un-m49)
     — UN M49 codes
+
+## Contribute
+
+Yes please!
+See [How to Contribute to Open Source][contribute].
 
 ## License
 
@@ -1163,9 +1240,17 @@ Another example, `YUCS` represents the change of `YU` `YUG` `Yugoslavia` to
 
 [npm]: https://docs.npmjs.com/cli/install
 
+[skypack]: https://www.skypack.dev
+
 [license]: license
 
 [author]: https://wooorm.com
+
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
+[typescript]: https://www.typescriptlang.org
+
+[contribute]: https://opensource.guide/how-to-contribute/
 
 [i3166]: https://www.iso.org/iso-3166-country-codes.html
 

@@ -1,5 +1,5 @@
 /**
- * @typedef {'merge'|'change'|'split'} ISO31663Type
+ * @typedef {'merge'|'change'|'split'} Type
  *
  * @typedef ISO31661FromEntry
  * @property {'formerly-assigned'} state
@@ -19,7 +19,7 @@
  *   Object representing a former country.
  * @property {string} alpha4
  *   ISO 3166-3 alpha-4 code (example: `ANHH`)
- * @property {ISO31663Type} type
+ * @property {Type} type
  *   Type of revision (example: `'split'`)
  * @property {ISO31661FromEntry} from
  *   Country before revision

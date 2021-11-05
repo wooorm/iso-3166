@@ -92,7 +92,7 @@ export default function table() {
       const node = processor.runSync(
         // @ts-expect-error: fine to pass an element.
         h('details', [
-          h('summary', 'ISO 3166-1 alpha-2 code matrix'),
+          h('summary', 'Show ISO 3166-1 alpha-2 code matrix'),
           h('table', [h('thead', h('tr', head)), h('tbody', rows)])
         ])
       )
