@@ -5166,6 +5166,56 @@ export const iso31662 = [
     parent: 'DZ'
   },
   {
+    code: 'DZ-49',
+    name: 'El M\'Ghair',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-50',
+    name: 'El Menia',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-51',
+    name: 'Ouled Djellal',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-52',
+    name: 'Bordj Baji Mokhtar',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-53',
+    name: 'Béni Abbès',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-54',
+    name: 'Timimoun',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-55',
+    name: 'Touggourt',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-56',
+    name: 'Djanet',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-57',
+    name: 'In Salah',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-58',
+    name: 'In Guezzam',
+    parent: 'DZ'
+  },
+  {
     code: 'EC-A',
     name: 'Azuay',
     parent: 'EC'
