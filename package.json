@@ -32,9 +32,8 @@
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
   "sideEffects": false,
-  "type": "module",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "1-a2-to-1-a3.d.ts",
     "1-a2-to-1-a3.js",
@@ -88,7 +87,7 @@
   "scripts": {
     "generate": "node build",
     "prepublishOnly": "npm run build && npm run format",
-    "build": "rimraf \"*.d.ts\" && tsc && type-coverage",
+    "build": "rimraf \"./*.d.ts\" && tsc && type-coverage",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test-api": "node --conditions development test.js",
     "test-coverage": "c8 --check-coverage --branches 100 --functions 100 --lines 100 --statements 100 --reporter lcov npm run test-api",
@@ -120,5 +119,8 @@
     "detail": true,
     "strict": true,
     "ignoreCatch": true
+  },
+  "dependencies": {
+    "my-awesome-greeter": "^1.0.2"
   }
 }

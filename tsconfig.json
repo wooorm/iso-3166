@@ -1,14 +1,14 @@
 {
-  "include": ["*.js"],
+  // k/ "include": ["*.js"],
   "compilerOptions": {
-    "target": "ES2020",
-    "lib": ["ES2020"],
-    "module": "ES2020",
+    "outDir": "dist/",
+    "target": "ES5",
+    "lib": ["ES5"],
+    "module": "CommonJS",
     "moduleResolution": "node",
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "strict": true
