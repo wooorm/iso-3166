@@ -1,6 +1,5 @@
 coverage/
 node_modules/
-*.d.ts
 *.log
 .DS_Store
 yarn.lock
