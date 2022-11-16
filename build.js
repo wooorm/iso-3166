@@ -95,9 +95,9 @@ Promise.resolve()
 
     /** @type {Element} */
     const table = selectAll('table.wikitable', tree)[1]
-    /** @type {Element[]} */
+    /** @type {Array<Element>} */
     const cells = selectAll('td', table)
-    /** @type {Entry[]} */
+    /** @type {Array<Entry>} */
     const entries = []
 
     let index = -1
@@ -191,70 +191,36 @@ Promise.resolve()
         .then((doc) => {
           const tree = html.parse(doc)
           const prefix = d.alpha2 + '-'
-          /** @type {Element[]} */
+          /** @type {Array<Element>} */
           const tables = selectAll('table.wikitable', tree)
           const tableLength = tables.length
           let tableIndex = -1
           let found = false
           /** @type {Record<string, Iso31662>} */
           const byCode = {}
-          /** @type {number} */
-          let columnIndex
-          /** @type {Element} */
-          let table
-          /** @type {Element[]} */
-          let rows
-          /** @type {number} */
-          let rowIndex
-          /** @type {number} */
-          let rowLength
-          /** @type {number} */
-          let cellIndex
-          /** @type {number} */
-          let cellLength
-          /** @type {Element[]} */
-          let cellNodes
-          /** @type {string[]} */
-          let cells
-          /** @type {Element} */
-          let row
-          /** @type {Element} */
-          let cellNode
-          /** @type {string|undefined} */
-          let cell
-          /** @type {keyof Iso31662|null} */
-          let field
-          /** @type {string} */
-          let column
-          /** @type {Iso31662} */
-          let result
-          /** @type {RegExpMatchArray|null} */
-          let match
-          /** @type {string} */
-          let key
 
           while (++tableIndex < tableLength) {
-            table = tables[tableIndex]
-            /** @type {string[]} */
+            const table = tables[tableIndex]
+            /** @type {Array<string>} */
             const headers = []
-            /** @type {number[]} */
+            /** @type {Array<number>} */
             const headerSpans = []
-            rows = selectAll('tr', table)
-            rowIndex = 0
-            rowLength = rows.length
+            const rows = selectAll('tr', table)
+            let rowIndex = 0
+            const rowLength = rows.length
 
             while (rowIndex < rowLength) {
-              row = rows[rowIndex]
-              cellNodes = selectAll('th', row)
-              cellLength = cellNodes.length
+              const row = rows[rowIndex]
+              const cellNodes = selectAll('th', row)
+              const cellLength = cellNodes.length
 
               // Not a header row.
               if (cellLength === 0) {
                 break
               }
 
-              cellIndex = 0
-              columnIndex = 0
+              let cellIndex = 0
+              let columnIndex = 0
 
               while (cellIndex < cellLength) {
                 if (headerSpans[columnIndex]) {
@@ -263,7 +229,7 @@ Promise.resolve()
                   continue
                 }
 
-                cellNode = cellNodes[cellIndex]
+                const cellNode = cellNodes[cellIndex]
 
                 if (cellNode.properties && cellNode.properties.rowSpan) {
                   headerSpans[columnIndex] =
@@ -299,22 +265,25 @@ Promise.resolve()
             rowIndex--
 
             while (++rowIndex < rowLength) {
-              row = rows[rowIndex]
-              cells = selectAll('td', row).map((d) => cleanNode(d))
-              cellLength = cells.length
+              const row = rows[rowIndex]
+              const cells = selectAll('td', row).map((d) => cleanNode(d))
+              const cellLength = cells.length
 
               if (cellLength === 0) {
                 console.warn('Empty row', d.alpha2)
                 continue
               }
 
-              result = {code: '', name: ''}
-              cellIndex = -1
+              /** @type {Iso31662} */
+              const result = {code: '', name: ''}
+              let cellIndex = -1
 
               while (++cellIndex < cellLength) {
-                cell = cells[cellIndex]
-                column = headers[cellIndex]
-                field = null
+                /** @type {string|undefined} */
+                let cell = cells[cellIndex]
+                const column = headers[cellIndex]
+                /** @type {keyof Iso31662|null} */
+                let field = null
 
                 if (!result.code && /code/.test(column)) {
                   field = 'code'
@@ -325,11 +294,14 @@ Promise.resolve()
                   // For Switzerland, it gets more confusing, because the
                   // column contains multiple translations.
                   // E.g., `Fribourg (fr), Freiburg (de)`
-                  match = cell.match(/\([a-z]{2}\)/)
+                  const match = cell.match(/\([a-z]{2}\)/)
 
                   // Pick the first translation:
                   if (match) {
-                    cell = clean(cell.slice(0, match.index))
+                    cell = clean(cell.slice(0, match.index)).replace(
+                      /^region /i,
+                      ''
+                    )
                   }
 
                   field = 'name'
@@ -380,6 +352,9 @@ Promise.resolve()
             }
           }
 
+          /** @type {string} */
+          let key
+
           for (key in byCode) {
             if (own.call(byCode, key)) {
               iso31662.push(byCode[key])
@@ -404,7 +379,7 @@ Promise.resolve()
     const tree = html.parse(doc)
     /** @type {Element} */
     const table = selectAll('table.wikitable', tree)[0]
-    /** @type {Element[]} */
+    /** @type {Array<Element>} */
     const rows = selectAll('tr', table)
 
     /** @type {Record<string, RegExp>} */
@@ -430,16 +405,10 @@ Promise.resolve()
       let kind = null
       let lastIndex = 0
       const re = /\([A-Z]{2}, [A-Z]{3}, (\d{3}|-)\)/g
+      /** @type {Array<Iso31663To>} */
+      const changeTo = []
       /** @type {string} */
       let key
-      /** @type {string} */
-      let alpha2
-      /** @type {string} */
-      let alpha3
-      /** @type {string} */
-      let numeric
-      /** @type {Iso31663To[]} */
-      const changeTo = []
 
       for (key in types) {
         if (own.call(types, key)) {
@@ -456,7 +425,7 @@ Promise.resolve()
         }
       }
 
-      ;[alpha2, alpha3, numeric] = before.split(/,\s+/g)
+      const [alpha2, alpha3, numeric] = before.split(/,\s+/g)
 
       assert(kind, 'expected `kind`')
 
@@ -477,7 +446,7 @@ Promise.resolve()
       let match
 
       while ((match = re.exec(after)) && match.index !== undefined) {
-        ;[alpha2, alpha3, numeric] = match[0].slice(1, -1).split(/,\s+/g)
+        const [alpha2, alpha3, numeric] = match[0].slice(1, -1).split(/,\s+/g)
 
         name = clean(
           after.slice(lastIndex, match.index).replace(/part of/i, '')
@@ -527,7 +496,7 @@ Promise.resolve()
     const a2ToA3 = {}
     /** @type {Record<string, string>} */
     const a2ToN = {}
-    /** @type {Record<string, string[]>} */
+    /** @type {Record<string, Array<string>>} */
     const a2To2 = {}
     /** @type {Record<string, string>} */
     const a3ToA2 = {}
@@ -790,7 +759,7 @@ function textIfSuccessful(response) {
  * @returns {string}
  */
 function pick(d) {
-  // @ts-ignore TS making life difficult.
+  // @ts-expect-error TS making life difficult.
   return d.alpha2 || d.code || d.alpha4
 }
 

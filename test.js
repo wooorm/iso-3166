@@ -10,11 +10,11 @@ import {iso31661Alpha3ToAlpha2} from './1-a3-to-1-a2.js'
 import {iso31661NumericToAlpha2} from './1-n-to-1-a2.js'
 
 test('iso-3166/1', function () {
-  /** @type {string[]} */
+  /** @type {Array<string>} */
   const iA2s = []
-  /** @type {string[]} */
+  /** @type {Array<string>} */
   const iA3s = []
-  /** @type {string[]} */
+  /** @type {Array<string>} */
   const iNs = []
 
   let index = -1
@@ -37,7 +37,7 @@ test('iso-3166/1', function () {
 })
 
 test('iso-3166/1-reserved', function () {
-  /** @type {string[]} */
+  /** @type {Array<string>} */
   const iA2s = []
 
   let index = -1
@@ -60,11 +60,11 @@ test('iso-3166/1-reserved', function () {
 })
 
 test('iso-3166/2', function () {
-  /** @type {string[]} */
+  /** @type {Array<string>} */
   const i1s = []
-  /** @type {string[]} */
+  /** @type {Array<string>} */
   const i2sInitial = []
-  /** @type {string[]} */
+  /** @type {Array<string>} */
   const i2s = []
 
   let index = -1
@@ -99,7 +99,7 @@ test('iso-3166/2', function () {
 })
 
 test('iso-3166/3', function () {
-  /** @type {string[]} */
+  /** @type {Array<string>} */
   const a4s = []
 
   let index = -1

@@ -38,9 +38,9 @@ export default function table() {
 
     headingRange(tree, 'matrix', (start, _, end) => {
       const head = [h('th')]
-      /** @type {import('hast').Element[]} */
+      /** @type {Array<import('hast').Element>} */
       const rows = []
-      /** @type {import('hast').Element[]} */
+      /** @type {Array<import('hast').Element>} */
       let cells
       /** @type {number} */
       let x = a
