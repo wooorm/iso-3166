@@ -11,9 +11,9 @@
  *
  * @typedef {{alpha4: string, type: string, from: Iso31663From, to: Array<Iso31663To>}} Iso31663
  *
- * @typedef {{state: string|undefined, alpha2: string, alpha3: string, numeric?: string, name: string}} Iso31663From
+ * @typedef {{state: string|undefined, alpha2: string, alpha3: string, numeric?: string|undefined, name: string}} Iso31663From
  *
- * @typedef {{state: string|undefined, alpha2: string, alpha3: string, numeric?: string, name: string}} Iso31663To
+ * @typedef {{state: string|undefined, alpha2: string, alpha3: string, numeric?: string|undefined, name: string}} Iso31663To
  */
 
 import assert from 'node:assert'
