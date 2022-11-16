@@ -55,11 +55,11 @@ export default function table() {
 
       while (x <= z) {
         y = a
-        head.push(h('th', String.fromCharCode(x)))
-        cells = [h('th', {scope: 'row'}, String.fromCharCode(x))]
+        head.push(h('th', String.fromCodePoint(x)))
+        cells = [h('th', {scope: 'row'}, String.fromCodePoint(x))]
 
         while (y <= z) {
-          code = String.fromCharCode(x) + String.fromCharCode(y)
+          code = String.fromCodePoint(x) + String.fromCodePoint(y)
           state = a2ToState[code]
           title = a2ToName[code]
 
