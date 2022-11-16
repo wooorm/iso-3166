@@ -1,5 +1,5 @@
-import assert from 'node:assert'
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {iso31661} from './1.js'
 import {iso31661Reserved} from './1-reserved.js'
 import {iso31662} from './2.js'
@@ -9,7 +9,7 @@ import {iso31661Alpha2ToNumeric} from './1-a2-to-1-n.js'
 import {iso31661Alpha3ToAlpha2} from './1-a3-to-1-a2.js'
 import {iso31661NumericToAlpha2} from './1-n-to-1-a2.js'
 
-test('iso-3166/1', function (t) {
+test('iso-3166/1', function () {
   /** @type {string[]} */
   const iA2s = []
   /** @type {string[]} */
@@ -17,65 +17,55 @@ test('iso-3166/1', function (t) {
   /** @type {string[]} */
   const iNs = []
 
-  t.plan(iso31661.length)
-
   let index = -1
 
   while (++index < iso31661.length) {
     const d = iso31661[index]
-    t.doesNotThrow(function () {
-      assert.ok(d.state === 'assigned', 'should be assigned')
-      assert.ok(a2(d.alpha2), 'should have an alpha-2')
-      assert.ok(!iA2s.includes(d.alpha2), 'should have a unique alpha-2')
-      assert.ok(a3(d.alpha3), 'should have an alpha-3')
-      assert.ok(!iA3s.includes(d.alpha3), 'should have a unique alpha-3')
-      assert.ok(numeric(d.numeric), 'should have a numeric')
-      assert.ok(!iNs.includes(d.numeric), 'should have a unique numeric')
-      assert.ok(name(d.name), 'should have a name')
+    assert.ok(d.state === 'assigned', 'should be assigned')
+    assert.ok(a2(d.alpha2), 'should have an alpha-2')
+    assert.ok(!iA2s.includes(d.alpha2), 'should have a unique alpha-2')
+    assert.ok(a3(d.alpha3), 'should have an alpha-3')
+    assert.ok(!iA3s.includes(d.alpha3), 'should have a unique alpha-3')
+    assert.ok(numeric(d.numeric), 'should have a numeric')
+    assert.ok(!iNs.includes(d.numeric), 'should have a unique numeric')
+    assert.ok(name(d.name), 'should have a name')
 
-      iA2s.push(d.alpha2)
-      iA3s.push(d.alpha3)
-      iNs.push(d.numeric)
-    }, d.alpha2)
+    iA2s.push(d.alpha2)
+    iA3s.push(d.alpha3)
+    iNs.push(d.numeric)
   }
 })
 
-test('iso-3166/1-reserved', function (t) {
+test('iso-3166/1-reserved', function () {
   /** @type {string[]} */
   const iA2s = []
-
-  t.plan(iso31661Reserved.length)
 
   let index = -1
 
   while (++index < iso31661Reserved.length) {
     const d = iso31661Reserved[index]
-    t.doesNotThrow(function () {
-      assert.ok(
-        d.state === 'indeterminately-reserved' ||
-          d.state === 'exceptionally-reserved' ||
-          d.state === 'transitionally-reserved' ||
-          d.state === 'formerly-assigned',
-        'should be reserved'
-      )
-      assert.ok(a2(d.alpha2), 'should have an alpha-2')
-      assert.ok(!iA2s.includes(d.alpha2), 'should have a unique code')
-      assert.ok(name(d.name), 'should have a name')
+    assert.ok(
+      d.state === 'indeterminately-reserved' ||
+        d.state === 'exceptionally-reserved' ||
+        d.state === 'transitionally-reserved' ||
+        d.state === 'formerly-assigned',
+      'should be reserved'
+    )
+    assert.ok(a2(d.alpha2), 'should have an alpha-2')
+    assert.ok(!iA2s.includes(d.alpha2), 'should have a unique code')
+    assert.ok(name(d.name), 'should have a name')
 
-      iA2s.push(d.alpha2)
-    }, d.alpha2)
+    iA2s.push(d.alpha2)
   }
 })
 
-test('iso-3166/2', function (t) {
+test('iso-3166/2', function () {
   /** @type {string[]} */
   const i1s = []
   /** @type {string[]} */
   const i2sInitial = []
   /** @type {string[]} */
   const i2s = []
-
-  t.plan(iso31662.length)
 
   let index = -1
 
@@ -95,137 +85,112 @@ test('iso-3166/2', function (t) {
 
   while (++index < iso31662.length) {
     const d = iso31662[index]
-    t.doesNotThrow(function () {
-      assert.ok(i2(d.code), 'should have a code')
-      assert.ok(!i2s.includes(d.code), 'should have a unique code')
-      assert.ok(name(d.name), 'should have a name')
-      assert.ok(i2(d.parent) || a2(d.parent), 'should have a parent')
-      assert.ok(
-        i2sInitial.includes(d.parent) || i1s.includes(d.parent),
-        'should have a known, assigned, parent'
-      )
+    assert.ok(i2(d.code), 'should have a code')
+    assert.ok(!i2s.includes(d.code), 'should have a unique code')
+    assert.ok(name(d.name), 'should have a name')
+    assert.ok(i2(d.parent) || a2(d.parent), 'should have a parent')
+    assert.ok(
+      i2sInitial.includes(d.parent) || i1s.includes(d.parent),
+      'should have a known, assigned, parent'
+    )
 
-      i2s.push(d.code)
-    }, d.code)
+    i2s.push(d.code)
   }
 })
 
-test('iso-3166/3', function (t) {
+test('iso-3166/3', function () {
   /** @type {string[]} */
   const a4s = []
-
-  t.plan(iso31663.length)
 
   let index = -1
 
   while (++index < iso31663.length) {
     const d = iso31663[index]
-    t.doesNotThrow(function () {
+    assert.ok(
+      d.type === 'merge' || d.type === 'change' || d.type === 'split',
+      'should have a type'
+    )
+    assert.ok(a4(d.alpha4), 'should have an alpha-4')
+    assert.ok(!a4s.includes(d.alpha4), 'should have a unique alpha-4')
+
+    assert.ok(d.from.state === 'formerly-assigned', 'from should be removed')
+    assert.ok(a2(d.from.alpha2), 'from should have an alpha-2')
+    assert.ok(a3(d.from.alpha3), 'from should have an alpha-2')
+    assert.ok(name(d.from.name), 'from should have a name')
+
+    if (d.from.numeric) {
       assert.ok(
-        d.type === 'merge' || d.type === 'change' || d.type === 'split',
-        'should have a type'
+        numeric(d.from.numeric),
+        'if there is a numeric, from should have a valid numeric'
       )
-      assert.ok(a4(d.alpha4), 'should have an alpha-4')
-      assert.ok(!a4s.includes(d.alpha4), 'should have a unique alpha-4')
+    }
 
-      assert.ok(d.from.state === 'formerly-assigned', 'from should be removed')
-      assert.ok(a2(d.from.alpha2), 'from should have an alpha-2')
-      assert.ok(a3(d.from.alpha3), 'from should have an alpha-2')
-      assert.ok(name(d.from.name), 'from should have a name')
+    let offset = -1
 
-      if (d.from.numeric) {
-        assert.ok(
-          numeric(d.from.numeric),
-          'if there is a numeric, from should have a valid numeric'
-        )
-      }
+    while (++offset < d.to.length) {
+      const to = d.to[offset]
+      const label = 'to `' + to.alpha2 + '`'
 
-      let index = -1
+      assert.ok(
+        to.state === 'assigned' || to.state === 'formerly-assigned',
+        label + ' should be removed or assigned'
+      )
+      assert.ok(a2(to.alpha2), label + ' should have an alpha-2')
+      assert.ok(a3(to.alpha3), label + ' should have an alpha-2')
+      assert.ok(name(to.name), label + ' should have a name')
 
-      while (++index < d.to.length) {
-        const to = d.to[index]
-        const label = 'to `' + to.alpha2 + '`'
+      assert.ok(numeric(to.numeric), label + ' should have a valid numeric')
+    }
 
-        assert.ok(
-          to.state === 'assigned' || to.state === 'formerly-assigned',
-          label + ' should be removed or assigned'
-        )
-        assert.ok(a2(to.alpha2), label + ' should have an alpha-2')
-        assert.ok(a3(to.alpha3), label + ' should have an alpha-2')
-        assert.ok(name(to.name), label + ' should have a name')
-
-        assert.ok(numeric(to.numeric), label + ' should have a valid numeric')
-      }
-
-      a4s.push(d.alpha4)
-    }, d.alpha4)
+    a4s.push(d.alpha4)
   }
 })
 
-test('iso-3166/1-a2-to-1-a3', function (t) {
+test('iso-3166/1-a2-to-1-a3', function () {
   const keys = Object.keys(iso31661Alpha2ToAlpha3)
 
-  t.plan(keys.length)
-
   let index = -1
 
   while (++index < keys.length) {
     const d = keys[index]
-    t.doesNotThrow(function () {
-      assert.ok(a2(d), 'key should be an alpha-2')
-      assert.ok(a3(iso31661Alpha2ToAlpha3[d]), 'value should be an alpha-3')
-    }, d)
+    assert.ok(a2(d), 'key should be an alpha-2')
+    assert.ok(a3(iso31661Alpha2ToAlpha3[d]), 'value should be an alpha-3')
   }
 })
 
-test('iso-3166/1-a3-to-1-a2', function (t) {
+test('iso-3166/1-a3-to-1-a2', function () {
   const keys = Object.keys(iso31661Alpha3ToAlpha2)
 
-  t.plan(keys.length)
-
   let index = -1
 
   while (++index < keys.length) {
     const d = keys[index]
-    t.doesNotThrow(function () {
-      assert.ok(a3(d), 'key should be an alpha-3')
-      assert.ok(a2(iso31661Alpha3ToAlpha2[d]), 'value should be an alpha-2')
-    }, d)
+    assert.ok(a3(d), 'key should be an alpha-3')
+    assert.ok(a2(iso31661Alpha3ToAlpha2[d]), 'value should be an alpha-2')
   }
 })
 
-test('iso-3166/1-a2-to-1-n', function (t) {
+test('iso-3166/1-a2-to-1-n', function () {
   const keys = Object.keys(iso31661Alpha2ToNumeric)
 
-  t.plan(keys.length)
-
   let index = -1
 
   while (++index < keys.length) {
     const d = keys[index]
-    t.doesNotThrow(function () {
-      assert.ok(a2(d), 'key should be an alpha-2')
-      assert.ok(
-        numeric(iso31661Alpha2ToNumeric[d]),
-        'value should be a numeric'
-      )
-    }, d)
+    assert.ok(a2(d), 'key should be an alpha-2')
+    assert.ok(numeric(iso31661Alpha2ToNumeric[d]), 'value should be a numeric')
   }
 })
 
-test('iso-3166/1-n-to-1-a2', function (t) {
+test('iso-3166/1-n-to-1-a2', function () {
   const keys = Object.keys(iso31661NumericToAlpha2)
-
-  t.plan(keys.length)
 
   let index = -1
 
   while (++index < keys.length) {
     const d = keys[index]
-    t.doesNotThrow(function () {
-      assert.ok(numeric(d), 'key should be a numeric')
-      assert.ok(a2(iso31661NumericToAlpha2[d]), 'value should be an alpha-2')
-    }, d)
+    assert.ok(numeric(d), 'key should be a numeric')
+    assert.ok(a2(iso31661NumericToAlpha2[d]), 'value should be an alpha-2')
   }
 })
 
