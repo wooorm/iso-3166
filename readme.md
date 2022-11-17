@@ -694,7 +694,7 @@ UN M49 also encodes regions bigger than countries, such as (sub)contintents.
       <td title="Tonga"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:TO">TO</a></td>
       <td title="East Timor"><s>TP</s></td>
       <td>TQ</td>
-      <td title="Turkey"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:TR">TR</a></td>
+      <td title="Türkiye"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:TR">TR</a></td>
       <td>TS</td>
       <td title="Trinidad and Tobago"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:TT">TT</a></td>
       <td>TU</td>

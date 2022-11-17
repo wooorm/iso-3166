@@ -3037,7 +3037,7 @@ export const iso31662 = [
   },
   {
     code: 'CF-HS',
-    name: 'Haute-Sangha/Mambéré-Kadéï',
+    name: 'Haute-Sangha / Mambéré-Kadéï',
     parent: 'CF'
   },
   {
@@ -3587,7 +3587,7 @@ export const iso31662 = [
   },
   {
     code: 'CN-NX',
-    name: 'Ningxia Huizi Zizhiqu',
+    name: 'Ningxia Huizu Zizhiqu',
     parent: 'CN'
   },
   {
@@ -4642,27 +4642,27 @@ export const iso31662 = [
   },
   {
     code: 'DK-81',
-    name: 'Nordjylland',
+    name: 'Region Nordjylland',
     parent: 'DK'
   },
   {
     code: 'DK-82',
-    name: 'Midtjylland',
+    name: 'Region Midjylland',
     parent: 'DK'
   },
   {
     code: 'DK-83',
-    name: 'Syddanmark',
+    name: 'Region Syddanmark',
     parent: 'DK'
   },
   {
     code: 'DK-84',
-    name: 'Hovedstaden',
+    name: 'Region Hovedstaden',
     parent: 'DK'
   },
   {
     code: 'DK-85',
-    name: 'Sjælland',
+    name: 'Region Sjælland',
     parent: 'DK'
   },
   {
@@ -6306,6 +6306,11 @@ export const iso31662 = [
     parent: 'ET'
   },
   {
+    code: 'ET-SI',
+    name: 'Sīdama',
+    parent: 'ET'
+  },
+  {
     code: 'ET-SN',
     name: 'YeDebub Bihēroch Bihēreseboch na Hizboch',
     parent: 'ET'
@@ -6873,17 +6878,27 @@ export const iso31662 = [
   {
     code: 'FR-67',
     name: 'Bas-Rhin',
-    parent: 'FR-GES'
+    parent: 'FR-6AE'
   },
   {
     code: 'FR-68',
     name: 'Haut-Rhin',
-    parent: 'FR-GES'
+    parent: 'FR-6AE'
   },
   {
     code: 'FR-69',
     name: 'Rhône',
     parent: 'FR-ARA'
+  },
+  {
+    code: 'FR-69M',
+    name: 'Métropole de Lyon',
+    parent: 'FR-ARA'
+  },
+  {
+    code: 'FR-6AE',
+    name: 'Alsace',
+    parent: 'FR-GES'
   },
   {
     code: 'FR-70',
@@ -6911,7 +6926,7 @@ export const iso31662 = [
     parent: 'FR-ARA'
   },
   {
-    code: 'FR-75',
+    code: 'FR-75C',
     name: 'Paris',
     parent: 'FR-IDF'
   },
@@ -7018,27 +7033,27 @@ export const iso31662 = [
   {
     code: 'FR-971',
     name: 'Guadeloupe',
-    parent: 'FR-GP'
+    parent: 'FR'
   },
   {
     code: 'FR-972',
     name: 'Martinique',
-    parent: 'FR-MQ'
+    parent: 'FR'
   },
   {
     code: 'FR-973',
     name: 'Guyane (française)',
-    parent: 'FR-GF'
+    parent: 'FR'
   },
   {
     code: 'FR-974',
     name: 'La Réunion',
-    parent: 'FR-RE'
+    parent: 'FR'
   },
   {
     code: 'FR-976',
     name: 'Mayotte',
-    parent: 'FR-YT'
+    parent: 'FR'
   },
   {
     code: 'FR-ARA',
@@ -7076,16 +7091,6 @@ export const iso31662 = [
     parent: 'FR'
   },
   {
-    code: 'FR-GF',
-    name: 'Guyane (française)',
-    parent: 'FR'
-  },
-  {
-    code: 'FR-GP',
-    name: 'Guadeloupe',
-    parent: 'FR'
-  },
-  {
     code: 'FR-HDF',
     name: 'Hauts-de-France',
     parent: 'FR'
@@ -7098,11 +7103,6 @@ export const iso31662 = [
   {
     code: 'FR-MF',
     name: 'Saint-Martin',
-    parent: 'FR'
-  },
-  {
-    code: 'FR-MQ',
-    name: 'Martinique',
     parent: 'FR'
   },
   {
@@ -7146,11 +7146,6 @@ export const iso31662 = [
     parent: 'FR'
   },
   {
-    code: 'FR-RE',
-    name: 'La Réunion',
-    parent: 'FR'
-  },
-  {
     code: 'FR-TF',
     name: 'Terres australes françaises',
     parent: 'FR'
@@ -7158,11 +7153,6 @@ export const iso31662 = [
   {
     code: 'FR-WF',
     name: 'Wallis-et-Futuna',
-    parent: 'FR'
-  },
-  {
-    code: 'FR-YT',
-    name: 'Mayotte',
     parent: 'FR'
   },
   {
@@ -8886,113 +8876,113 @@ export const iso31662 = [
     parent: 'GR'
   },
   {
-    code: 'GT-AV',
-    name: 'Alta Verapaz',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-BV',
-    name: 'Baja Verapaz',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-CM',
-    name: 'Chimaltenango',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-CQ',
-    name: 'Chiquimula',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-ES',
-    name: 'Escuintla',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-GU',
+    code: 'GT-01',
     name: 'Guatemala',
     parent: 'GT'
   },
   {
-    code: 'GT-HU',
-    name: 'Huehuetenango',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-IZ',
-    name: 'Izabal',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-JA',
-    name: 'Jalapa',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-JU',
-    name: 'Jutiapa',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-PE',
-    name: 'Petén',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-PR',
+    code: 'GT-02',
     name: 'El Progreso',
     parent: 'GT'
   },
   {
-    code: 'GT-QC',
-    name: 'Quiché',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-QZ',
-    name: 'Quetzaltenango',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-RE',
-    name: 'Retalhuleu',
-    parent: 'GT'
-  },
-  {
-    code: 'GT-SA',
+    code: 'GT-03',
     name: 'Sacatepéquez',
     parent: 'GT'
   },
   {
-    code: 'GT-SM',
-    name: 'San Marcos',
+    code: 'GT-04',
+    name: 'Chimaltenango',
     parent: 'GT'
   },
   {
-    code: 'GT-SO',
-    name: 'Sololá',
+    code: 'GT-05',
+    name: 'Escuintla',
     parent: 'GT'
   },
   {
-    code: 'GT-SR',
+    code: 'GT-06',
     name: 'Santa Rosa',
     parent: 'GT'
   },
   {
-    code: 'GT-SU',
-    name: 'Suchitepéquez',
+    code: 'GT-07',
+    name: 'Sololá',
     parent: 'GT'
   },
   {
-    code: 'GT-TO',
+    code: 'GT-08',
     name: 'Totonicapán',
     parent: 'GT'
   },
   {
-    code: 'GT-ZA',
+    code: 'GT-09',
+    name: 'Quetzaltenango',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-10',
+    name: 'Suchitepéquez',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-11',
+    name: 'Retalhuleu',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-12',
+    name: 'San Marcos',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-13',
+    name: 'Huehuetenango',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-14',
+    name: 'Quiché',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-15',
+    name: 'Baja Verapaz',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-16',
+    name: 'Alta Verapaz',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-17',
+    name: 'Petén',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-18',
+    name: 'Izabal',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-19',
     name: 'Zacapa',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-20',
+    name: 'Chiquimula',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-21',
+    name: 'Jalapa',
+    parent: 'GT'
+  },
+  {
+    code: 'GT-22',
+    name: 'Jutiapa',
     parent: 'GT'
   },
   {
@@ -9382,7 +9372,7 @@ export const iso31662 = [
   },
   {
     code: 'HU-CS',
-    name: 'Csongrád',
+    name: 'Csongrád-Csanád',
     parent: 'HU'
   },
   {
@@ -9977,7 +9967,7 @@ export const iso31662 = [
   },
   {
     code: 'IN-CH',
-    name: 'Chandigarh',
+    name: 'Chandīgarh',
     parent: 'IN'
   },
   {
@@ -10138,7 +10128,7 @@ export const iso31662 = [
   {
     code: 'IQ-AR',
     name: 'Arbīl',
-    parent: 'IQ'
+    parent: 'IQ-KR'
   },
   {
     code: 'IQ-BA',
@@ -10158,7 +10148,7 @@ export const iso31662 = [
   {
     code: 'IQ-DA',
     name: 'Dahūk',
-    parent: 'IQ'
+    parent: 'IQ-KR'
   },
   {
     code: 'IQ-DI',
@@ -10171,11 +10161,6 @@ export const iso31662 = [
     parent: 'IQ'
   },
   {
-    code: 'IQ-HA',
-    name: 'Halabja',
-    parent: 'IQ'
-  },
-  {
     code: 'IQ-KA',
     name: 'Karbalā’',
     parent: 'IQ'
@@ -10183,6 +10168,11 @@ export const iso31662 = [
   {
     code: 'IQ-KI',
     name: 'Kirkūk',
+    parent: 'IQ'
+  },
+  {
+    code: 'IQ-KR',
+    name: 'Iqlīm Kūrdistān',
     parent: 'IQ'
   },
   {
@@ -10218,7 +10208,7 @@ export const iso31662 = [
   {
     code: 'IQ-SU',
     name: 'As Sulaymānīyah',
-    parent: 'IQ'
+    parent: 'IQ-KR'
   },
   {
     code: 'IQ-WA',
@@ -10446,11 +10436,6 @@ export const iso31662 = [
     parent: 'IS'
   },
   {
-    code: 'IS-BFJ',
-    name: 'Borgarfjarðarhreppur',
-    parent: 'IS'
-  },
-  {
     code: 'IS-BLA',
     name: 'Bláskógabyggð',
     parent: 'IS'
@@ -10481,11 +10466,6 @@ export const iso31662 = [
     parent: 'IS'
   },
   {
-    code: 'IS-DJU',
-    name: 'Djúpavogshreppur',
-    parent: 'IS'
-  },
-  {
     code: 'IS-EOM',
     name: 'Eyja- og Miklaholtshreppur',
     parent: 'IS'
@@ -10508,11 +10488,6 @@ export const iso31662 = [
   {
     code: 'IS-FLA',
     name: 'Flóahreppur',
-    parent: 'IS'
-  },
-  {
-    code: 'IS-FLD',
-    name: 'Fljótsdalshérað',
     parent: 'IS'
   },
   {
@@ -10616,6 +10591,11 @@ export const iso31662 = [
     parent: 'IS'
   },
   {
+    code: 'IS-MUL',
+    name: 'Múlaþing',
+    parent: 'IS'
+  },
+  {
     code: 'IS-MYR',
     name: 'Mýrdalshreppur',
     parent: 'IS'
@@ -10673,11 +10653,6 @@ export const iso31662 = [
   {
     code: 'IS-SEL',
     name: 'Seltjarnarnesbær',
-    parent: 'IS'
-  },
-  {
-    code: 'IS-SEY',
-    name: 'Seyðisfjarðarkaupstaður',
     parent: 'IS'
   },
   {
@@ -13083,302 +13058,302 @@ export const iso31662 = [
   {
     code: 'LT-01',
     name: 'Akmenė',
-    parent: 'LT'
+    parent: 'LT-SA'
   },
   {
     code: 'LT-02',
     name: 'Alytaus miestas',
-    parent: 'LT'
+    parent: 'LT-AL'
   },
   {
     code: 'LT-03',
     name: 'Alytus',
-    parent: 'LT'
+    parent: 'LT-AL'
   },
   {
     code: 'LT-04',
     name: 'Anykščiai',
-    parent: 'LT'
+    parent: 'LT-UT'
   },
   {
     code: 'LT-05',
-    name: 'Birštono',
-    parent: 'LT'
+    name: 'Birštonas',
+    parent: 'LT-KU'
   },
   {
     code: 'LT-06',
     name: 'Biržai',
-    parent: 'LT'
+    parent: 'LT-PN'
   },
   {
     code: 'LT-07',
     name: 'Druskininkai',
-    parent: 'LT'
+    parent: 'LT-AL'
   },
   {
     code: 'LT-08',
     name: 'Elektrėnai',
-    parent: 'LT'
+    parent: 'LT-VL'
   },
   {
     code: 'LT-09',
     name: 'Ignalina',
-    parent: 'LT'
+    parent: 'LT-UT'
   },
   {
     code: 'LT-10',
     name: 'Jonava',
-    parent: 'LT'
+    parent: 'LT-KU'
   },
   {
     code: 'LT-11',
     name: 'Joniškis',
-    parent: 'LT'
+    parent: 'LT-SA'
   },
   {
     code: 'LT-12',
     name: 'Jurbarkas',
-    parent: 'LT'
+    parent: 'LT-TA'
   },
   {
     code: 'LT-13',
     name: 'Kaišiadorys',
-    parent: 'LT'
+    parent: 'LT-KU'
   },
   {
     code: 'LT-14',
-    name: 'Kalvarijos',
-    parent: 'LT'
+    name: 'Kalvarija',
+    parent: 'LT-MR'
   },
   {
     code: 'LT-15',
     name: 'Kauno miestas',
-    parent: 'LT'
+    parent: 'LT-KU'
   },
   {
     code: 'LT-16',
     name: 'Kaunas',
-    parent: 'LT'
+    parent: 'LT-KU'
   },
   {
     code: 'LT-17',
     name: 'Kazlų Rūdos',
-    parent: 'LT'
+    parent: 'LT-MR'
   },
   {
     code: 'LT-18',
     name: 'Kėdainiai',
-    parent: 'LT'
+    parent: 'LT-KU'
   },
   {
     code: 'LT-19',
     name: 'Kelmė',
-    parent: 'LT'
+    parent: 'LT-SA'
   },
   {
     code: 'LT-20',
     name: 'Klaipėdos miestas',
-    parent: 'LT'
+    parent: 'LT-KL'
   },
   {
     code: 'LT-21',
     name: 'Klaipėda',
-    parent: 'LT'
+    parent: 'LT-KL'
   },
   {
     code: 'LT-22',
     name: 'Kretinga',
-    parent: 'LT'
+    parent: 'LT-KL'
   },
   {
     code: 'LT-23',
     name: 'Kupiškis',
-    parent: 'LT'
+    parent: 'LT-PN'
   },
   {
     code: 'LT-24',
     name: 'Lazdijai',
-    parent: 'LT'
+    parent: 'LT-AL'
   },
   {
     code: 'LT-25',
     name: 'Marijampolė',
-    parent: 'LT'
+    parent: 'LT-MR'
   },
   {
     code: 'LT-26',
     name: 'Mažeikiai',
-    parent: 'LT'
+    parent: 'LT-TE'
   },
   {
     code: 'LT-27',
     name: 'Molėtai',
-    parent: 'LT'
+    parent: 'LT-UT'
   },
   {
     code: 'LT-28',
     name: 'Neringa',
-    parent: 'LT'
+    parent: 'LT-KL'
   },
   {
     code: 'LT-29',
     name: 'Pagėgiai',
-    parent: 'LT'
+    parent: 'LT-TA'
   },
   {
     code: 'LT-30',
     name: 'Pakruojis',
-    parent: 'LT'
+    parent: 'LT-SA'
   },
   {
     code: 'LT-31',
     name: 'Palangos miestas',
-    parent: 'LT'
+    parent: 'LT-KL'
   },
   {
     code: 'LT-32',
     name: 'Panevėžio miestas',
-    parent: 'LT'
+    parent: 'LT-PN'
   },
   {
     code: 'LT-33',
     name: 'Panevėžys',
-    parent: 'LT'
+    parent: 'LT-PN'
   },
   {
     code: 'LT-34',
     name: 'Pasvalys',
-    parent: 'LT'
+    parent: 'LT-PN'
   },
   {
     code: 'LT-35',
     name: 'Plungė',
-    parent: 'LT'
+    parent: 'LT-TE'
   },
   {
     code: 'LT-36',
     name: 'Prienai',
-    parent: 'LT'
+    parent: 'LT-KU'
   },
   {
     code: 'LT-37',
     name: 'Radviliškis',
-    parent: 'LT'
+    parent: 'LT-SA'
   },
   {
     code: 'LT-38',
     name: 'Raseiniai',
-    parent: 'LT'
+    parent: 'LT-KU'
   },
   {
     code: 'LT-39',
-    name: 'Rietavo',
-    parent: 'LT'
+    name: 'Rietavas',
+    parent: 'LT-TE'
   },
   {
     code: 'LT-40',
     name: 'Rokiškis',
-    parent: 'LT'
+    parent: 'LT-PN'
   },
   {
     code: 'LT-41',
     name: 'Šakiai',
-    parent: 'LT'
+    parent: 'LT-MR'
   },
   {
     code: 'LT-42',
     name: 'Šalčininkai',
-    parent: 'LT'
+    parent: 'LT-VL'
   },
   {
     code: 'LT-43',
     name: 'Šiaulių miestas',
-    parent: 'LT'
+    parent: 'LT-SA'
   },
   {
     code: 'LT-44',
     name: 'Šiauliai',
-    parent: 'LT'
+    parent: 'LT-SA'
   },
   {
     code: 'LT-45',
     name: 'Šilalė',
-    parent: 'LT'
+    parent: 'LT-TA'
   },
   {
     code: 'LT-46',
     name: 'Šilutė',
-    parent: 'LT'
+    parent: 'LT-KL'
   },
   {
     code: 'LT-47',
     name: 'Širvintos',
-    parent: 'LT'
+    parent: 'LT-VL'
   },
   {
     code: 'LT-48',
     name: 'Skuodas',
-    parent: 'LT'
+    parent: 'LT-KL'
   },
   {
     code: 'LT-49',
     name: 'Švenčionys',
-    parent: 'LT'
+    parent: 'LT-VL'
   },
   {
     code: 'LT-50',
     name: 'Tauragė',
-    parent: 'LT'
+    parent: 'LT-TA'
   },
   {
     code: 'LT-51',
     name: 'Telšiai',
-    parent: 'LT'
+    parent: 'LT-TE'
   },
   {
     code: 'LT-52',
     name: 'Trakai',
-    parent: 'LT'
+    parent: 'LT-VL'
   },
   {
     code: 'LT-53',
     name: 'Ukmergė',
-    parent: 'LT'
+    parent: 'LT-VL'
   },
   {
     code: 'LT-54',
     name: 'Utena',
-    parent: 'LT'
+    parent: 'LT-UT'
   },
   {
     code: 'LT-55',
     name: 'Varėna',
-    parent: 'LT'
+    parent: 'LT-AL'
   },
   {
     code: 'LT-56',
     name: 'Vilkaviškis',
-    parent: 'LT'
+    parent: 'LT-MR'
   },
   {
     code: 'LT-57',
     name: 'Vilniaus miestas',
-    parent: 'LT'
+    parent: 'LT-VL'
   },
   {
     code: 'LT-58',
     name: 'Vilnius',
-    parent: 'LT'
+    parent: 'LT-VL'
   },
   {
     code: 'LT-59',
     name: 'Visaginas',
-    parent: 'LT'
+    parent: 'LT-UT'
   },
   {
     code: 'LT-60',
     name: 'Zarasai',
-    parent: 'LT'
+    parent: 'LT-UT'
   },
   {
     code: 'LT-AL',
@@ -13491,33 +13466,8 @@ export const iso31662 = [
     parent: 'LU'
   },
   {
-    code: 'LV-001',
-    name: 'Aglonas novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-002',
     name: 'Aizkraukles novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-003',
-    name: 'Aizputes novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-004',
-    name: 'Aknīstes novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-005',
-    name: 'Alojas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-006',
-    name: 'Alsungas novads',
     parent: 'LV'
   },
   {
@@ -13526,38 +13476,8 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-008',
-    name: 'Amatas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-009',
-    name: 'Apes novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-010',
-    name: 'Auces novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-011',
     name: 'Ādažu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-012',
-    name: 'Babītes novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-013',
-    name: 'Baldones novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-014',
-    name: 'Baltinavas novads',
     parent: 'LV'
   },
   {
@@ -13571,48 +13491,8 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-017',
-    name: 'Beverīnas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-018',
-    name: 'Brocēnu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-019',
-    name: 'Burtnieku novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-020',
-    name: 'Carnikavas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-021',
-    name: 'Cesvaines novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-022',
     name: 'Cēsu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-023',
-    name: 'Ciblas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-024',
-    name: 'Dagdas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-025',
-    name: 'Daugavpils novads',
     parent: 'LV'
   },
   {
@@ -13621,73 +13501,8 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-027',
-    name: 'Dundagas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-028',
-    name: 'Durbes novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-029',
-    name: 'Engures novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-030',
-    name: 'Ērgļu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-031',
-    name: 'Garkalnes novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-032',
-    name: 'Grobiņas novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-033',
     name: 'Gulbenes novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-034',
-    name: 'Iecavas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-035',
-    name: 'Ikšķiles novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-036',
-    name: 'Ilūkstes novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-037',
-    name: 'Inčukalna novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-038',
-    name: 'Jaunjelgavas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-039',
-    name: 'Jaunpiebalgas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-040',
-    name: 'Jaunpils novads',
     parent: 'LV'
   },
   {
@@ -13701,38 +13516,8 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-043',
-    name: 'Kandavas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-044',
-    name: 'Kārsavas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-045',
-    name: 'Kocēnu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-046',
-    name: 'Kokneses novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-047',
     name: 'Krāslavas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-048',
-    name: 'Krimuldas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-049',
-    name: 'Krustpils novads',
     parent: 'LV'
   },
   {
@@ -13741,18 +13526,8 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-051',
-    name: 'Ķeguma novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-052',
     name: 'Ķekavas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-053',
-    name: 'Lielvārdes novads',
     parent: 'LV'
   },
   {
@@ -13761,18 +13536,8 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-055',
-    name: 'Līgatnes novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-056',
     name: 'Līvānu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-057',
-    name: 'Lubānas novads',
     parent: 'LV'
   },
   {
@@ -13786,38 +13551,8 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-060',
-    name: 'Mazsalacas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-061',
-    name: 'Mālpils novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-062',
     name: 'Mārupes novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-063',
-    name: 'Mērsraga novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-064',
-    name: 'Naukšēnu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-065',
-    name: 'Neretas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-066',
-    name: 'Nīcas novads',
     parent: 'LV'
   },
   {
@@ -13831,43 +13566,8 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-069',
-    name: 'Ozolnieku novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-070',
-    name: 'Pārgaujas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-071',
-    name: 'Pāvilostas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-072',
-    name: 'Pļaviņu novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-073',
     name: 'Preiļu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-074',
-    name: 'Priekules novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-075',
-    name: 'Priekuļu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-076',
-    name: 'Raunas novads',
     parent: 'LV'
   },
   {
@@ -13876,48 +13576,8 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-078',
-    name: 'Riebiņu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-079',
-    name: 'Rojas novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-080',
     name: 'Ropažu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-081',
-    name: 'Rucavas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-082',
-    name: 'Rugāju novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-083',
-    name: 'Rundāles novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-084',
-    name: 'Rūjienas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-085',
-    name: 'Salas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-086',
-    name: 'Salacgrīvas novads',
     parent: 'LV'
   },
   {
@@ -13936,23 +13596,8 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-090',
-    name: 'Sējas novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-091',
     name: 'Siguldas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-092',
-    name: 'Skrīveru novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-093',
-    name: 'Skrundas novads',
     parent: 'LV'
   },
   {
@@ -13961,33 +13606,13 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-095',
-    name: 'Stopiņu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-096',
-    name: 'Strenču novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-097',
     name: 'Talsu novads',
     parent: 'LV'
   },
   {
-    code: 'LV-098',
-    name: 'Tērvetes novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-099',
     name: 'Tukuma novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-100',
-    name: 'Vaiņodes novads',
     parent: 'LV'
   },
   {
@@ -14001,43 +13626,23 @@ export const iso31662 = [
     parent: 'LV'
   },
   {
-    code: 'LV-103',
-    name: 'Vārkavas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-104',
-    name: 'Vecpiebalgas novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-105',
-    name: 'Vecumnieku novads',
-    parent: 'LV'
-  },
-  {
     code: 'LV-106',
     name: 'Ventspils novads',
     parent: 'LV'
   },
   {
-    code: 'LV-107',
-    name: 'Viesītes novads',
+    code: 'LV-111',
+    name: 'Augšdaugavas novads',
     parent: 'LV'
   },
   {
-    code: 'LV-108',
-    name: 'Viļakas novads',
+    code: 'LV-112',
+    name: 'Dienvidkurzemes Novads',
     parent: 'LV'
   },
   {
-    code: 'LV-109',
-    name: 'Viļānu novads',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-110',
-    name: 'Zilupes novads',
+    code: 'LV-113',
+    name: 'Valmieras Novads',
     parent: 'LV'
   },
   {
@@ -14048,11 +13653,6 @@ export const iso31662 = [
   {
     code: 'LV-JEL',
     name: 'Jelgava',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-JKB',
-    name: 'Jēkabpils',
     parent: 'LV'
   },
   {
@@ -14078,11 +13678,6 @@ export const iso31662 = [
   {
     code: 'LV-VEN',
     name: 'Ventspils',
-    parent: 'LV'
-  },
-  {
-    code: 'LV-VMR',
-    name: 'Valmiera',
     parent: 'LV'
   },
   {
@@ -15292,7 +14887,7 @@ export const iso31662 = [
   },
   {
     code: 'MK-304',
-    name: 'Debarca',
+    name: 'Debrca',
     parent: 'MK'
   },
   {
@@ -17487,7 +17082,7 @@ export const iso31662 = [
   },
   {
     code: 'NP-P5',
-    name: 'Lumbini',
+    name: 'Lumbinī',
     parent: 'NP'
   },
   {
@@ -17788,6 +17383,11 @@ export const iso31662 = [
   {
     code: 'PA-NB',
     name: 'Ngöbe-Buglé',
+    parent: 'PA'
+  },
+  {
+    code: 'PA-NT',
+    name: 'Naso Tjër Di',
     parent: 'PA'
   },
   {
@@ -18497,7 +18097,7 @@ export const iso31662 = [
   },
   {
     code: 'PH-WSA',
-    name: 'Samar (Western Samar)',
+    name: 'Samar (local variant: Western Samar)',
     parent: 'PH-08'
   },
   {
@@ -23162,7 +22762,7 @@ export const iso31662 = [
   },
   {
     code: 'TT-CTT',
-    name: 'Couva–Tabaquite–Talparo',
+    name: 'Couva-Tabaquite-Talparo',
     parent: 'TT'
   },
   {
@@ -24662,7 +24262,7 @@ export const iso31662 = [
   },
   {
     code: 'US-VI',
-    name: 'U.S. Virgin Islands',
+    name: 'Virgin Islands, U.S.',
     parent: 'US'
   },
   {
@@ -24997,7 +24597,7 @@ export const iso31662 = [
   },
   {
     code: 'VE-X',
-    name: 'Vargas',
+    name: 'La Guaira',
     parent: 'VE'
   },
   {

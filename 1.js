@@ -1588,7 +1588,7 @@ export const iso31661 = [
     numeric: '776'
   },
   {
-    name: 'Turkey',
+    name: 'Türkiye',
     state: 'assigned',
     alpha2: 'TR',
     alpha3: 'TUR',
