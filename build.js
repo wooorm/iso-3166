@@ -1,5 +1,9 @@
 /**
  * @typedef {import('hast').Element} Element
+ * 
+ * @typedef {import('hast').ElementContent} ElementContent
+ * 
+ * @typedef {import('hast').Text} Text
  *
  * @typedef {{name?: string, alpha2: string, alpha3: string, numeric: string}} Reserved
  *
@@ -35,6 +39,8 @@ const iso31661Main = wiki + '/wiki/ISO_3166-1'
 const iso31661Overview = wiki + '/wiki/ISO_3166-1_alpha-2'
 const iso31662Base = wiki + '/wiki/ISO_3166-2:'
 const iso31663Main = wiki + '/wiki/ISO_3166-3'
+
+const prefixesThatShouldReplaceBr = ['ES-']
 
 /** @type {Array<Assigned>} */
 const assigned = []
@@ -266,7 +272,10 @@ Promise.resolve()
 
             while (++rowIndex < rowLength) {
               const row = rows[rowIndex]
-              const cells = selectAll('td', row).map((d) => cleanNode(d))
+              const shouldReplaceBr = prefixesThatShouldReplaceBr.includes(prefix)
+              const cells = selectAll('td', row).map((d) =>
+                cleanNode(d, shouldReplaceBr)
+              )
               const cellLength = cells.length
 
               if (cellLength === 0) {
@@ -302,6 +311,11 @@ Promise.resolve()
                       /^region /i,
                       ''
                     )
+                  }
+
+                  if (!!shouldReplaceBr) {
+                    const brPosition = cell.indexOf('-br-')
+                    cell = clean(cell.substring(0, brPosition))
                   }
 
                   field = 'name'
@@ -765,10 +779,31 @@ function pick(d) {
 
 /**
  * @param {Element} d
+ * @param {boolean} shouldReplaceBr
  * @returns {string}
  */
-function cleanNode(d) {
+function cleanNode(d, shouldReplaceBr = false) {
+  if (!!shouldReplaceBr) {
+    for (let index = 0; index < d.children.length; index++) {
+      const element = d.children[index]
+      const result = replaceBr(element)
+      if (result) {
+        d.children.splice(index, 1, result)
+      }
+    }
+  }
   return clean(toString(d))
+}
+
+/**
+ * @param {ElementContent} el
+ * @returns {Text|undefined}
+ */
+function replaceBr(el) {
+  if (el.type === 'element' && el.tagName === 'br') {
+    return {type: 'text', value: '-br-'}
+  }
+  return undefined
 }
 
 /**
