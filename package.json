@@ -1,6 +1,6 @@
 {
   "name": "iso-3166",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "ISO 3166 (standard for country codes and codes for their subdivisions)",
   "license": "MIT",
   "keywords": [
