@@ -65,7 +65,7 @@
     "c8": "^7.0.0",
     "concat-stream": "^2.0.0",
     "hast-util-select": "^5.0.0",
-    "hast-util-to-string": "^2.0.0",
+    "hast-util-to-text": "^3.0.0",
     "hastscript": "^7.0.0",
     "mdast-util-heading-range": "^3.0.0",
     "node-fetch": "^3.0.0",

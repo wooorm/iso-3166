@@ -24,7 +24,7 @@ import fetch from 'node-fetch'
 import {unified} from 'unified'
 import parse from 'rehype-parse'
 import {select, selectAll} from 'hast-util-select'
-import {toString} from 'hast-util-to-string'
+import {toText} from 'hast-util-to-text'
 
 const own = {}.hasOwnProperty
 
@@ -291,6 +291,17 @@ Promise.resolve()
                 if (!result.code && /code/.test(column)) {
                   field = 'code'
                 } else if (!result.name && /name|bgn\/pcgn/.test(column)) {
+                  // We use `hast-util-to-text`, which turns breaks into `\n`.
+                  // The Spanish Wikipedia table uses breaks to delimit different
+                  // translations.
+                  // Here we choose the first.
+                  // <https://en.wikipedia.org/wiki/ISO_3166-2:ES>
+                  const eolIndex = cell.indexOf('\n')
+
+                  if (eolIndex !== -1) {
+                    cell = cell.slice(0, eolIndex)
+                  }
+
                   // Some regions have different languages, and then the
                   // primary names are also in different languages (e.g.,
                   // Belgium).
@@ -389,7 +400,7 @@ Promise.resolve()
     const types = {
       merge: /^merged into /i,
       change: /^name changed to /i,
-      split: /^divided into: /i
+      split: /^divided into:\s+/i
     }
 
     let index = -1
@@ -772,7 +783,7 @@ function pick(d) {
  * @returns {string}
  */
 function cleanNode(d) {
-  return clean(toString(d))
+  return clean(toText(d))
 }
 
 /**
@@ -783,6 +794,6 @@ function clean(d) {
   return d
     .replace(/\[[^\]]+]/g, '')
     .replace(/\(i\.e\., [^\]]+\)/g, '')
-    .replace(/\s+/g, ' ')
+    .replace(/\s+/g, ($0) => ($0.includes('\n') ? '\n' : ' '))
     .trim()
 }

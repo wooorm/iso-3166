@@ -6052,7 +6052,7 @@ export const iso31662 = [
   },
   {
     code: 'ES-A',
-    name: 'AlicanteAlacant',
+    name: 'Alicante',
     parent: 'ES-VC'
   },
   {
@@ -6157,7 +6157,7 @@ export const iso31662 = [
   },
   {
     code: 'ES-CS',
-    name: 'CastellónCastelló',
+    name: 'Castellón',
     parent: 'ES-VC'
   },
   {
@@ -6272,12 +6272,12 @@ export const iso31662 = [
   },
   {
     code: 'ES-NA',
-    name: 'NavarraNafarroa',
+    name: 'Navarra',
     parent: 'ES-NC'
   },
   {
     code: 'ES-NC',
-    name: 'Navarra, Comunidad Foral deNafarroako Foru Komunitatea',
+    name: 'Navarra, Comunidad Foral de',
     parent: 'ES'
   },
   {
@@ -6307,7 +6307,7 @@ export const iso31662 = [
   },
   {
     code: 'ES-PV',
-    name: 'País VascoEuskal Herria',
+    name: 'País Vasco',
     parent: 'ES'
   },
   {
@@ -6367,7 +6367,7 @@ export const iso31662 = [
   },
   {
     code: 'ES-V',
-    name: 'ValenciaValència',
+    name: 'Valencia',
     parent: 'ES-VC'
   },
   {
@@ -6377,12 +6377,12 @@ export const iso31662 = [
   },
   {
     code: 'ES-VC',
-    name: 'Valenciana, ComunidadValenciana, Comunitat',
+    name: 'Valenciana, Comunidad',
     parent: 'ES'
   },
   {
     code: 'ES-VI',
-    name: 'ÁlavaAraba',
+    name: 'Álava',
     parent: 'ES-PV'
   },
   {
@@ -13147,7 +13147,7 @@ export const iso31662 = [
   },
   {
     code: 'LR-RI',
-    name: 'River Cess(local variant is Rivercess)',
+    name: 'River Cess',
     parent: 'LR'
   },
   {
@@ -15347,7 +15347,7 @@ export const iso31662 = [
   },
   {
     code: 'ML-10',
-    name: 'Taoudénit(local variants are Taoudenni, Taoudéni)',
+    name: 'Taoudénit',
     parent: 'ML'
   },
   {
@@ -16007,7 +16007,7 @@ export const iso31662 = [
   },
   {
     code: 'MU-CC',
-    name: 'Cargados Carajos Shoals(local variant is Saint Brandon Islands)',
+    name: 'Cargados Carajos Shoals',
     parent: 'MU'
   },
   {
@@ -16627,7 +16627,7 @@ export const iso31662 = [
   },
   {
     code: 'NA-KA',
-    name: '//Karas(local variants are Karas and !Karas)',
+    name: '//Karas',
     parent: 'NA'
   },
   {
@@ -17447,7 +17447,7 @@ export const iso31662 = [
   },
   {
     code: 'PA-KY',
-    name: 'Guna Yala(local variant is Kuna Yala)',
+    name: 'Guna Yala',
     parent: 'PA'
   },
   {
@@ -17497,7 +17497,7 @@ export const iso31662 = [
   },
   {
     code: 'PE-CUS',
-    name: 'Cusco(local variant is Cuzco)',
+    name: 'Cusco',
     parent: 'PE'
   },
   {
@@ -18207,7 +18207,7 @@ export const iso31662 = [
   },
   {
     code: 'PK-JK',
-    name: 'Azad Jammu and Kashmir(local variant is AJ&K)',
+    name: 'Azad Jammu and Kashmir',
     parent: 'PK'
   },
   {
@@ -19202,7 +19202,7 @@ export const iso31662 = [
   },
   {
     code: 'RU-KHM',
-    name: 'Khanty-Mansiyskiy avtonomnyy okrug(local variant is Yugra)',
+    name: 'Khanty-Mansiyskiy avtonomnyy okrug',
     parent: 'RU'
   },
   {
@@ -19357,7 +19357,7 @@ export const iso31662 = [
   },
   {
     code: 'RU-SA',
-    name: 'Saha, Respublika(local variant is Jakutija)',
+    name: 'Saha, Respublika',
     parent: 'RU'
   },
   {
@@ -19377,7 +19377,7 @@ export const iso31662 = [
   },
   {
     code: 'RU-SE',
-    name: 'Severnaya Osetiya, Respublika(local variant is Alaniya )',
+    name: 'Severnaya Osetiya, Respublika',
     parent: 'RU'
   },
   {
@@ -19427,7 +19427,7 @@ export const iso31662 = [
   },
   {
     code: 'RU-TY',
-    name: 'Tyva, Respublika(local variant is Tuva)',
+    name: 'Tyva, Respublika',
     parent: 'RU'
   },
   {
@@ -19762,7 +19762,7 @@ export const iso31662 = [
   },
   {
     code: 'SD-DC',
-    name: 'Wasaţ Dārfūr(local variant is Zālinjay)',
+    name: 'Wasaţ Dārfūr',
     parent: 'SD'
   },
   {
@@ -21152,7 +21152,7 @@ export const iso31662 = [
   },
   {
     code: 'SM-07',
-    name: 'Città di San Marino(local variant is San Marino)',
+    name: 'Città di San Marino',
     parent: 'SM'
   },
   {
@@ -21762,7 +21762,7 @@ export const iso31662 = [
   },
   {
     code: 'TH-10',
-    name: 'Krung Thep Maha Nakhon(local variant is Bangkok)',
+    name: 'Krung Thep Maha Nakhon',
     parent: 'TH'
   },
   {
@@ -22232,7 +22232,7 @@ export const iso31662 = [
   },
   {
     code: 'TL-OE',
-    name: 'Oé-Cusse Ambeno(local variant is Oecussi)',
+    name: 'Oé-Cusse Ambeno',
     parent: 'TL'
   },
   {
@@ -24992,7 +24992,7 @@ export const iso31662 = [
   },
   {
     code: 'VN-SG',
-    name: 'Hồ Chí Minh(local variant is Sai Gon)',
+    name: 'Hồ Chí Minh',
     parent: 'VN'
   },
   {
