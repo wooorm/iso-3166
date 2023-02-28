@@ -727,6 +727,7 @@ Promise.resolve()
       )
     }
   })
+  // eslint-disable-next-line unicorn/prefer-top-level-await
   .catch(
     /** @param {Error} error */ (error) => {
       console.log('Error:', error)

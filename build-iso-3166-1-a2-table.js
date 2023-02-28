@@ -64,21 +64,26 @@ export default function table() {
           title = a2ToName[code]
 
           switch (state) {
-            case 'assigned':
+            case 'assigned': {
               code = h(
                 'a',
                 {href: 'https://en.wikipedia.org/wiki/ISO_3166-1:' + code},
                 code
               )
               break
+            }
+
             case 'exceptionally-reserved':
             case 'transitionally-reserved':
             case 'indeterminately-reserved':
-            case 'formerly-assigned':
+            case 'formerly-assigned': {
               code = h('s', code)
               break
-            default:
+            }
+
+            default: {
               break
+            }
           }
 
           cells.push(h('td', {title}, code))
