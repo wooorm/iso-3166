@@ -4641,6 +4641,86 @@ export const iso31662 = [
     parent: 'DJ'
   },
   {
+    code: 'DK-015',
+    name: 'København',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-020',
+    name: 'Frederiksborg',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-025',
+    name: 'Roskilde',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-030',
+    name: 'Vestsjælland',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-035',
+    name: 'Storstrøm',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-040',
+    name: 'Bornholm',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-042',
+    name: 'Fyn',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-050',
+    name: 'Sønderjylland',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-055',
+    name: 'Ribe',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-060',
+    name: 'Vejle',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-065',
+    name: 'Ringkøbing',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-070',
+    name: 'Århus',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-076',
+    name: 'Viborg',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-080',
+    name: 'Nordjylland',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-101',
+    name: 'København',
+    parent: 'DK'
+  },
+  {
+    code: 'DK-147',
+    name: 'Frederiksberg',
+    parent: 'DK'
+  },
+  {
     code: 'DK-81',
     name: 'Region Nordjylland',
     parent: 'DK'
@@ -5163,6 +5243,56 @@ export const iso31662 = [
   {
     code: 'DZ-48',
     name: 'Relizane',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-49',
+    name: 'Timimoun',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-50',
+    name: 'Bordj Badji Mokhtar',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-51',
+    name: 'Ouled Djellal',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-52',
+    name: 'Béni Abbès',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-53',
+    name: 'In Salah',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-54',
+    name: 'In Guezzam',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-55',
+    name: 'Touggourt',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-56',
+    name: 'Djanet',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-57',
+    name: 'El Meghaier',
+    parent: 'DZ'
+  },
+  {
+    code: 'DZ-58',
+    name: 'El Meniaa',
     parent: 'DZ'
   },
   {
@@ -6237,7 +6367,7 @@ export const iso31662 = [
   },
   {
     code: 'ES-V',
-    name: 'València',
+    name: 'ValenciaValència',
     parent: 'ES-VC'
   },
   {
@@ -6247,7 +6377,7 @@ export const iso31662 = [
   },
   {
     code: 'ES-VC',
-    name: 'Valenciana, Comunitat',
+    name: 'Valenciana, ComunidadValenciana, Comunitat',
     parent: 'ES'
   },
   {
@@ -6318,6 +6448,11 @@ export const iso31662 = [
   {
     code: 'ET-SO',
     name: 'Sumalē',
+    parent: 'ET'
+  },
+  {
+    code: 'ET-SW',
+    name: 'YeDebub M‘irab Ītyop’iya Hizboch',
     parent: 'ET'
   },
   {
@@ -7886,13 +8021,13 @@ export const iso31662 = [
     parent: 'GB-NIR'
   },
   {
-    code: 'GB-NSM',
-    name: 'North Somerset',
+    code: 'GB-NNH',
+    name: 'North Northamptonshire',
     parent: 'GB-ENG'
   },
   {
-    code: 'GB-NTH',
-    name: 'Northamptonshire',
+    code: 'GB-NSM',
+    name: 'North Somerset',
     parent: 'GB-ENG'
   },
   {
@@ -8263,6 +8398,11 @@ export const iso31662 = [
   {
     code: 'GB-WND',
     name: 'Wandsworth',
+    parent: 'GB-ENG'
+  },
+  {
+    code: 'GB-WNH',
+    name: 'West Northamptonshire',
     parent: 'GB-ENG'
   },
   {
@@ -9696,9 +9836,24 @@ export const iso31662 = [
     parent: 'ID-PP'
   },
   {
+    code: 'ID-PE',
+    name: 'Papua Pengunungan',
+    parent: 'ID-PP'
+  },
+  {
     code: 'ID-PP',
     name: 'Papua',
     parent: 'ID'
+  },
+  {
+    code: 'ID-PS',
+    name: 'Papua Selatan',
+    parent: 'ID-PP'
+  },
+  {
+    code: 'ID-PT',
+    name: 'Papua Tengah',
+    parent: 'ID-PP'
   },
   {
     code: 'ID-RI',
@@ -10411,11 +10566,6 @@ export const iso31662 = [
     parent: 'IS'
   },
   {
-    code: 'IS-AKH',
-    name: 'Akrahreppur',
-    parent: 'IS'
-  },
-  {
     code: 'IS-AKN',
     name: 'Akraneskaupstaður',
     parent: 'IS'
@@ -10438,11 +10588,6 @@ export const iso31662 = [
   {
     code: 'IS-BLA',
     name: 'Bláskógabyggð',
-    parent: 'IS'
-  },
-  {
-    code: 'IS-BLO',
-    name: 'Blönduósbær',
     parent: 'IS'
   },
   {
@@ -10526,11 +10671,6 @@ export const iso31662 = [
     parent: 'IS'
   },
   {
-    code: 'IS-HEL',
-    name: 'Helgafellssveit',
-    parent: 'IS'
-  },
-  {
     code: 'IS-HRG',
     name: 'Hörgársveit',
     parent: 'IS'
@@ -10541,8 +10681,8 @@ export const iso31662 = [
     parent: 'IS'
   },
   {
-    code: 'IS-HUT',
-    name: 'Húnavatnshreppur',
+    code: 'IS-HUG',
+    name: 'Húnabyggð',
     parent: 'IS'
   },
   {
@@ -10631,11 +10771,6 @@ export const iso31662 = [
     parent: 'IS'
   },
   {
-    code: 'IS-SBH',
-    name: 'Svalbarðshreppur',
-    parent: 'IS'
-  },
-  {
     code: 'IS-SBT',
     name: 'Svalbarðsstrandarhreppur',
     parent: 'IS'
@@ -10681,8 +10816,8 @@ export const iso31662 = [
     parent: 'IS'
   },
   {
-    code: 'IS-SKU',
-    name: 'Skútustaðahreppur',
+    code: 'IS-SKR',
+    name: 'Skagafjörður',
     parent: 'IS'
   },
   {
@@ -10698,11 +10833,6 @@ export const iso31662 = [
   {
     code: 'IS-SOL',
     name: 'Sveitarfélagið Ölfus',
-    parent: 'IS'
-  },
-  {
-    code: 'IS-SSF',
-    name: 'Sveitarfélagið Skagafjörður',
     parent: 'IS'
   },
   {
@@ -12326,6 +12456,11 @@ export const iso31662 = [
     parent: 'KP'
   },
   {
+    code: 'KP-15',
+    name: 'Kaesong',
+    parent: 'KP'
+  },
+  {
     code: 'KR-11',
     name: 'Seoul',
     parent: 'KR'
@@ -12441,88 +12576,103 @@ export const iso31662 = [
     parent: 'KW'
   },
   {
-    code: 'KZ-AKM',
+    code: 'KZ-10',
+    name: 'Abay oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-11',
     name: 'Aqmola oblysy',
     parent: 'KZ'
   },
   {
-    code: 'KZ-AKT',
+    code: 'KZ-15',
     name: 'Aqtöbe oblysy',
     parent: 'KZ'
   },
   {
-    code: 'KZ-ALA',
-    name: 'Almaty',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-ALM',
+    code: 'KZ-19',
     name: 'Almaty oblysy',
     parent: 'KZ'
   },
   {
-    code: 'KZ-AST',
-    name: 'Nur-Sultan',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-ATY',
+    code: 'KZ-23',
     name: 'Atyraū oblysy',
     parent: 'KZ'
   },
   {
-    code: 'KZ-KAR',
-    name: 'Qaraghandy oblysy',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-KUS',
-    name: 'Qostanay oblysy',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-KZY',
-    name: 'Qyzylorda oblysy',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-MAN',
-    name: 'Mangghystaū oblysy',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-PAV',
-    name: 'Pavlodar oblysy',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-SEV',
-    name: 'Soltüstik Qazaqstan oblysy',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-SHY',
-    name: 'Shymkent',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-VOS',
-    name: 'Shyghys Qazaqstan oblysy',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-YUZ',
-    name: 'Türkistan oblysy',
-    parent: 'KZ'
-  },
-  {
-    code: 'KZ-ZAP',
+    code: 'KZ-27',
     name: 'Batys Qazaqstan oblysy',
     parent: 'KZ'
   },
   {
-    code: 'KZ-ZHA',
+    code: 'KZ-31',
     name: 'Zhambyl oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-33',
+    name: 'Zhetisū oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-35',
+    name: 'Qaraghandy oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-39',
+    name: 'Qostanay oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-43',
+    name: 'Qyzylorda oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-47',
+    name: 'Mangghystaū oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-55',
+    name: 'Pavlodar oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-59',
+    name: 'Soltüstik Qazaqstan oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-61',
+    name: 'Türkistan oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-62',
+    name: 'Ulytaū oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-63',
+    name: 'Shyghys Qazaqstan oblysy',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-71',
+    name: 'Astana',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-75',
+    name: 'Almaty',
+    parent: 'KZ'
+  },
+  {
+    code: 'KZ-79',
+    name: 'Shymkent',
     parent: 'KZ'
   },
   {
@@ -13412,7 +13562,12 @@ export const iso31662 = [
   },
   {
     code: 'LU-CL',
-    name: 'Clervaux',
+    name: 'Clerf',
+    parent: 'LU'
+  },
+  {
+    code: 'LU-D',
+    name: 'Diekirch (de, lb)',
     parent: 'LU'
   },
   {
@@ -13427,7 +13582,12 @@ export const iso31662 = [
   },
   {
     code: 'LU-ES',
-    name: 'Esch-sur-Alzette',
+    name: 'Esch an der Alzette',
+    parent: 'LU'
+  },
+  {
+    code: 'LU-G',
+    name: 'Grevenmacher (de, lb)',
     parent: 'LU'
   },
   {
@@ -13436,8 +13596,13 @@ export const iso31662 = [
     parent: 'LU'
   },
   {
-    code: 'LU-LU',
+    code: 'LU-L',
     name: 'Luxembourg',
+    parent: 'LU'
+  },
+  {
+    code: 'LU-LU',
+    name: 'Luxemburg',
     parent: 'LU'
   },
   {
@@ -13447,7 +13612,7 @@ export const iso31662 = [
   },
   {
     code: 'LU-RD',
-    name: 'Redange',
+    name: 'Redingen',
     parent: 'LU'
   },
   {
@@ -16981,93 +17146,13 @@ export const iso31662 = [
     parent: 'NO'
   },
   {
-    code: 'NP-1',
-    name: 'Madhyamanchal',
-    parent: 'NP'
-  },
-  {
-    code: 'NP-2',
-    name: 'Madhya Pashchimanchal',
-    parent: 'NP'
-  },
-  {
-    code: 'NP-3',
-    name: 'Pashchimanchal',
-    parent: 'NP'
-  },
-  {
-    code: 'NP-4',
-    name: 'Purwanchal',
-    parent: 'NP'
-  },
-  {
-    code: 'NP-5',
-    name: 'Sudur Pashchimanchal',
-    parent: 'NP'
-  },
-  {
-    code: 'NP-BA',
-    name: 'Bagmati',
-    parent: 'NP-1'
-  },
-  {
-    code: 'NP-BH',
-    name: 'Bheri',
-    parent: 'NP-2'
-  },
-  {
-    code: 'NP-DH',
-    name: 'Dhawalagiri',
-    parent: 'NP-3'
-  },
-  {
-    code: 'NP-GA',
-    name: 'Gandaki',
-    parent: 'NP-3'
-  },
-  {
-    code: 'NP-JA',
-    name: 'Janakpur',
-    parent: 'NP-1'
-  },
-  {
-    code: 'NP-KA',
-    name: 'Karnali',
-    parent: 'NP-2'
-  },
-  {
-    code: 'NP-KO',
-    name: 'Kosi(local variant is Koshi)',
-    parent: 'NP-4'
-  },
-  {
-    code: 'NP-LU',
-    name: 'Lumbini',
-    parent: 'NP-3'
-  },
-  {
-    code: 'NP-MA',
-    name: 'Mahakali',
-    parent: 'NP-5'
-  },
-  {
-    code: 'NP-ME',
-    name: 'Mechi',
-    parent: 'NP-4'
-  },
-  {
-    code: 'NP-NA',
-    name: 'Narayani',
-    parent: 'NP-1'
-  },
-  {
     code: 'NP-P1',
     name: 'Pradesh 1',
     parent: 'NP'
   },
   {
     code: 'NP-P2',
-    name: 'Pradesh 2',
+    name: 'Madhesh',
     parent: 'NP'
   },
   {
@@ -17077,7 +17162,7 @@ export const iso31662 = [
   },
   {
     code: 'NP-P4',
-    name: 'Gandaki',
+    name: 'Gaṇḍakī',
     parent: 'NP'
   },
   {
@@ -17087,28 +17172,13 @@ export const iso31662 = [
   },
   {
     code: 'NP-P6',
-    name: 'Karnali',
+    name: 'Karṇālī',
     parent: 'NP'
   },
   {
     code: 'NP-P7',
-    name: 'Sudūr Pashchim',
+    name: 'Sudūrpashchim',
     parent: 'NP'
-  },
-  {
-    code: 'NP-RA',
-    name: 'Rapti',
-    parent: 'NP-2'
-  },
-  {
-    code: 'NP-SA',
-    name: 'Sagarmatha',
-    parent: 'NP-4'
-  },
-  {
-    code: 'NP-SE',
-    name: 'Seti',
-    parent: 'NP-5'
   },
   {
     code: 'NR-01',
@@ -17217,7 +17287,7 @@ export const iso31662 = [
   },
   {
     code: 'NZ-MWT',
-    name: 'Manawatu-Wanganui',
+    name: 'Manawatū-Whanganui',
     parent: 'NZ'
   },
   {
@@ -17252,7 +17322,7 @@ export const iso31662 = [
   },
   {
     code: 'NZ-WGN',
-    name: 'Wellington',
+    name: 'Greater Wellington',
     parent: 'NZ'
   },
   {
@@ -17382,7 +17452,7 @@ export const iso31662 = [
   },
   {
     code: 'PA-NB',
-    name: 'Ngöbe-Buglé',
+    name: 'Ngäbe-Buglé',
     parent: 'PA'
   },
   {
@@ -20142,7 +20212,7 @@ export const iso31662 = [
   },
   {
     code: 'SI-044',
-    name: 'Kanal',
+    name: 'Kanal ob Soči',
     parent: 'SI'
   },
   {
@@ -20902,7 +20972,7 @@ export const iso31662 = [
   },
   {
     code: 'SI-197',
-    name: 'Kosanjevica na Krki',
+    name: 'Kostanjevica na Krki',
     parent: 'SI'
   },
   {

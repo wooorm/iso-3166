@@ -252,9 +252,12 @@ Promise.resolve()
               rowIndex++
             }
 
-            if (headers.length === 0 || headers[0] !== 'code') {
+            if (headers.length === 0 || !/code/i.test(headers[0])) {
+              // Regex of things we don’t need to warn about.
               if (
-                !/newsletter|date of change|date issued/.test(headers.join(' '))
+                !/newsletter|date of change|date issued/i.test(
+                  headers.join(' ')
+                )
               ) {
                 console.warn('Not a code table', d.alpha2, headers)
               }
@@ -400,7 +403,7 @@ Promise.resolve()
       }
 
       const cells = selectAll('th, td', row)
-      let [alpha4, name, before, , after] = cells.map((d) => cleanNode(d))
+      let [name, before, , alpha4, after] = cells.map((d) => cleanNode(d))
       /** @type {string|null} */
       let kind = null
       let lastIndex = 0
