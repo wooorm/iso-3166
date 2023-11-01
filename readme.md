@@ -514,7 +514,7 @@ UN M49 also encodes regions bigger than countries, such as (sub)contintents.
       <td title="Nicaragua"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:NI">NI</a></td>
       <td>NJ</td>
       <td>NK</td>
-      <td title="Netherlands"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:NL">NL</a></td>
+      <td title="Netherlands, Kingdom of the"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:NL">NL</a></td>
       <td>NM</td>
       <td>NN</td>
       <td title="Norway"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:NO">NO</a></td>

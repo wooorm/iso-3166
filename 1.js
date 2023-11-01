@@ -1175,7 +1175,7 @@ export const iso31661 = [
     numeric: '558'
   },
   {
-    name: 'Netherlands',
+    name: 'Netherlands, Kingdom of the',
     state: 'assigned',
     alpha2: 'NL',
     alpha3: 'NLD',

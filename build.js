@@ -794,6 +794,8 @@ function clean(d) {
   return d
     .replace(/\[[^\]]+]/g, '')
     .replace(/\(i\.e\., [^\]]+\)/g, '')
+    .replace(/†$/g, '')
+    .replace(/\(local variant[^)]*\)/g, '')
     .replace(/\s+/g, ($0) => ($0.includes('\n') ? '\n' : ' '))
     .trim()
 }

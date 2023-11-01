@@ -1533,12 +1533,12 @@ export const iso31662 = [
   {
     code: 'BE-VAN',
     name: 'Antwerpen',
-    parent: 'BE-VLG'
+    parent: 'BE'
   },
   {
     code: 'BE-VBR',
     name: 'Vlaams-Brabant',
-    parent: 'BE-VLG'
+    parent: 'BE'
   },
   {
     code: 'BE-VLG',
@@ -1548,17 +1548,17 @@ export const iso31662 = [
   {
     code: 'BE-VLI',
     name: 'Limburg',
-    parent: 'BE-VLG'
+    parent: 'BE'
   },
   {
     code: 'BE-VOV',
     name: 'Oost-Vlaanderen',
-    parent: 'BE-VLG'
+    parent: 'BE'
   },
   {
     code: 'BE-VWV',
     name: 'West-Vlaanderen',
-    parent: 'BE-VLG'
+    parent: 'BE'
   },
   {
     code: 'BE-WAL',
@@ -1568,27 +1568,27 @@ export const iso31662 = [
   {
     code: 'BE-WBR',
     name: 'Brabant wallon',
-    parent: 'BE-WAL'
+    parent: 'BE'
   },
   {
     code: 'BE-WHT',
     name: 'Hainaut',
-    parent: 'BE-WAL'
+    parent: 'BE'
   },
   {
     code: 'BE-WLG',
     name: 'Liège',
-    parent: 'BE-WAL'
+    parent: 'BE'
   },
   {
     code: 'BE-WLX',
     name: 'Luxembourg',
-    parent: 'BE-WAL'
+    parent: 'BE'
   },
   {
     code: 'BE-WNA',
     name: 'Namur',
-    parent: 'BE-WAL'
+    parent: 'BE'
   },
   {
     code: 'BF-01',
@@ -17202,7 +17202,7 @@ export const iso31662 = [
   },
   {
     code: 'NR-05',
-    name: 'Baitsi (local variant is Baiti)',
+    name: 'Baitsi',
     parent: 'NR'
   },
   {
@@ -18167,7 +18167,7 @@ export const iso31662 = [
   },
   {
     code: 'PH-WSA',
-    name: 'Samar (local variant: Western Samar)',
+    name: 'Samar',
     parent: 'PH-08'
   },
   {
@@ -21622,117 +21622,117 @@ export const iso31662 = [
   },
   {
     code: 'TD-BA',
-    name: 'Al Baţḩā’',
+    name: 'Batha',
     parent: 'TD'
   },
   {
     code: 'TD-BG',
-    name: 'Baḩr al Ghazāl',
+    name: 'Bahr el Ghazal',
     parent: 'TD'
   },
   {
     code: 'TD-BO',
-    name: 'Būrkū',
+    name: 'Borkou',
     parent: 'TD'
   },
   {
     code: 'TD-CB',
-    name: 'Shārī Bāqirmī',
+    name: 'Chari-Baguirmi',
     parent: 'TD'
   },
   {
     code: 'TD-EE',
-    name: 'Inīdī ash Sharqī',
+    name: 'Ennedi-Est',
     parent: 'TD'
   },
   {
     code: 'TD-EO',
-    name: 'Inīdī al Gharbī',
+    name: 'Ennedi-Ouest',
     parent: 'TD'
   },
   {
     code: 'TD-GR',
-    name: 'Qīrā',
+    name: 'Guéra',
     parent: 'TD'
   },
   {
     code: 'TD-HL',
-    name: 'Ḩajjar Lamīs',
+    name: 'Hadjer Lamis',
     parent: 'TD'
   },
   {
     code: 'TD-KA',
-    name: 'Kānim',
+    name: 'Kanem',
     parent: 'TD'
   },
   {
     code: 'TD-LC',
-    name: 'Al Buḩayrah',
+    name: 'Lac',
     parent: 'TD'
   },
   {
     code: 'TD-LO',
-    name: 'Lūghūn al Gharbī',
+    name: 'Logone-Occidental',
     parent: 'TD'
   },
   {
     code: 'TD-LR',
-    name: 'Lūghūn ash Sharqī',
+    name: 'Logone-Oriental',
     parent: 'TD'
   },
   {
     code: 'TD-MA',
-    name: 'Māndūl',
+    name: 'Mandoul',
     parent: 'TD'
   },
   {
     code: 'TD-MC',
-    name: 'Shārī al Awsaţ',
+    name: 'Moyen-Chari',
     parent: 'TD'
   },
   {
     code: 'TD-ME',
-    name: 'Māyū Kībbī ash Sharqī',
+    name: 'Mayo-Kebbi-Est',
     parent: 'TD'
   },
   {
     code: 'TD-MO',
-    name: 'Māyū Kībbī al Gharbī',
+    name: 'Mayo-Kebbi-Ouest',
     parent: 'TD'
   },
   {
     code: 'TD-ND',
-    name: 'Madīnat Injamīnā',
+    name: 'Ville de Ndjamena',
     parent: 'TD'
   },
   {
     code: 'TD-OD',
-    name: 'Waddāy',
+    name: 'Ouaddaï',
     parent: 'TD'
   },
   {
     code: 'TD-SA',
-    name: 'Salāmāt',
+    name: 'Salamat',
     parent: 'TD'
   },
   {
     code: 'TD-SI',
-    name: 'Sīlā',
+    name: 'Sila',
     parent: 'TD'
   },
   {
     code: 'TD-TA',
-    name: 'Tānjīlī',
+    name: 'Tandjilé',
     parent: 'TD'
   },
   {
     code: 'TD-TI',
-    name: 'Tibastī',
+    name: 'Tibesti',
     parent: 'TD'
   },
   {
     code: 'TD-WF',
-    name: 'Wādī Fīrā’',
+    name: 'Wadi Fira',
     parent: 'TD'
   },
   {
