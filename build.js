@@ -21,14 +21,11 @@ import fs from 'node:fs'
 import pMap from 'p-map'
 import {bail} from 'bail'
 import fetch from 'node-fetch'
-import {unified} from 'unified'
-import parse from 'rehype-parse'
+import {fromHtml} from 'hast-util-from-html'
 import {select, selectAll} from 'hast-util-select'
 import {toText} from 'hast-util-to-text'
 
 const own = {}.hasOwnProperty
-
-const html = unified().use(parse)
 
 const wiki = 'https://en.wikipedia.org'
 const iso31661Main = wiki + '/wiki/ISO_3166-1'
@@ -50,7 +47,7 @@ Promise.resolve()
   .then(() => fetch(iso31661Main))
   .then(textIfSuccessful)
   .then((doc) => {
-    const tree = html.parse(doc)
+    const tree = fromHtml(doc)
     const table = selectAll('table.wikitable', tree)[1]
     const rows = selectAll('tr', table)
 
@@ -69,7 +66,7 @@ Promise.resolve()
   .then(() => fetch(iso31661Overview))
   .then(textIfSuccessful)
   .then((doc) => {
-    const tree = html.parse(doc)
+    const tree = fromHtml(doc)
     /** @type {Record<string, string>} */
     const map = {
       'user-assigned': 'user-assigned',
@@ -189,7 +186,7 @@ Promise.resolve()
         .then(() => fetch(iso31662Base + d.alpha2))
         .then(textIfSuccessful)
         .then((doc) => {
-          const tree = html.parse(doc)
+          const tree = fromHtml(doc)
           const prefix = d.alpha2 + '-'
           /** @type {Array<Element>} */
           const tables = selectAll('table.wikitable', tree)
@@ -390,7 +387,7 @@ Promise.resolve()
   .then(() => fetch(iso31663Main))
   .then(textIfSuccessful)
   .then((doc) => {
-    const tree = html.parse(doc)
+    const tree = fromHtml(doc)
     /** @type {Element} */
     const table = selectAll('table.wikitable', tree)[0]
     /** @type {Array<Element>} */

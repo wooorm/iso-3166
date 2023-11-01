@@ -1,17 +1,16 @@
 /**
+ * @typedef {import('hast').Element} Element
  * @typedef {import('mdast').Root} Root
  */
 
 import {unified} from 'unified'
-import format from 'rehype-format'
-import stringify from 'rehype-stringify'
+import rehypeFormat from 'rehype-format'
 import {h} from 'hastscript'
+import {toHtml} from 'hast-util-to-html'
 import {u} from 'unist-builder'
 import {headingRange} from 'mdast-util-heading-range'
 import {iso31661Reserved} from './1-reserved.js'
 import {iso31661} from './1.js'
-
-const processor = unified().use(format).use(stringify)
 
 export default function table() {
   /**
@@ -101,16 +100,19 @@ export default function table() {
         ++x
       }
 
-      const node = processor.runSync(
-        // @ts-expect-error: fine to pass an element.
-        h('details', [
-          h('summary', 'Show ISO 3166-1 alpha-2 code matrix'),
-          h('table', [h('thead', h('tr', head)), h('tbody', rows)])
-        ])
+      const node = /** @type {Element} */ (
+        unified()
+          .use(rehypeFormat)
+          .runSync(
+            // @ts-expect-error: fine to pass an element.
+            h('details', [
+              h('summary', 'Show ISO 3166-1 alpha-2 code matrix'),
+              h('table', [h('thead', h('tr', head)), h('tbody', rows)])
+            ])
+          )
       )
 
-      // @ts-expect-error: to do: use utilities.
-      const html = processor.stringify(node)
+      const html = toHtml(node)
 
       return [
         start,
