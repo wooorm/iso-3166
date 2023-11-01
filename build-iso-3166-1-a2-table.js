@@ -1,3 +1,7 @@
+/**
+ * @typedef {import('mdast').Root} Root
+ */
+
 import {unified} from 'unified'
 import format from 'rehype-format'
 import stringify from 'rehype-stringify'
@@ -9,10 +13,13 @@ import {iso31661} from './1.js'
 
 const processor = unified().use(format).use(stringify)
 
-/**
- * @type {import('unified').Plugin<[], import('mdast').Root>}
- */
 export default function table() {
+  /**
+   * @param {Root} tree
+   *   Tree.
+   * @returns {undefined}
+   *   Nothing.
+   */
   return (tree) => {
     const a = 65
     const z = 90
@@ -102,6 +109,7 @@ export default function table() {
         ])
       )
 
+      // @ts-expect-error: to do: use utilities.
       const html = processor.stringify(node)
 
       return [
