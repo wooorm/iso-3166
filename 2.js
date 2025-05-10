@@ -9836,6 +9836,11 @@ export const iso31662 = [
     parent: 'ID-PP'
   },
   {
+    code: 'ID-PD',
+    name: 'Papua Barat Daya',
+    parent: 'ID-PP'
+  },
+  {
     code: 'ID-PE',
     name: 'Papua Pengunungan',
     parent: 'ID-PP'
