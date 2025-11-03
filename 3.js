@@ -40,6 +40,7 @@ export const iso31663 = [
       state: 'formerly-assigned',
       alpha2: 'AI',
       alpha3: 'AFI',
+      numeric: '262',
       name: 'French Afars and Issas'
     },
     to: [
@@ -246,6 +247,7 @@ export const iso31663 = [
       state: 'formerly-assigned',
       alpha2: 'DY',
       alpha3: 'DHY',
+      numeric: '204',
       name: 'Dahomey'
     },
     to: [

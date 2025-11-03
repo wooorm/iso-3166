@@ -48,7 +48,7 @@ Promise.resolve()
   .then(textIfSuccessful)
   .then((doc) => {
     const tree = fromHtml(doc)
-    const table = selectAll('table.wikitable', tree)[1]
+    const table = selectAll('table.wikitable', tree)[2]
     const rows = selectAll('tr', table)
 
     let index = -1
@@ -212,7 +212,7 @@ Promise.resolve()
               const cellLength = cellNodes.length
 
               // Not a header row.
-              if (cellLength === 0) {
+              if (cellLength < 2) {
                 break
               }
 
@@ -266,7 +266,7 @@ Promise.resolve()
 
             while (++rowIndex < rowLength) {
               const row = rows[rowIndex]
-              const cells = selectAll('td', row).map((d) => cleanNode(d))
+              const cells = selectAll('td, th', row).map((d) => cleanNode(d))
               const cellLength = cells.length
 
               if (cellLength === 0) {

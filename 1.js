@@ -216,7 +216,7 @@ export const iso31661 = [
     numeric: '096'
   },
   {
-    name: 'Bolivia (Plurinational State of)',
+    name: 'Bolivia, Plurinational State of',
     state: 'assigned',
     alpha2: 'BO',
     alpha3: 'BOL',
@@ -524,7 +524,7 @@ export const iso31661 = [
     numeric: '238'
   },
   {
-    name: 'Micronesia (Federated States of)',
+    name: 'Micronesia, Federated States of',
     state: 'assigned',
     alpha2: 'FM',
     alpha3: 'FSM',
@@ -769,7 +769,7 @@ export const iso31661 = [
     numeric: '368'
   },
   {
-    name: 'Iran (Islamic Republic of)',
+    name: 'Iran, Islamic Republic of',
     state: 'assigned',
     alpha2: 'IR',
     alpha3: 'IRN',
@@ -860,7 +860,7 @@ export const iso31661 = [
     numeric: '659'
   },
   {
-    name: "Korea (Democratic People's Republic of)",
+    name: "Korea, Democratic People's Republic of",
     state: 'assigned',
     alpha2: 'KP',
     alpha3: 'PRK',
@@ -1679,7 +1679,7 @@ export const iso31661 = [
     numeric: '670'
   },
   {
-    name: 'Venezuela (Bolivarian Republic of)',
+    name: 'Venezuela, Bolivarian Republic of',
     state: 'assigned',
     alpha2: 'VE',
     alpha3: 'VEN',

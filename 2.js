@@ -1102,7 +1102,7 @@ export const iso31662 = [
   },
   {
     code: 'BA-BRC',
-    name: 'Brčko distrikt',
+    name: 'Brčko Distrikt',
     parent: 'BA'
   },
   {
@@ -7222,7 +7222,7 @@ export const iso31662 = [
   },
   {
     code: 'FR-GES',
-    name: 'Grand-Est',
+    name: 'Grand Est',
     parent: 'FR'
   },
   {
@@ -7338,302 +7338,302 @@ export const iso31662 = [
   {
     code: 'GB-ABC',
     name: 'Armagh City, Banbridge and Craigavon',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-ABD',
     name: 'Aberdeenshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-ABE',
     name: 'Aberdeen City',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-AGB',
     name: 'Argyll and Bute',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-AGY',
     name: 'Isle of Anglesey',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-AND',
     name: 'Ards and North Down',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-ANN',
     name: 'Antrim and Newtownabbey',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-ANS',
     name: 'Angus',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-BAS',
     name: 'Bath and North East Somerset',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BBD',
     name: 'Blackburn with Darwen',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BCP',
     name: 'Bournemouth, Christchurch and Poole',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BDF',
     name: 'Bedford',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BDG',
     name: 'Barking and Dagenham',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BEN',
     name: 'Brent',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BEX',
     name: 'Bexley',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BFS',
     name: 'Belfast City',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-BGE',
     name: 'Bridgend',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-BGW',
     name: 'Blaenau Gwent',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-BIR',
     name: 'Birmingham',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BKM',
     name: 'Buckinghamshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BNE',
     name: 'Barnet',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BNH',
     name: 'Brighton and Hove',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BNS',
     name: 'Barnsley',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BOL',
     name: 'Bolton',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BPL',
     name: 'Blackpool',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BRC',
     name: 'Bracknell Forest',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BRD',
     name: 'Bradford',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BRY',
     name: 'Bromley',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BST',
     name: 'Bristol, City of',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-BUR',
     name: 'Bury',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-CAM',
     name: 'Cambridgeshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-CAY',
     name: 'Caerphilly',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-CBF',
     name: 'Central Bedfordshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-CCG',
     name: 'Causeway Coast and Glens',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-CGN',
     name: 'Ceredigion',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-CHE',
     name: 'Cheshire East',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-CHW',
     name: 'Cheshire West and Chester',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-CLD',
     name: 'Calderdale',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-CLK',
     name: 'Clackmannanshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-CMA',
     name: 'Cumbria',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-CMD',
     name: 'Camden',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-CMN',
     name: 'Carmarthenshire',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-CON',
     name: 'Cornwall',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-COV',
     name: 'Coventry',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-CRF',
     name: 'Cardiff',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-CRY',
     name: 'Croydon',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-CWY',
     name: 'Conwy',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-DAL',
     name: 'Darlington',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-DBY',
     name: 'Derbyshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-DEN',
     name: 'Denbighshire',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-DER',
     name: 'Derby',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-DEV',
     name: 'Devon',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-DGY',
     name: 'Dumfries and Galloway',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-DNC',
     name: 'Doncaster',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-DND',
     name: 'Dundee City',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-DOR',
     name: 'Dorset',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-DRS',
     name: 'Derry and Strabane',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-DUD',
     name: 'Dudley',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-DUR',
     name: 'Durham, County',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-EAL',
     name: 'Ealing',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-EAW',
@@ -7643,32 +7643,32 @@ export const iso31662 = [
   {
     code: 'GB-EAY',
     name: 'East Ayrshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-EDH',
     name: 'Edinburgh, City of',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-EDU',
     name: 'East Dunbartonshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-ELN',
     name: 'East Lothian',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-ELS',
     name: 'Eilean Siar',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-ENF',
     name: 'Enfield',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-ENG',
@@ -7678,47 +7678,47 @@ export const iso31662 = [
   {
     code: 'GB-ERW',
     name: 'East Renfrewshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-ERY',
     name: 'East Riding of Yorkshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-ESS',
     name: 'Essex',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-ESX',
     name: 'East Sussex',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-FAL',
     name: 'Falkirk',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-FIF',
     name: 'Fife',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-FLN',
     name: 'Flintshire',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-FMO',
     name: 'Fermanagh and Omagh',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-GAT',
     name: 'Gateshead',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-GBN',
@@ -7728,277 +7728,277 @@ export const iso31662 = [
   {
     code: 'GB-GLG',
     name: 'Glasgow City',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-GLS',
     name: 'Gloucestershire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-GRE',
     name: 'Greenwich',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-GWN',
     name: 'Gwynedd',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-HAL',
     name: 'Halton',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HAM',
     name: 'Hampshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HAV',
     name: 'Havering',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HCK',
     name: 'Hackney',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HEF',
     name: 'Herefordshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HIL',
     name: 'Hillingdon',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HLD',
     name: 'Highland',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-HMF',
     name: 'Hammersmith and Fulham',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HNS',
     name: 'Hounslow',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HPL',
     name: 'Hartlepool',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HRT',
     name: 'Hertfordshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HRW',
     name: 'Harrow',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-HRY',
     name: 'Haringey',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-IOS',
     name: 'Isles of Scilly',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-IOW',
     name: 'Isle of Wight',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-ISL',
     name: 'Islington',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-IVC',
     name: 'Inverclyde',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-KEC',
     name: 'Kensington and Chelsea',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-KEN',
     name: 'Kent',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-KHL',
     name: 'Kingston upon Hull',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-KIR',
     name: 'Kirklees',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-KTT',
     name: 'Kingston upon Thames',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-KWL',
     name: 'Knowsley',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-LAN',
     name: 'Lancashire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-LBC',
     name: 'Lisburn and Castlereagh',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-LBH',
     name: 'Lambeth',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-LCE',
     name: 'Leicester',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-LDS',
     name: 'Leeds',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-LEC',
     name: 'Leicestershire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-LEW',
     name: 'Lewisham',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-LIN',
     name: 'Lincolnshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-LIV',
     name: 'Liverpool',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-LND',
     name: 'London, City of',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-LUT',
     name: 'Luton',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-MAN',
     name: 'Manchester',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-MDB',
     name: 'Middlesbrough',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-MDW',
     name: 'Medway',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-MEA',
     name: 'Mid and East Antrim',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-MIK',
     name: 'Milton Keynes',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-MLN',
     name: 'Midlothian',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-MON',
     name: 'Monmouthshire',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-MRT',
     name: 'Merton',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-MRY',
     name: 'Moray',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-MTY',
     name: 'Merthyr Tydfil',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-MUL',
     name: 'Mid-Ulster',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-NAY',
     name: 'North Ayrshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-NBL',
     name: 'Northumberland',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NEL',
     name: 'North East Lincolnshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NET',
     name: 'Newcastle upon Tyne',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NFK',
     name: 'Norfolk',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NGM',
     name: 'Nottingham',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NIR',
@@ -8008,162 +8008,162 @@ export const iso31662 = [
   {
     code: 'GB-NLK',
     name: 'North Lanarkshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-NLN',
     name: 'North Lincolnshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NMD',
     name: 'Newry, Mourne and Down',
-    parent: 'GB-NIR'
+    parent: 'GB'
   },
   {
     code: 'GB-NNH',
     name: 'North Northamptonshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NSM',
     name: 'North Somerset',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NTL',
     name: 'Neath Port Talbot',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-NTT',
     name: 'Nottinghamshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NTY',
     name: 'North Tyneside',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NWM',
     name: 'Newham',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-NWP',
     name: 'Newport',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-NYK',
     name: 'North Yorkshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-OLD',
     name: 'Oldham',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-ORK',
     name: 'Orkney Islands',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-OXF',
     name: 'Oxfordshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-PEM',
     name: 'Pembrokeshire',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-PKN',
     name: 'Perth and Kinross',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-PLY',
     name: 'Plymouth',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-POR',
     name: 'Portsmouth',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-POW',
     name: 'Powys',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-PTE',
     name: 'Peterborough',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-RCC',
     name: 'Redcar and Cleveland',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-RCH',
     name: 'Rochdale',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-RCT',
     name: 'Rhondda Cynon Taff',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-RDB',
     name: 'Redbridge',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-RDG',
     name: 'Reading',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-RFW',
     name: 'Renfrewshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-RIC',
     name: 'Richmond upon Thames',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-ROT',
     name: 'Rotherham',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-RUT',
     name: 'Rutland',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SAW',
     name: 'Sandwell',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SAY',
     name: 'South Ayrshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-SCB',
     name: 'Scottish Borders',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-SCT',
@@ -8173,162 +8173,162 @@ export const iso31662 = [
   {
     code: 'GB-SFK',
     name: 'Suffolk',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SFT',
     name: 'Sefton',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SGC',
     name: 'South Gloucestershire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SHF',
     name: 'Sheffield',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SHN',
     name: 'St. Helens',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SHR',
     name: 'Shropshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SKP',
     name: 'Stockport',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SLF',
     name: 'Salford',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SLG',
     name: 'Slough',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SLK',
     name: 'South Lanarkshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-SND',
     name: 'Sunderland',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SOL',
     name: 'Solihull',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SOM',
     name: 'Somerset',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SOS',
     name: 'Southend-on-Sea',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SRY',
     name: 'Surrey',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-STE',
     name: 'Stoke-on-Trent',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-STG',
     name: 'Stirling',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-STH',
     name: 'Southampton',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-STN',
     name: 'Sutton',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-STS',
     name: 'Staffordshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-STT',
     name: 'Stockton-on-Tees',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-STY',
     name: 'South Tyneside',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SWA',
     name: 'Swansea',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-SWD',
     name: 'Swindon',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-SWK',
     name: 'Southwark',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-TAM',
     name: 'Tameside',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-TFW',
     name: 'Telford and Wrekin',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-THR',
     name: 'Thurrock',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-TOB',
     name: 'Torbay',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-TOF',
     name: 'Torfaen',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-TRF',
     name: 'Trafford',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-TWH',
     name: 'Tower Hamlets',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-UKM',
@@ -8338,52 +8338,52 @@ export const iso31662 = [
   {
     code: 'GB-VGL',
     name: 'Vale of Glamorgan, The',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-WAR',
     name: 'Warwickshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WBK',
     name: 'West Berkshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WDU',
     name: 'West Dunbartonshire',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-WFT',
     name: 'Waltham Forest',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WGN',
     name: 'Wigan',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WIL',
     name: 'Wiltshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WKF',
     name: 'Wakefield',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WLL',
     name: 'Walsall',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WLN',
     name: 'West Lothian',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GB-WLS',
@@ -8393,67 +8393,67 @@ export const iso31662 = [
   {
     code: 'GB-WLV',
     name: 'Wolverhampton',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WND',
     name: 'Wandsworth',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WNH',
     name: 'West Northamptonshire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WNM',
     name: 'Windsor and Maidenhead',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WOK',
     name: 'Wokingham',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WOR',
     name: 'Worcestershire',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WRL',
     name: 'Wirral',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WRT',
     name: 'Warrington',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WRX',
     name: 'Wrexham',
-    parent: 'GB-WLS'
+    parent: 'GB'
   },
   {
     code: 'GB-WSM',
     name: 'Westminster',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-WSX',
     name: 'West Sussex',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-YOR',
     name: 'York',
-    parent: 'GB-ENG'
+    parent: 'GB'
   },
   {
     code: 'GB-ZET',
     name: 'Shetland Islands',
-    parent: 'GB-SCT'
+    parent: 'GB'
   },
   {
     code: 'GD-01',
@@ -8497,7 +8497,7 @@ export const iso31662 = [
   },
   {
     code: 'GE-AJ',
-    name: 'Ajaria',
+    name: 'Adjara',
     parent: 'GE'
   },
   {
@@ -8898,17 +8898,17 @@ export const iso31662 = [
   {
     code: 'GQ-AN',
     name: 'Annobón',
-    parent: 'GQ-I'
+    parent: 'GQ'
   },
   {
     code: 'GQ-BN',
     name: 'Bioko Norte',
-    parent: 'GQ-I'
+    parent: 'GQ'
   },
   {
     code: 'GQ-BS',
     name: 'Bioko Sur',
-    parent: 'GQ-I'
+    parent: 'GQ'
   },
   {
     code: 'GQ-C',
@@ -8918,12 +8918,12 @@ export const iso31662 = [
   {
     code: 'GQ-CS',
     name: 'Centro Sur',
-    parent: 'GQ-C'
+    parent: 'GQ'
   },
   {
     code: 'GQ-DJ',
     name: 'Djibloho',
-    parent: 'GQ-C'
+    parent: 'GQ'
   },
   {
     code: 'GQ-I',
@@ -8933,17 +8933,17 @@ export const iso31662 = [
   {
     code: 'GQ-KN',
     name: 'Kié-Ntem',
-    parent: 'GQ-C'
+    parent: 'GQ'
   },
   {
     code: 'GQ-LI',
     name: 'Litoral',
-    parent: 'GQ-C'
+    parent: 'GQ'
   },
   {
     code: 'GQ-WN',
     name: 'Wele-Nzas',
-    parent: 'GQ-C'
+    parent: 'GQ'
   },
   {
     code: 'GR-69',
@@ -8952,7 +8952,7 @@ export const iso31662 = [
   },
   {
     code: 'GR-A',
-    name: 'Anatolikí Makedonía kai Thráki',
+    name: 'Anatolikí Makedonía kai',
     parent: 'GR'
   },
   {
@@ -9698,57 +9698,57 @@ export const iso31662 = [
   {
     code: 'ID-AC',
     name: 'Aceh',
-    parent: 'ID-SM'
+    parent: 'ID'
   },
   {
     code: 'ID-BA',
     name: 'Bali',
-    parent: 'ID-NU'
+    parent: 'ID'
   },
   {
     code: 'ID-BB',
     name: 'Kepulauan Bangka Belitung',
-    parent: 'ID-SM'
+    parent: 'ID'
   },
   {
     code: 'ID-BE',
     name: 'Bengkulu',
-    parent: 'ID-SM'
+    parent: 'ID'
   },
   {
     code: 'ID-BT',
     name: 'Banten',
-    parent: 'ID-JW'
+    parent: 'ID'
   },
   {
     code: 'ID-GO',
     name: 'Gorontalo',
-    parent: 'ID-SL'
+    parent: 'ID'
   },
   {
     code: 'ID-JA',
     name: 'Jambi',
-    parent: 'ID-SM'
+    parent: 'ID'
   },
   {
     code: 'ID-JB',
     name: 'Jawa Barat',
-    parent: 'ID-JW'
+    parent: 'ID'
   },
   {
     code: 'ID-JI',
     name: 'Jawa Timur',
-    parent: 'ID-JW'
+    parent: 'ID'
   },
   {
     code: 'ID-JK',
     name: 'Jakarta Raya',
-    parent: 'ID-JW'
+    parent: 'ID'
   },
   {
     code: 'ID-JT',
     name: 'Jawa Tengah',
-    parent: 'ID-JW'
+    parent: 'ID'
   },
   {
     code: 'ID-JW',
@@ -9763,42 +9763,42 @@ export const iso31662 = [
   {
     code: 'ID-KB',
     name: 'Kalimantan Barat',
-    parent: 'ID-KA'
+    parent: 'ID'
   },
   {
     code: 'ID-KI',
     name: 'Kalimantan Timur',
-    parent: 'ID-KA'
+    parent: 'ID'
   },
   {
     code: 'ID-KR',
     name: 'Kepulauan Riau',
-    parent: 'ID-SM'
+    parent: 'ID'
   },
   {
     code: 'ID-KS',
     name: 'Kalimantan Selatan',
-    parent: 'ID-KA'
+    parent: 'ID'
   },
   {
     code: 'ID-KT',
     name: 'Kalimantan Tengah',
-    parent: 'ID-KA'
+    parent: 'ID'
   },
   {
     code: 'ID-KU',
     name: 'Kalimantan Utara',
-    parent: 'ID-KA'
+    parent: 'ID'
   },
   {
     code: 'ID-LA',
     name: 'Lampung',
-    parent: 'ID-SM'
+    parent: 'ID'
   },
   {
     code: 'ID-MA',
     name: 'Maluku',
-    parent: 'ID-ML'
+    parent: 'ID'
   },
   {
     code: 'ID-ML',
@@ -9808,17 +9808,17 @@ export const iso31662 = [
   {
     code: 'ID-MU',
     name: 'Maluku Utara',
-    parent: 'ID-ML'
+    parent: 'ID'
   },
   {
     code: 'ID-NB',
     name: 'Nusa Tenggara Barat',
-    parent: 'ID-NU'
+    parent: 'ID'
   },
   {
     code: 'ID-NT',
     name: 'Nusa Tenggara Timur',
-    parent: 'ID-NU'
+    parent: 'ID'
   },
   {
     code: 'ID-NU',
@@ -9828,17 +9828,22 @@ export const iso31662 = [
   {
     code: 'ID-PA',
     name: 'Papua',
-    parent: 'ID-PP'
+    parent: 'ID'
   },
   {
     code: 'ID-PB',
     name: 'Papua Barat',
-    parent: 'ID-PP'
+    parent: 'ID'
+  },
+  {
+    code: 'ID-PD',
+    name: 'Papua Barat Daya',
+    parent: 'ID'
   },
   {
     code: 'ID-PE',
     name: 'Papua Pengunungan',
-    parent: 'ID-PP'
+    parent: 'ID'
   },
   {
     code: 'ID-PP',
@@ -9848,32 +9853,32 @@ export const iso31662 = [
   {
     code: 'ID-PS',
     name: 'Papua Selatan',
-    parent: 'ID-PP'
+    parent: 'ID'
   },
   {
     code: 'ID-PT',
     name: 'Papua Tengah',
-    parent: 'ID-PP'
+    parent: 'ID'
   },
   {
     code: 'ID-RI',
     name: 'Riau',
-    parent: 'ID-SM'
+    parent: 'ID'
   },
   {
     code: 'ID-SA',
     name: 'Sulawesi Utara',
-    parent: 'ID-SL'
+    parent: 'ID'
   },
   {
     code: 'ID-SB',
     name: 'Sumatera Barat',
-    parent: 'ID-SM'
+    parent: 'ID'
   },
   {
     code: 'ID-SG',
     name: 'Sulawesi Tenggara',
-    parent: 'ID-SL'
+    parent: 'ID'
   },
   {
     code: 'ID-SL',
@@ -9888,32 +9893,32 @@ export const iso31662 = [
   {
     code: 'ID-SN',
     name: 'Sulawesi Selatan',
-    parent: 'ID-SL'
+    parent: 'ID'
   },
   {
     code: 'ID-SR',
     name: 'Sulawesi Barat',
-    parent: 'ID-SL'
+    parent: 'ID'
   },
   {
     code: 'ID-SS',
     name: 'Sumatera Selatan',
-    parent: 'ID-SM'
+    parent: 'ID'
   },
   {
     code: 'ID-ST',
     name: 'Sulawesi Tengah',
-    parent: 'ID-SL'
+    parent: 'ID'
   },
   {
     code: 'ID-SU',
     name: 'Sumatera Utara',
-    parent: 'ID-SM'
+    parent: 'ID'
   },
   {
     code: 'ID-YO',
     name: 'Yogyakarta',
-    parent: 'ID-JW'
+    parent: 'ID'
   },
   {
     code: 'IE-C',
@@ -10121,13 +10126,13 @@ export const iso31662 = [
     parent: 'IN'
   },
   {
-    code: 'IN-CH',
-    name: 'Chandīgarh',
+    code: 'IN-CG',
+    name: 'Chhattīsgarh',
     parent: 'IN'
   },
   {
-    code: 'IN-CT',
-    name: 'Chhattīsgarh',
+    code: 'IN-CH',
+    name: 'Chandigarh',
     parent: 'IN'
   },
   {
@@ -10221,7 +10226,7 @@ export const iso31662 = [
     parent: 'IN'
   },
   {
-    code: 'IN-OR',
+    code: 'IN-OD',
     name: 'Odisha',
     parent: 'IN'
   },
@@ -10232,7 +10237,7 @@ export const iso31662 = [
   },
   {
     code: 'IN-PY',
-    name: 'Puducherry',
+    name: 'Puducherry (Pondicherry)',
     parent: 'IN'
   },
   {
@@ -10246,11 +10251,6 @@ export const iso31662 = [
     parent: 'IN'
   },
   {
-    code: 'IN-TG',
-    name: 'Telangāna',
-    parent: 'IN'
-  },
-  {
     code: 'IN-TN',
     name: 'Tamil Nādu',
     parent: 'IN'
@@ -10261,13 +10261,18 @@ export const iso31662 = [
     parent: 'IN'
   },
   {
-    code: 'IN-UP',
-    name: 'Uttar Pradesh',
+    code: 'IN-TS',
+    name: 'Telangāna',
     parent: 'IN'
   },
   {
-    code: 'IN-UT',
+    code: 'IN-UK',
     name: 'Uttarākhand',
+    parent: 'IN'
+  },
+  {
+    code: 'IN-UP',
+    name: 'Uttar Pradesh',
     parent: 'IN'
   },
   {
@@ -10892,7 +10897,7 @@ export const iso31662 = [
   },
   {
     code: 'IT-23',
-    name: "Valle d'Aosta, Val d'Aoste",
+    name: "Valle d'Aosta, Vallée d'Aoste",
     parent: 'IT'
   },
   {
@@ -12397,147 +12402,147 @@ export const iso31662 = [
   },
   {
     code: 'KP-01',
-    name: 'Pyongyang',
+    name: "P'yǒngyang",
     parent: 'KP'
   },
   {
     code: 'KP-02',
-    name: 'South Pyongan',
+    name: "P'yǒngan-namdo",
     parent: 'KP'
   },
   {
     code: 'KP-03',
-    name: 'North Pyongan',
+    name: "P'yǒngan-bukto",
     parent: 'KP'
   },
   {
     code: 'KP-04',
-    name: 'Chagang',
+    name: 'Chagang-do',
     parent: 'KP'
   },
   {
     code: 'KP-05',
-    name: 'South Hwanghae',
+    name: 'Hwanghae-namdo',
     parent: 'KP'
   },
   {
     code: 'KP-06',
-    name: 'North Hwanghae',
+    name: 'Hwanghae-bukto',
     parent: 'KP'
   },
   {
     code: 'KP-07',
-    name: 'Kangwon',
+    name: 'Kangwǒn-do',
     parent: 'KP'
   },
   {
     code: 'KP-08',
-    name: 'South Hamgyong',
+    name: 'Hamgyǒng-namdo',
     parent: 'KP'
   },
   {
     code: 'KP-09',
-    name: 'North Hamgyong',
+    name: 'Hamgyǒng-bukto',
     parent: 'KP'
   },
   {
     code: 'KP-10',
-    name: 'Ryanggang',
+    name: 'Ryanggang-do',
     parent: 'KP'
   },
   {
     code: 'KP-13',
-    name: 'Rason',
+    name: 'Rasǒn',
     parent: 'KP'
   },
   {
     code: 'KP-14',
-    name: 'Nampo',
+    name: 'Namp’o',
     parent: 'KP'
   },
   {
     code: 'KP-15',
-    name: 'Kaesong',
+    name: 'Kaesŏng',
     parent: 'KP'
   },
   {
     code: 'KR-11',
-    name: 'Seoul',
+    name: 'Seoul-teukbyeolsi',
     parent: 'KR'
   },
   {
     code: 'KR-26',
-    name: 'Busan',
+    name: 'Busan-gwangyeoksi',
     parent: 'KR'
   },
   {
     code: 'KR-27',
-    name: 'Daegu',
+    name: 'Daegu-gwangyeoksi',
     parent: 'KR'
   },
   {
     code: 'KR-28',
-    name: 'Incheon',
+    name: 'Incheon-gwangyeoksi',
     parent: 'KR'
   },
   {
     code: 'KR-29',
-    name: 'Gwangju',
+    name: 'Gwangju-gwangyeoksi',
     parent: 'KR'
   },
   {
     code: 'KR-30',
-    name: 'Daejeon',
+    name: 'Daejeon-gwangyeoksi',
     parent: 'KR'
   },
   {
     code: 'KR-31',
-    name: 'Ulsan',
+    name: 'Ulsan-gwangyeoksi',
     parent: 'KR'
   },
   {
     code: 'KR-41',
-    name: 'Gyeonggi',
+    name: 'Gyeonggi-do',
     parent: 'KR'
   },
   {
     code: 'KR-42',
-    name: 'Gangwon',
+    name: 'Gangwon-teukbyeoljachido',
     parent: 'KR'
   },
   {
     code: 'KR-43',
-    name: 'North Chungcheong',
+    name: 'Chungcheongbuk-do',
     parent: 'KR'
   },
   {
     code: 'KR-44',
-    name: 'South Chungcheong',
+    name: 'Chungcheongnam-do',
     parent: 'KR'
   },
   {
     code: 'KR-45',
-    name: 'North Jeolla',
+    name: 'Jeollabuk-do',
     parent: 'KR'
   },
   {
     code: 'KR-46',
-    name: 'South Jeolla',
+    name: 'Jeollanam-do',
     parent: 'KR'
   },
   {
     code: 'KR-47',
-    name: 'North Gyeongsang',
+    name: 'Gyeongsangbuk-do',
     parent: 'KR'
   },
   {
     code: 'KR-48',
-    name: 'South Gyeongsang',
+    name: 'Gyeongsangnam-do',
     parent: 'KR'
   },
   {
     code: 'KR-49',
-    name: 'Jeju',
+    name: 'Jeju-teukbyeoljachido',
     parent: 'KR'
   },
   {
@@ -12577,7 +12582,7 @@ export const iso31662 = [
   },
   {
     code: 'KZ-10',
-    name: 'Abay oblysy',
+    name: 'Abay',
     parent: 'KZ'
   },
   {
@@ -12592,12 +12597,12 @@ export const iso31662 = [
   },
   {
     code: 'KZ-19',
-    name: 'Almaty oblysy',
+    name: 'Almaty',
     parent: 'KZ'
   },
   {
     code: 'KZ-23',
-    name: 'Atyraū oblysy',
+    name: 'Atyraū',
     parent: 'KZ'
   },
   {
@@ -12652,7 +12657,7 @@ export const iso31662 = [
   },
   {
     code: 'KZ-62',
-    name: 'Ulytaū oblysy',
+    name: 'Ulytaū',
     parent: 'KZ'
   },
   {
@@ -12912,12 +12917,12 @@ export const iso31662 = [
   },
   {
     code: 'LK-1',
-    name: 'Western Province',
+    name: 'Basnāhira paḷāta',
     parent: 'LK'
   },
   {
     code: 'LK-11',
-    name: 'Colombo',
+    name: 'Kŏḷamba',
     parent: 'LK-1'
   },
   {
@@ -12932,127 +12937,127 @@ export const iso31662 = [
   },
   {
     code: 'LK-2',
-    name: 'Central Province',
+    name: 'Madhyama paḷāta',
     parent: 'LK'
   },
   {
     code: 'LK-21',
-    name: 'Kandy',
+    name: 'Mahanuvara',
     parent: 'LK-2'
   },
   {
     code: 'LK-22',
-    name: 'Matale',
+    name: 'Mātale',
     parent: 'LK-2'
   },
   {
     code: 'LK-23',
-    name: 'Nuwara Eliya',
+    name: 'Nuvara Ĕliya',
     parent: 'LK-2'
   },
   {
     code: 'LK-3',
-    name: 'Southern Province',
+    name: 'Dakuṇu paḷāta',
     parent: 'LK'
   },
   {
     code: 'LK-31',
-    name: 'Galle',
+    name: 'Gālla',
     parent: 'LK-3'
   },
   {
     code: 'LK-32',
-    name: 'Matara',
+    name: 'Mātara',
     parent: 'LK-3'
   },
   {
     code: 'LK-33',
-    name: 'Hambantota',
+    name: 'Hambantŏṭa',
     parent: 'LK-3'
   },
   {
     code: 'LK-4',
-    name: 'Northern Province',
+    name: 'Uturu paḷāta',
     parent: 'LK'
   },
   {
     code: 'LK-41',
-    name: 'Jaffna',
+    name: 'Yāpanaya',
     parent: 'LK-4'
   },
   {
     code: 'LK-42',
-    name: 'Kilinochchi',
+    name: 'Kilinŏchchi',
     parent: 'LK-4'
   },
   {
     code: 'LK-43',
-    name: 'Mannar',
+    name: 'Mannārama',
     parent: 'LK-4'
   },
   {
     code: 'LK-44',
-    name: 'Vavuniya',
+    name: 'Vavuniyāva',
     parent: 'LK-4'
   },
   {
     code: 'LK-45',
-    name: 'Mullaittivu',
+    name: 'Mulativ',
     parent: 'LK-4'
   },
   {
     code: 'LK-5',
-    name: 'Eastern Province',
+    name: 'Næ̆gĕnahira paḷāta',
     parent: 'LK'
   },
   {
     code: 'LK-51',
-    name: 'Batticaloa',
+    name: 'Maḍakalapuva',
     parent: 'LK-5'
   },
   {
     code: 'LK-52',
-    name: 'Ampara',
+    name: 'Ampāra',
     parent: 'LK-5'
   },
   {
     code: 'LK-53',
-    name: 'Trincomalee',
+    name: 'Trikuṇāmalaya',
     parent: 'LK-5'
   },
   {
     code: 'LK-6',
-    name: 'North Western Province',
+    name: 'Vayamba paḷāta',
     parent: 'LK'
   },
   {
     code: 'LK-61',
-    name: 'Kurunegala',
+    name: 'Kuruṇægala',
     parent: 'LK-6'
   },
   {
     code: 'LK-62',
-    name: 'Puttalam',
+    name: 'Puttalama',
     parent: 'LK-6'
   },
   {
     code: 'LK-7',
-    name: 'North Central Province',
+    name: 'Uturumæ̆da paḷāta',
     parent: 'LK'
   },
   {
     code: 'LK-71',
-    name: 'Anuradhapura',
+    name: 'Anurādhapura',
     parent: 'LK-7'
   },
   {
     code: 'LK-72',
-    name: 'Polonnaruwa',
+    name: 'Pŏḷŏnnaruva',
     parent: 'LK-7'
   },
   {
     code: 'LK-8',
-    name: 'Uva Province',
+    name: 'Ūva paḷāta',
     parent: 'LK'
   },
   {
@@ -13062,12 +13067,12 @@ export const iso31662 = [
   },
   {
     code: 'LK-82',
-    name: 'Monaragala',
+    name: 'Mŏṇarāgala',
     parent: 'LK-8'
   },
   {
     code: 'LK-9',
-    name: 'Sabaragamuwa Province',
+    name: 'Sabaragamuva paḷāta',
     parent: 'LK'
   },
   {
@@ -13077,7 +13082,7 @@ export const iso31662 = [
   },
   {
     code: 'LK-92',
-    name: 'Kegalla',
+    name: 'Kægalla',
     parent: 'LK-9'
   },
   {
@@ -13562,7 +13567,7 @@ export const iso31662 = [
   },
   {
     code: 'LU-CL',
-    name: 'Clerf',
+    name: 'Clervaux',
     parent: 'LU'
   },
   {
@@ -13582,7 +13587,7 @@ export const iso31662 = [
   },
   {
     code: 'LU-ES',
-    name: 'Esch an der Alzette',
+    name: 'Esch-sur-Alzette',
     parent: 'LU'
   },
   {
@@ -13602,7 +13607,7 @@ export const iso31662 = [
   },
   {
     code: 'LU-LU',
-    name: 'Luxemburg',
+    name: 'Luxembourg',
     parent: 'LU'
   },
   {
@@ -13612,7 +13617,7 @@ export const iso31662 = [
   },
   {
     code: 'LU-RD',
-    name: 'Redingen',
+    name: 'Redange',
     parent: 'LU'
   },
   {
@@ -14781,6 +14786,11 @@ export const iso31662 = [
     parent: 'ME'
   },
   {
+    code: 'ME-25',
+    name: 'Zeta',
+    parent: 'ME'
+  },
+  {
     code: 'MG-A',
     name: 'Toamasina',
     parent: 'MG'
@@ -15877,7 +15887,7 @@ export const iso31662 = [
   },
   {
     code: 'MT-45',
-    name: 'Rabat Gozo',
+    name: 'Rabat Għawdex',
     parent: 'MT'
   },
   {
@@ -15892,22 +15902,22 @@ export const iso31662 = [
   },
   {
     code: 'MT-48',
-    name: "Saint Julian's",
+    name: 'San Ġiljan',
     parent: 'MT'
   },
   {
     code: 'MT-49',
-    name: 'Saint John',
+    name: 'San Ġwann',
     parent: 'MT'
   },
   {
     code: 'MT-50',
-    name: 'Saint Lawrence',
+    name: 'San Lawrenz',
     parent: 'MT'
   },
   {
     code: 'MT-51',
-    name: "Saint Paul's Bay",
+    name: 'San Pawl il-Baħar',
     parent: 'MT'
   },
   {
@@ -15917,7 +15927,7 @@ export const iso31662 = [
   },
   {
     code: 'MT-53',
-    name: "Saint Lucia's",
+    name: 'Santa Luċija',
     parent: 'MT'
   },
   {
@@ -15977,7 +15987,7 @@ export const iso31662 = [
   },
   {
     code: 'MT-65',
-    name: 'Żebbuġ Gozo',
+    name: 'Żebbuġ Għawdex',
     parent: 'MT'
   },
   {
@@ -16057,17 +16067,17 @@ export const iso31662 = [
   },
   {
     code: 'MV-00',
-    name: 'South Ari Atoll',
+    name: 'Ariatholhu Dhekunuburi',
     parent: 'MV'
   },
   {
     code: 'MV-01',
-    name: 'Addu City',
+    name: 'Addu',
     parent: 'MV'
   },
   {
     code: 'MV-02',
-    name: 'North Ari Atoll',
+    name: 'Ariatholhu Uthuruburi',
     parent: 'MV'
   },
   {
@@ -16077,7 +16087,7 @@ export const iso31662 = [
   },
   {
     code: 'MV-04',
-    name: 'Felidhu Atoll',
+    name: 'Felidheatholhu',
     parent: 'MV'
   },
   {
@@ -16087,7 +16097,7 @@ export const iso31662 = [
   },
   {
     code: 'MV-07',
-    name: 'North Thiladhunmathi',
+    name: 'Thiladhunmathee Uthuruburi',
     parent: 'MV'
   },
   {
@@ -16097,57 +16107,57 @@ export const iso31662 = [
   },
   {
     code: 'MV-12',
-    name: 'Mulaku Atoll',
+    name: 'Mulakatholhu',
     parent: 'MV'
   },
   {
     code: 'MV-13',
-    name: 'North Maalhosmadulu',
+    name: 'Maalhosmadulu Uthuruburi',
     parent: 'MV'
   },
   {
     code: 'MV-14',
-    name: 'North Nilandhe Atoll',
+    name: 'Nilandheatholhu Uthuruburi',
     parent: 'MV'
   },
   {
     code: 'MV-17',
-    name: 'South Nilandhe Atoll',
+    name: 'Nilandheatholhu Dhekunuburi',
     parent: 'MV'
   },
   {
     code: 'MV-20',
-    name: 'South Maalhosmadulu',
+    name: 'Maalhosmadulu Dhekunuburi',
     parent: 'MV'
   },
   {
     code: 'MV-23',
-    name: 'South Thiladhunmathi',
+    name: 'Thiladhunmathee Dhekunuburi',
     parent: 'MV'
   },
   {
     code: 'MV-24',
-    name: 'North Miladhunmadulu',
+    name: 'Miladhunmadulu Uthuruburi',
     parent: 'MV'
   },
   {
     code: 'MV-25',
-    name: 'South Miladhunmadulu',
+    name: 'Miladhunmadulu Dhekunuburi',
     parent: 'MV'
   },
   {
     code: 'MV-26',
-    name: 'Male Atoll',
+    name: 'Maaleatholhu',
     parent: 'MV'
   },
   {
     code: 'MV-27',
-    name: 'North Huvadhu Atoll',
+    name: 'Huvadhuatholhu Uthuruburi',
     parent: 'MV'
   },
   {
     code: 'MV-28',
-    name: 'South Huvadhu Atoll',
+    name: 'Huvadhuatholhu Dhekunuburi',
     parent: 'MV'
   },
   {
@@ -16157,7 +16167,7 @@ export const iso31662 = [
   },
   {
     code: 'MV-MLE',
-    name: 'Male',
+    name: 'Maale',
     parent: 'MV'
   },
   {
@@ -16172,7 +16182,7 @@ export const iso31662 = [
   },
   {
     code: 'MW-C',
-    name: 'Central Region',
+    name: 'Chapakati',
     parent: 'MW'
   },
   {
@@ -16252,7 +16262,7 @@ export const iso31662 = [
   },
   {
     code: 'MW-N',
-    name: 'Northern Region',
+    name: 'Chakumpoto',
     parent: 'MW'
   },
   {
@@ -16297,7 +16307,7 @@ export const iso31662 = [
   },
   {
     code: 'MW-S',
-    name: 'Southern Region',
+    name: 'Chakumwera',
     parent: 'MW'
   },
   {
@@ -17137,17 +17147,17 @@ export const iso31662 = [
   },
   {
     code: 'NO-50',
-    name: 'Trøndelag / Trööndelage (-)',
+    name: 'Trøndelag',
     parent: 'NO'
   },
   {
     code: 'NO-54',
-    name: 'Troms og Finnmark / Romsa ja Finnmárku',
+    name: 'Troms og Finnmark',
     parent: 'NO'
   },
   {
     code: 'NP-P1',
-    name: 'Pradesh 1',
+    name: 'Koshī',
     parent: 'NP'
   },
   {
@@ -18011,11 +18021,6 @@ export const iso31662 = [
     parent: 'PH-41'
   },
   {
-    code: 'PH-MAG',
-    name: 'Maguindanao',
-    parent: 'PH-14'
-  },
-  {
     code: 'PH-MAS',
     name: 'Masbate',
     parent: 'PH-05'
@@ -18029,6 +18034,16 @@ export const iso31662 = [
     code: 'PH-MDR',
     name: 'Mindoro Oriental',
     parent: 'PH-41'
+  },
+  {
+    code: 'PH-MGN',
+    name: 'Maguindanao del Norte',
+    parent: 'PH-14'
+  },
+  {
+    code: 'PH-MGS',
+    name: 'Maguindanao del Sur',
+    parent: 'PH-14'
   },
   {
     code: 'PH-MOU',
@@ -18192,32 +18207,32 @@ export const iso31662 = [
   },
   {
     code: 'PK-BA',
-    name: 'Balochistan',
+    name: 'Balōchistān',
     parent: 'PK'
   },
   {
     code: 'PK-GB',
-    name: 'Gilgit-Baltistan',
+    name: 'Gilgit-Baltistān',
     parent: 'PK'
   },
   {
     code: 'PK-IS',
-    name: 'Islamabad',
+    name: 'Islāmābād',
     parent: 'PK'
   },
   {
     code: 'PK-JK',
-    name: 'Azad Jammu and Kashmir',
+    name: 'Āzād Jammūñ o Kashmīr',
     parent: 'PK'
   },
   {
     code: 'PK-KP',
-    name: 'Khyber Pakhtunkhwa',
+    name: 'Khaībar Pakhtūnkhwā',
     parent: 'PK'
   },
   {
     code: 'PK-PB',
-    name: 'Punjab',
+    name: 'Panjāb',
     parent: 'PK'
   },
   {
@@ -18237,7 +18252,7 @@ export const iso31662 = [
   },
   {
     code: 'PL-04',
-    name: 'Kujawsko-pomorskie',
+    name: 'Kujawsko-Pomorskie',
     parent: 'PL'
   },
   {
@@ -18297,7 +18312,7 @@ export const iso31662 = [
   },
   {
     code: 'PL-28',
-    name: 'Warmińsko-mazurskie',
+    name: 'Warmińsko-Mazurskie',
     parent: 'PL'
   },
   {
@@ -18312,82 +18327,82 @@ export const iso31662 = [
   },
   {
     code: 'PS-BTH',
-    name: 'Bethlehem',
+    name: 'Bayt Laḩm',
     parent: 'PS'
   },
   {
     code: 'PS-DEB',
-    name: 'Deir El Balah',
+    name: 'Dayr al Balaḩ',
     parent: 'PS'
   },
   {
     code: 'PS-GZA',
-    name: 'Gaza',
+    name: 'Ghazzah',
     parent: 'PS'
   },
   {
     code: 'PS-HBN',
-    name: 'Hebron',
+    name: 'Al Khalīl',
     parent: 'PS'
   },
   {
     code: 'PS-JEM',
-    name: 'Jerusalem',
+    name: 'Al Quds',
     parent: 'PS'
   },
   {
     code: 'PS-JEN',
-    name: 'Jenin',
+    name: 'Janīn',
     parent: 'PS'
   },
   {
     code: 'PS-JRH',
-    name: 'Jericho and Al Aghwar',
+    name: 'Arīḩā wal Aghwār',
     parent: 'PS'
   },
   {
     code: 'PS-KYS',
-    name: 'Khan Yunis',
+    name: 'Khān Yūnis',
     parent: 'PS'
   },
   {
     code: 'PS-NBS',
-    name: 'Nablus',
+    name: 'Nāblus',
     parent: 'PS'
   },
   {
     code: 'PS-NGZ',
-    name: 'North Gaza',
+    name: 'Shamāl Ghazzah',
     parent: 'PS'
   },
   {
     code: 'PS-QQA',
-    name: 'Qalqilya',
+    name: 'Qalqīlyah',
     parent: 'PS'
   },
   {
     code: 'PS-RBH',
-    name: 'Ramallah',
+    name: 'Rām Allāh wal Bīrah',
     parent: 'PS'
   },
   {
     code: 'PS-RFH',
-    name: 'Rafah',
+    name: 'Rafaḩ',
     parent: 'PS'
   },
   {
     code: 'PS-SLT',
-    name: 'Salfit',
+    name: 'Salfīt',
     parent: 'PS'
   },
   {
     code: 'PS-TBS',
-    name: 'Tubas',
+    name: 'Ţūbās',
     parent: 'PS'
   },
   {
     code: 'PS-TKM',
-    name: 'Tulkarm',
+    name: 'Ţūlkarm',
     parent: 'PS'
   },
   {
@@ -19167,12 +19182,12 @@ export const iso31662 = [
   },
   {
     code: 'RU-KB',
-    name: 'Kabardino-Balkarskaya Respublika',
+    name: 'Kabardino-',
     parent: 'RU'
   },
   {
     code: 'RU-KC',
-    name: 'Karachayevo-Cherkesskaya Respublika',
+    name: 'Karachayevo-Cherkesskaya',
     parent: 'RU'
   },
   {
@@ -19202,7 +19217,7 @@ export const iso31662 = [
   },
   {
     code: 'RU-KHM',
-    name: 'Khanty-Mansiyskiy avtonomnyy okrug',
+    name: 'Khanty-',
     parent: 'RU'
   },
   {
@@ -19252,7 +19267,7 @@ export const iso31662 = [
   },
   {
     code: 'RU-LEN',
-    name: "Leningradskaya oblast'",
+    name: 'Leningradskaya',
     parent: 'RU'
   },
   {
@@ -19292,7 +19307,7 @@ export const iso31662 = [
   },
   {
     code: 'RU-NEN',
-    name: 'Nenetskiy avtonomnyy okrug',
+    name: 'Nenetskiy',
     parent: 'RU'
   },
   {
@@ -19307,7 +19322,7 @@ export const iso31662 = [
   },
   {
     code: 'RU-NVS',
-    name: "Novosibirskaya oblast'",
+    name: 'Novosibirskaya',
     parent: 'RU'
   },
   {
@@ -19447,12 +19462,12 @@ export const iso31662 = [
   },
   {
     code: 'RU-VGG',
-    name: "Volgogradskaya oblast'",
+    name: 'Volgogradskaya',
     parent: 'RU'
   },
   {
     code: 'RU-VLA',
-    name: "Vladimirskaya oblast'",
+    name: 'Vladimirskaya',
     parent: 'RU'
   },
   {
@@ -19467,7 +19482,7 @@ export const iso31662 = [
   },
   {
     code: 'RU-YAN',
-    name: 'Yamalo-Nenetskiy avtonomnyy okrug',
+    name: 'Yamalo-',
     parent: 'RU'
   },
   {
@@ -21622,117 +21637,117 @@ export const iso31662 = [
   },
   {
     code: 'TD-BA',
-    name: 'Batha',
+    name: 'Al Baţḩā’',
     parent: 'TD'
   },
   {
     code: 'TD-BG',
-    name: 'Bahr el Ghazal',
+    name: 'Baḩr al Ghazāl',
     parent: 'TD'
   },
   {
     code: 'TD-BO',
-    name: 'Borkou',
+    name: 'Būrkū',
     parent: 'TD'
   },
   {
     code: 'TD-CB',
-    name: 'Chari-Baguirmi',
+    name: 'Shārī Bāqirmī',
     parent: 'TD'
   },
   {
     code: 'TD-EE',
-    name: 'Ennedi-Est',
+    name: 'Inīdī ash Sharqī',
     parent: 'TD'
   },
   {
     code: 'TD-EO',
-    name: 'Ennedi-Ouest',
+    name: 'Inīdī al Gharbī',
     parent: 'TD'
   },
   {
     code: 'TD-GR',
-    name: 'Guéra',
+    name: 'Qīrā',
     parent: 'TD'
   },
   {
     code: 'TD-HL',
-    name: 'Hadjer Lamis',
+    name: 'Ḩajjar Lamīs',
     parent: 'TD'
   },
   {
     code: 'TD-KA',
-    name: 'Kanem',
+    name: 'Kānim',
     parent: 'TD'
   },
   {
     code: 'TD-LC',
-    name: 'Lac',
+    name: 'Al Buḩayrah',
     parent: 'TD'
   },
   {
     code: 'TD-LO',
-    name: 'Logone-Occidental',
+    name: 'Lūghūn al Gharbī',
     parent: 'TD'
   },
   {
     code: 'TD-LR',
-    name: 'Logone-Oriental',
+    name: 'Lūghūn ash Sharqī',
     parent: 'TD'
   },
   {
     code: 'TD-MA',
-    name: 'Mandoul',
+    name: 'Māndūl',
     parent: 'TD'
   },
   {
     code: 'TD-MC',
-    name: 'Moyen-Chari',
+    name: 'Shārī al Awsaţ',
     parent: 'TD'
   },
   {
     code: 'TD-ME',
-    name: 'Mayo-Kebbi-Est',
+    name: 'Māyū Kībbī ash Sharqī',
     parent: 'TD'
   },
   {
     code: 'TD-MO',
-    name: 'Mayo-Kebbi-Ouest',
+    name: 'Māyū Kībbī al Gharbī',
     parent: 'TD'
   },
   {
     code: 'TD-ND',
-    name: 'Ville de Ndjamena',
+    name: 'Madīnat Injamīnā',
     parent: 'TD'
   },
   {
     code: 'TD-OD',
-    name: 'Ouaddaï',
+    name: 'Waddāy',
     parent: 'TD'
   },
   {
     code: 'TD-SA',
-    name: 'Salamat',
+    name: 'Salāmāt',
     parent: 'TD'
   },
   {
     code: 'TD-SI',
-    name: 'Sila',
+    name: 'Sīlā',
     parent: 'TD'
   },
   {
     code: 'TD-TA',
-    name: 'Tandjilé',
+    name: 'Tānjīlī',
     parent: 'TD'
   },
   {
     code: 'TD-TI',
-    name: 'Tibesti',
+    name: 'Tibastī',
     parent: 'TD'
   },
   {
     code: 'TD-WF',
-    name: 'Wadi Fira',
+    name: 'Wādī Fīrā’',
     parent: 'TD'
   },
   {
@@ -24332,7 +24347,7 @@ export const iso31662 = [
   },
   {
     code: 'US-VI',
-    name: 'Virgin Islands, U.S.',
+    name: 'United States Virgin Islands',
     parent: 'US'
   },
   {
@@ -25207,7 +25222,7 @@ export const iso31662 = [
   },
   {
     code: 'ZA-EC',
-    name: 'Kapa-Vuxa',
+    name: 'Eastern Cape',
     parent: 'ZA'
   },
   {
@@ -25237,17 +25252,17 @@ export const iso31662 = [
   },
   {
     code: 'ZA-NC',
-    name: "Kapa-N'walungu",
+    name: 'Northern Cape',
     parent: 'ZA'
   },
   {
     code: 'ZA-NW',
-    name: "N'walungu-Vupeladyambu",
+    name: 'North-West',
     parent: 'ZA'
   },
   {
     code: 'ZA-WC',
-    name: 'Kapa-Vupeladyambu',
+    name: 'Western Cape',
     parent: 'ZA'
   },
   {

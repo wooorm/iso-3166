@@ -169,7 +169,7 @@ UN M49 also encodes regions bigger than countries, such as (sub)contintents.
       <td title="Saint Barthélemy"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:BL">BL</a></td>
       <td title="Bermuda"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:BM">BM</a></td>
       <td title="Brunei Darussalam"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:BN">BN</a></td>
-      <td title="Bolivia (Plurinational State of)"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:BO">BO</a></td>
+      <td title="Bolivia, Plurinational State of"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:BO">BO</a></td>
       <td>BP</td>
       <td title="Bonaire, Sint Eustatius and Saba"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:BQ">BQ</a></td>
       <td title="Brazil"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:BR">BR</a></td>
@@ -283,7 +283,7 @@ UN M49 also encodes regions bigger than countries, such as (sub)contintents.
       <td title="Fiji"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:FJ">FJ</a></td>
       <td title="Falkland Islands (Malvinas)"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:FK">FK</a></td>
       <td title="Liechtenstein"><s>FL</s></td>
-      <td title="Micronesia (Federated States of)"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:FM">FM</a></td>
+      <td title="Micronesia, Federated States of"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:FM">FM</a></td>
       <td>FN</td>
       <td title="Faroe Islands"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:FO">FO</a></td>
       <td>FP</td>
@@ -375,7 +375,7 @@ UN M49 also encodes regions bigger than countries, such as (sub)contintents.
       <td title="British Indian Ocean Territory"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:IO">IO</a></td>
       <td>IP</td>
       <td title="Iraq"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:IQ">IQ</a></td>
-      <td title="Iran (Islamic Republic of)"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:IR">IR</a></td>
+      <td title="Iran, Islamic Republic of"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:IR">IR</a></td>
       <td title="Iceland"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:IS">IS</a></td>
       <td title="Italy"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:IT">IT</a></td>
       <td>IU</td>
@@ -431,7 +431,7 @@ UN M49 also encodes regions bigger than countries, such as (sub)contintents.
       <td title="Comoros"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:KM">KM</a></td>
       <td title="Saint Kitts and Nevis"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:KN">KN</a></td>
       <td>KO</td>
-      <td title="Korea (Democratic People&#x27;s Republic of)"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:KP">KP</a></td>
+      <td title="Korea, Democratic People&#x27;s Republic of"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:KP">KP</a></td>
       <td>KQ</td>
       <td title="Korea, Republic of"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:KR">KR</a></td>
       <td>KS</td>
@@ -739,7 +739,7 @@ UN M49 also encodes regions bigger than countries, such as (sub)contintents.
       <td>VB</td>
       <td title="Saint Vincent and the Grenadines"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:VC">VC</a></td>
       <td title="Viet-Nam, Democratic Republic of"><s>VD</s></td>
-      <td title="Venezuela (Bolivarian Republic of)"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:VE">VE</a></td>
+      <td title="Venezuela, Bolivarian Republic of"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:VE">VE</a></td>
       <td>VF</td>
       <td title="Virgin Islands (British)"><a href="https://en.wikipedia.org/wiki/ISO_3166-1:VG">VG</a></td>
       <td>VH</td>
